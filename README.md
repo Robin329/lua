@@ -1,0 +1,2 @@
+# lua
+Lua basic learning
