@@ -234,7 +234,6 @@ testFun(
         return key .. "=" .. val
     end
 )
-<<<<<<< HEAD
 
 -- 7.默认降序
 print(">>>>>>>>>>>>>>>> 7.table.sort( tablename, sortfunction ) <<<<<<<<<<<<<<<\n")
@@ -259,5 +258,3 @@ for k,v in pairs(testTab) do
 	print("testTab k=",k,"v=",v)
 
 end
-=======
->>>>>>> c660b696f7fb01dfd1832a7e16b514b122468812
