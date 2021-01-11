@@ -6,4 +6,4 @@ Lua 是巴西里约热内卢天主教大学（Pontifical Catholic University of 
 
 # 2. 参考
 - https://www.runoob.com/lua/lua-tutorial.html
--
+- https://www.lua.org/manual/5.3/
