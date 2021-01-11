@@ -1,0 +1,8 @@
+运行脚本需要lua环境并且设置环境变量,安装lua5.1以上版本(安装过程如果没有自动添加到环境变量,安装完成需要自己添加)
+把游戏配置txt文件放在config目录下
+打开config.lua填写生成配置,一般情况下只需要填写文件路径(url字段)、生成类的包名(as3Pkg字段)、字段过滤配置(filters字段)
+然后双击运行buildAS3.bat文件:
+就会自动生成as文件到as3目录下面,其中GCReader.as是GameConfReader中读取配置的函数,其他为配置的结构体(手动复制到项目中)
+日志文件生成在log目录下
+clearAS3.bat删除旧的as文件
+clearLogByUser.bat或clearLog.bat删除旧的日志文件

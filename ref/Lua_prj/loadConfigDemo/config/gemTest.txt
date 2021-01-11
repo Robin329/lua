@@ -1,0 +1,38 @@
+GemConfig = {
+	gem_stars={
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+		}
+	}
+}

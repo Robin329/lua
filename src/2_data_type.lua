@@ -234,3 +234,27 @@ testFun(
         return key .. "=" .. val
     end
 )
+
+-- 7.默认降序
+print(">>>>>>>>>>>>>>>> 7.table.sort( tablename, sortfunction ) <<<<<<<<<<<<<<<\n")
+
+testTab = {
+{id=1,name="z",power=100,lv=22,timev=10},
+{id=2,name="d",power=90,lv=23,timev=8},
+{id=3,name="a",power=100,lv=21,timev=12},
+{id=4,name="b",power=110,lv=21,timev=16},
+{id=5,name="c",power=110,lv=21,timev=15}
+}
+
+print("DESC= ",string.lower("DESC"),type("desc"),"\n")
+
+testTab = {4,52,1,86,6,5}
+table.sort(testTab)
+
+table.insert( testTab, 5, 0 )
+for k,v in pairs(testTab) do
+
+	--print("testTab k=",k,"v.id=",v.id)
+	print("testTab k=",k,"v=",v)
+
+end

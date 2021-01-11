@@ -1,0 +1,1389 @@
+--这里定义帮派相关的配置信息，主要是各个帮派等级的限制条件，比如人数上限等，还包括一些全局的帮派设定，比如创建帮派需要的达到的角色等级、
+--绑定银两（银两）等
+--#include "..\..\language\LangCode.txt"
+Guild = 
+{
+	--全局的配置
+	levelLimit = 40,	--创建帮派时，角色需要达到的最小等级
+	money = 3000,		--创建1级帮派所，角色需要缴纳的绑定元宝数量，成功创建的话，会扣除这部分的绑定元宝
+	yuanbao2 = 88,		--创建2级帮派所，角色需要缴纳的元宝数量，成功创建的话，会扣除这部分的元宝
+	yuanbao3 = 188,		--创建3级帮派所，角色需要缴纳的元宝数量，成功创建的话，会扣除这部分的元宝
+	leftTimeLimit = 3600,		--玩家主动脱离帮派的话，在一定时间内（如24小时）不能加入其他帮派或者接受其他帮派的邀请，这个是配置这个时间，以小时为单位
+	kickoutTimeLimit = 1800,	-- 玩家退出帮派后，在这个时间(小时)内不能加入其它帮派
+	--itemId：灵石的物品id，是指在物品配置表中配置好的物品id，升级用的
+	-- 这个字段未必需要
+	upItemId2 = 42830,  --创建2级帮派所需道具id
+	upItemId3 = 58606,  --创建3级帮派所需道具id
+	-- 每次领取福利消耗的帮贡，每个人消耗是一样的
+	weal_contrib = 0,
+	wealLimit = {10,4,2,1}, -- 福利领取次数限制，分别是精英，长老，副帮，帮主
+	--护送任务npc
+	questNPC = {sceneName = Lang.SceneName.s5, entityName= Lang.EntityName.n66 },
+	--帮派领地地点，该结构和任务的NPC是一样的，可以指定NPC名称或是一个坐标
+	manor = {sceneName = Lang.SceneName.s5, entityName= Lang.EntityName.n66 },
+	--天元之战规则
+	tianyuanDesc = Lang.GuildLang.t100,
+	checkTime = 24,		-- 创建帮派后不足10人多久解散,单位小时
+	checkMemberCount = 10, -- 不足N人，一定时间后解散
+	--帮派建筑的名字
+	buildingName = Lang.GuildLang.buildingName,
+	--帮派建筑的TIPS
+	buildingTips = Lang.GuildLang.buildingTips,
+
+	guildFubenSceneId = {14,27,28,29,30,31,1118,1119,1120,1121,1216,1217,1218,1219},
+	-- 弹劾令ID
+	impeachItem = 18655,
+	-- 自动弹劾时间(秒)
+	autoImpeachTime = 7 * 24 * 3600,
+	-- 玩家弹劾时间(秒)
+	actorImpeachTime = 3 * 24 * 3600,
+	-- 弹劾期持续时间(秒)
+	impeachTime = 2 * 24 * 3600,
+	-- 自动弹劾选择的玩家最小离线时长
+	autoImpeachOfflineTime = 3 * 24 * 3600,
+
+	roomCapacity = {5,10,20,30,40,50,80},
+	roomUpdateYb = {100,200,400,700,1000,2000,6000},
+
+	touchEggExp = 100, -- 每次抚摸神兽蛋增加的经验
+	touchEggXb = 8888, -- 抚摸神兽蛋获得的仙币
+	totalTouch = 20, -- 每个帮派每天可以抚摸神兽的次数
+	upEggExp = { 1000, 1500, 2000, 2500, 3000, 3500, 4000 }, -- 点亮每颗灵珠需要的经验, 共7颗
+	ssLevelLimit = 5, -- 神兽祭坛的1级对应神兽等级上限的几级
+	totalXianGuo = 999, -- 每个帮派每天献果的总次数
+	xianGuoBackDay = 7, -- 找回献果次数累计最大次数
+	xianGuoBackMoney = 5, -- 找回献果需要的元宝
+	xianGuoTimes = {1,2,3,4,5}, -- 每日献果次数，根据职位排，分别是帮众，精英，长老，副帮主，帮主
+	copyNeedLevel = {2,3,4,5}, -- 帮派副本开放等级，分别是简单，普通，困难，噩梦
+
+	ybContribute = 100, --捐献1元宝，个人获得多少帮贡
+	ybLingshi = 20, --捐献1元宝，帮派获得多少灵石
+	lingshiCount = 10, --捐献一个灵石道具，帮派获得多少灵石
+	lingshiContribute = 40, --捐献1个灵石道具，个人获得多少帮贡
+	lingshiId = 52542, --灵石道具id
+
+	leaderTitleNeedLevel = 3,	-- 帮派等级达到才会获得下面的称号
+	leaderTitle = 82,		-- 帮主的称号ID
+	titleConf = {137,144},
+	ssLevels = 
+	{ -- 每个等级神兽的配置，从1开始
+		{
+			upExp = 3300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 100,},
+				{type = 81,value = 0.01,},
+				{type = 82,value = 0.01,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 4500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 130,},
+				{type = 81,value = 0.013,},
+				{type = 82,value = 0.013,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 5700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 160,},
+				{type = 81,value = 0.016,},
+				{type = 82,value = 0.016,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 6900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 190,},
+				{type = 81,value = 0.019,},
+				{type = 82,value = 0.019,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 8100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 220,},
+				{type = 81,value = 0.022,},
+				{type = 82,value = 0.022,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 9300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 260,},
+				{type = 81,value = 0.026,},
+				{type = 82,value = 0.026,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 10500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 300,},
+				{type = 81,value = 0.030,},
+				{type = 82,value = 0.030,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 11700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 340,},
+				{type = 81,value = 0.034,},
+				{type = 82,value = 0.034,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 12900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 380,},
+				{type = 81,value = 0.038,},
+				{type = 82,value = 0.038,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 14100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 420,},
+				{type = 81,value = 0.042,},
+				{type = 82,value = 0.042,},
+				-- 其它属性按上面配置
+			},
+		},	
+		
+		-- 其它等级按上面配置  10
+		{
+			upExp = 15300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 460,},
+				{type = 81,value = 0.046,},
+				{type = 82,value = 0.046,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 16500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 500,},
+				{type = 81,value = 0.050,},
+				{type = 82,value = 0.050,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 17700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 540,},
+				{type = 81,value = 0.054,},
+				{type = 82,value = 0.054,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 18900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 580,},
+				{type = 81,value = 0.058,},
+				{type = 82,value = 0.058,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 20100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 620,},
+				{type = 81,value = 0.062,},
+				{type = 82,value = 0.062,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 21300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 650,},
+				{type = 81,value = 0.065,},
+				{type = 82,value = 0.065,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 22500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 680,},
+				{type = 81,value = 0.068,},
+				{type = 82,value = 0.068,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 23700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 710,},
+				{type = 81,value = 0.071,},
+				{type = 82,value = 0.071,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 24900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 740,},
+				{type = 81,value = 0.074,},
+				{type = 82,value = 0.074,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 26100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 770,},
+				{type = 81,value = 0.077,},
+				{type = 82,value = 0.077,},
+				-- 其它属性按上面配置
+			},
+		},	
+		--20
+		{
+			upExp = 27300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 800,},
+				{type = 81,value = 0.08,},
+				{type = 82,value = 0.08,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 28500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 830,},
+				{type = 81,value = 0.083,},
+				{type = 82,value = 0.083,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 29700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 860,},
+				{type = 81,value = 0.086,},
+				{type = 82,value = 0.086,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 30900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 890,},
+				{type = 81,value = 0.089,},
+				{type = 82,value = 0.089,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 32100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 920,},
+				{type = 81,value = 0.092,},
+				{type = 82,value = 0.092,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 33300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 950,},
+				{type = 81,value = 0.095,},
+				{type = 82,value = 0.095,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 34500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 980,},
+				{type = 81,value = 0.098,},
+				{type = 82,value = 0.098,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 35700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1010,},
+				{type = 81,value = 0.101,},
+				{type = 82,value = 0.101,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 36900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1040,},
+				{type = 81,value = 0.104,},
+				{type = 82,value = 0.104,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 38100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1070,},
+				{type = 81,value = 0.107,},
+				{type = 82,value = 0.107,},
+				-- 其它属性按上面配置
+			},
+		},	
+		--30
+		{
+			upExp = 39300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1100,},
+				{type = 81,value = 0.11,},
+				{type = 82,value = 0.11,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 40500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1130,},
+				{type = 81,value = 0.113,},
+				{type = 82,value = 0.113,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 41700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1160,},
+				{type = 81,value = 0.116,},
+				{type = 82,value = 0.116,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 42900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1190,},
+				{type = 81,value = 0.119,},
+				{type = 82,value = 0.119,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 44100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1220,},
+				{type = 81,value = 0.122,},
+				{type = 82,value = 0.122,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 45300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1250,},
+				{type = 81,value = 0.125,},
+				{type = 82,value = 0.125,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 46500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1280,},
+				{type = 81,value = 0.128,},
+				{type = 82,value = 0.128,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 47700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1310,},
+				{type = 81,value = 0.131,},
+				{type = 82,value = 0.131,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 48900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1340,},
+				{type = 81,value = 0.134,},
+				{type = 82,value = 0.134,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 50100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1370,},
+				{type = 81,value = 0.137,},
+				{type = 82,value = 0.137,},
+				-- 其它属性按上面配置
+			},
+		},	
+		---40
+		{
+			upExp = 51300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1400,},
+				{type = 81,value = 0.14,},
+				{type = 82,value = 0.14,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 52500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1430,},
+				{type = 81,value = 0.143,},
+				{type = 82,value = 0.143,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 53700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1460,},
+				{type = 81,value = 0.146,},
+				{type = 82,value = 0.146,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 54900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1490,},
+				{type = 81,value = 0.149,},
+				{type = 82,value = 0.149,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 56100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1520,},
+				{type = 81,value = 0.152,},
+				{type = 82,value = 0.152,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 57300, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1550,},
+				{type = 81,value = 0.155,},
+				{type = 82,value = 0.155,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 58500, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1580,},
+				{type = 81,value = 0.158,},
+				{type = 82,value = 0.158,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 59700, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1610,},
+				{type = 81,value = 0.161,},
+				{type = 82,value = 0.161,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 60900, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1640,},
+				{type = 81,value = 0.164,},
+				{type = 82,value = 0.164,},
+				-- 其它属性按上面配置
+			},
+		},
+		{
+			upExp = 62100, -- 升级需要的经验
+			attrs = -- 该等级增加的属性 
+			{
+				{type = 71,value = 1670,},
+				{type = 81,value = 0.167,},
+				{type = 82,value = 0.167,},
+				-- 其它属性按上面配置
+			},
+		},	
+		--50
+		
+	},
+		
+	
+	
+	-- 各种类型的仙果的配置
+	xianGuoExp = { 100, 300, 3000},	-- 获得的经验
+	xianGuoRenown = { 100, 999, 9999},	-- 获得的声望
+	xianGuoItem = { {52135, 1}, {52135, 3}, {52135, 35}},
+	xianGuoMoney = { 40, 100, 1000},	-- 消耗的金钱
+	xianGuoMoneyType = { 6, 3, 3},	-- 消耗的金钱类型，第一个是帮贡
+
+	-- 帮派商店的配置
+	store = 
+	{
+		-- 这个等级表示帮派建筑：百宝阁的等级
+		{itemid = 18601, level = 1 , contrib = 100},	-- 3个数字，第一个是物品id， 第二个是开放的等级,最后是购买物品需要的贡献值，比如这里是1，表示帮派第一等级就可以购买这个物品
+		{itemid = 19200, level = 1 , contrib = 800},
+		{itemid = 18331, level = 1 , contrib = 600},
+		{itemid = 18341, level = 1 , contrib = 600},--1
+		
+		{itemid = 19300, level = 2 , contrib = 800},	-- 这个表示帮派等级3才能购买这个物品，帮派在3级的时候，可以购买1234和1235这两个物品。以下类推
+	    {itemid = 24443, level = 2 , contrib = 1000},
+		{itemid = 18351, level = 2 , contrib = 800},
+		{itemid = 18321, level = 2 , contrib = 800},
+		{itemid = 18332, level = 2 , contrib = 1000},
+		{itemid = 18342, level = 2 , contrib = 1000},--2
+		
+		
+		--{itemid = 18401, level = 3 , contrib = 1200},
+		--{itemid = 19100, level = 3 , contrib = 1000},
+		{itemid = 18600, level = 3 , contrib = 1200},
+		{itemid = 24444, level = 3 , contrib = 2500},
+		{itemid = 18352, level = 3 , contrib = 1200},
+		{itemid = 18322, level = 3 , contrib = 1200},--3
+		
+		{itemid = 18201, level = 4 , contrib = 1500},
+		{itemid = 18333, level = 4 , contrib = 1500},
+		{itemid = 18343, level = 4 , contrib = 1500},
+		{itemid = 18403, level = 4 , contrib = 1500},--4
+		
+		{itemid = 18353, level = 5 , contrib = 1800},
+		{itemid = 18323, level = 5 , contrib = 1800},--5
+		
+		
+		{itemid = 18334, level = 6 , contrib = 2500},
+		{itemid = 18344, level = 6 , contrib = 2500},--6
+		
+		{itemid = 18354, level = 7 , contrib = 3500},
+		{itemid = 18324, level = 7 , contrib = 3500},--7
+		
+		{itemid = 18335, level = 8 , contrib = 5000},
+		{itemid = 18345, level = 8 , contrib = 5000},--8
+		
+		{itemid = 18325, level = 10, contrib = 8000},
+		{itemid = 18355, level = 10, contrib = 8000},
+		{itemid = 18404, level = 10, contrib = 8000},
+		--{itemid = 19101, level = 10, contrib = 8000},--10
+	},
+	
+	--献果的名字
+	animalFoodName = Lang.GuildLang.animalFoodName,
+
+	--以下是各个等级的配置
+	--注意：如果达到一定的等级后，以后所有的配置都一样的话，可以只配置到这个等级，以后的等级配置按照这个配置
+	--比如，如果帮派达到20级后，大于或等于20级的帮派都是按照20级的配置，那么这里配置文件就只需配置到20级，以后的级数不用再配置
+	guildLevel = {
+		{
+			level = 1,		--帮派等级,这个值起始是1，每次递增1级
+			maxMember = 20, --该等级帮派所有成员的人数上限
+
+			--这个是升级到下一级需要满足的条件内容			
+			--升级所需要的灵石数量
+			stone = { 50000,50000,50000,50000,50000 },
+			--以下是可以领取的召集令和工资的数量，如果这个帮派等级还不能领取福利，就全部设置成0
+			money = {
+				--不同权限的人每日可领取福利工资的数量
+				--leader:表示帮主每天可领取的福利工资的数量
+				--secLeader：副帮主可领取的福利工资的数量
+				--hufa：护法可领取的福利工资的数量
+				--jy：精英可领取的福利工资的数量
+				--member:普通帮众可领取的福利工资的数量
+				--如果既发银两也发绑定银两，就配置以下两行，否则就配一个
+				--moneyType就是金钱类型，1是银两，0 是绑定银两
+				{ moneyType = 0, leader = 200000, secLeader = 150000, hufa = 100000, jy = 75000, member = 50000 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			item = {
+				--不同权限的人每日可领取物品的数量
+				--leader:表示帮主每天可领取的物品数量
+				--secLeader：副帮主可领取的物品数量
+				--hufa：护法可领取的物品数量
+				--jy：精英可领取的物品数量
+				--member:普通帮众可领取的物品数量
+				--itemType表示物品类型 0是护镖令
+				-- {itemType = 1, rewardId = 18600, leader = 10, secLeader = 8, hufa = 6, jy = 4, member = 2 }, --押镖令配置列 
+				-- {itemType = 2, rewardId = 22116, leader = 50, secLeader = 40, hufa = 30, jy = 20, member = 10 },
+				--{itemType = 1, leader = 帮主, secLeader = 副帮主, hufa = 护法, jy = 精英, member = 普通 },
+			},
+			buildingEffect = Lang.GuildLang.buildingEffect1,
+		},
+
+		{
+			--帮派等级2的配置
+			level = 2,		--帮派等级
+			maxMember = 30, --该等级帮派所有成员的人数上限
+			
+			--这个是升级到下一级需要满足的条件内容			
+			stone = { 100000,100000,100000,100000,100000 },
+
+			money = {	
+				{ moneyType = 0, leader = 210000, secLeader = 155000, hufa = 102000, jy = 76000, member = 50500 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 12, secLeader = 10, hufa = 8, jy = 6, member = 4 },
+				-- {itemType = 2, rewardId = 22116, leader = 60, secLeader = 50, hufa = 40, jy = 30, member = 20 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect2,
+
+		},
+
+		{
+			--帮派等级3的配置
+			level = 3,
+			maxMember = 40, 
+			stone = { 200000,200000,200000,200000,200000 },
+			
+			money = {	
+				{ moneyType = 0, leader = 220000, secLeader = 160000, hufa = 104000, jy = 77000, member = 51000 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 14, secLeader = 12, hufa = 10, jy = 8, member = 6 },
+				-- {itemType = 2, rewardId = 22116, leader = 70, secLeader = 60, hufa = 50, jy = 40, member = 30 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect3,
+		},
+
+		{
+			--帮派等级4的配置
+			level = 4,
+			maxMember = 50, 
+			stone = { 400000,400000,400000,400000,400000 },
+
+			money = {	
+				{ moneyType = 0, leader = 230000, secLeader = 165000, hufa = 106000, jy = 78000, member = 51500 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 16, secLeader = 14, hufa = 12, jy = 10, member = 8 },
+				-- {itemType = 2, rewardId = 22116, leader = 80, secLeader =0, hufa = 60, jy = 50, member = 40 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect4,
+		},
+
+		{
+			--帮派等级5的配置
+			level = 5,
+			maxMember = 60, 
+			stone = { 500000,500000,500000,500000,500000 },
+
+			money = {	
+				{ moneyType = 0, leader = 240000, secLeader = 170000, hufa = 108000, jy = 79000, member = 52000 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 18, secLeader = 16, hufa = 14, jy = 12, member = 10 },
+				-- {itemType = 2, rewardId = 22116, leader = 90, secLeader = 80, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect5,
+		},
+		
+		{
+			--帮派等级6的配置
+			level = 6,
+			maxMember = 70, 
+			stone = { 600000,600000,600000,600000,600000 },
+
+			money = {	
+				{ moneyType = 0, leader = 250000, secLeader = 175000, hufa = 110000, jy = 80000, member = 52500 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 20, secLeader = 18, hufa = 16, jy = 14, member = 12 },
+				-- {itemType = 2, rewardId = 22116, leader = 100, secLeader = 90, hufa = 80, jy = 70, member = 60 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect6,
+		},
+		
+		{
+			--帮派等级7的配置
+			level = 7,
+			maxMember = 80, 
+			stone = { 800000,800000,800000,800000,800000 },
+
+			money = {	
+				{ moneyType = 0, leader = 260000, secLeader = 180000, hufa = 112000, jy = 81000, member = 53000 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 24, secLeader = 20, hufa = 18, jy = 16, member = 14 },
+				-- {itemType = 2, rewardId = 22116, leader = 120, secLeader = 100, hufa = 90, jy = 80, member = 70 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect7,
+		},
+		
+		{
+			--帮派等级8的配置
+			level = 8,
+			maxMember = 90, 
+			stone = { 1000000,1000000,1000000,1000000,1000000 },
+
+			money = {	
+				{ moneyType = 0, leader = 270000, secLeader = 185000, hufa = 114000, jy = 82000, member = 53500 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 28, secLeader = 24, hufa = 20, jy = 18, member = 16 },
+				-- {itemType = 2, rewardId = 22116, leader = 140, secLeader = 120, hufa = 100, jy = 90, member = 80 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect8,
+		},
+		
+		{
+			--帮派等级9的配置
+			level = 9,
+			maxMember = 100, 
+			stone = { 1200000,1200000,1200000,1200000,1200000 },
+
+			money = {	
+				{ moneyType = 0, leader = 280000, secLeader = 190000, hufa = 116000, jy = 83000, member = 54000 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 34, secLeader = 28, hufa = 24, jy = 20, member = 18 },
+				-- {itemType = 2, rewardId = 22116, leader = 170, secLeader = 140, hufa = 120, jy = 100, member = 90 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect9,
+		},
+		
+		{
+			--帮派等级10的配置
+			level = 10,
+			maxMember = 110, 
+			stone = { 1800000,1800000,1800000,1800000,1800000 },
+
+			money = {	
+				{ moneyType = 0, leader = 290000, secLeader = 195000, hufa = 118000, jy = 84000, member = 54500 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 40, secLeader = 34, hufa = 28, jy = 24, member = 20 },
+				-- {itemType = 2, rewardId = 22116, leader = 200, secLeader = 170, hufa = 140, jy = 120, member = 100 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect10,
+		},
+		{
+			--帮派等级11的配置
+			level = 11,
+			maxMember = 120, 
+			stone = { 2700000,2700000,2700000,2700000,2700000 },
+
+			money = {	
+				{ moneyType = 0, leader = 300000, secLeader = 200000, hufa = 120000, jy = 85000, member = 55000 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 40, secLeader = 34, hufa = 28, jy = 24, member = 20 },
+				-- {itemType = 2, rewardId = 22116, leader = 200, secLeader = 170, hufa = 140, jy = 120, member = 100 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect11,
+		},
+		{
+			--帮派等级12的配置
+			level = 12,
+			maxMember = 130, 
+			stone = { 4050000,4050000,4050000,4050000,4050000 },
+
+			money = {	
+				{ moneyType = 0, leader = 310000, secLeader = 205000, hufa = 122000, jy = 86000, member = 55500 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 40, secLeader = 34, hufa = 28, jy = 24, member = 20 },
+				-- {itemType = 2, rewardId = 22116, leader = 200, secLeader = 170, hufa = 140, jy = 120, member = 100 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect12,
+		},
+		{
+			--帮派等级13的配置
+			level = 13,
+			maxMember = 140, 
+			stone = { 6075000,6075000,6075000,6075000,6075000 },
+
+			money = {	
+				{ moneyType = 0, leader = 320000, secLeader = 210000, hufa = 124000, jy = 87000, member = 56000 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 40, secLeader = 34, hufa = 28, jy = 24, member = 20 },
+				-- {itemType = 2, rewardId = 22116, leader = 200, secLeader = 170, hufa = 140, jy = 120, member = 100 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect13,
+		},
+		{
+			--帮派等级14的配置
+			level = 14,
+			maxMember = 150, 
+			stone = { 9112500,9112500,9112500,9112500,9112500 },
+
+			money = {	
+				{ moneyType = 0, leader = 330000, secLeader = 215000, hufa = 126000, jy = 88000, member = 56500 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 40, secLeader = 34, hufa = 28, jy = 24, member = 20 },
+				-- {itemType = 2, rewardId = 22116, leader = 200, secLeader = 170, hufa = 140, jy = 120, member = 100 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect14,
+		},
+		{
+			--帮派等级15的配置
+			level = 15,
+			maxMember = 160, 
+			stone = { 9112500,9112500,9112500,9112500,9112500 },
+
+			money = {	
+				{ moneyType = 0, leader = 340000, secLeader = 220000, hufa = 128000, jy = 89000, member = 57000 },
+				{ moneyType = 2, leader = 150, secLeader = 100, hufa = 70, jy = 60, member = 50 },
+			},
+			
+			item = {
+				-- {itemType = 1, rewardId = 18600, leader = 40, secLeader = 34, hufa = 28, jy = 24, member = 20 },
+				-- {itemType = 2, rewardId = 22116, leader = 200, secLeader = 170, hufa = 140, jy = 120, member = 100 },
+			},
+			
+			buildingEffect = Lang.GuildLang.buildingEffect15,
+		},
+
+
+	},
+
+	guildSkill = { -- 帮派技能配置
+		{
+			skillId = 1, -- 技能ID，从1开始
+			skillName = "绝命追击", --技能名字
+			postionLimit = 0, --所需地位，0为帮众，1为精英，2为长老，3为副帮主，4为帮主
+			contribution = {1000, 3000, 6000, 10000, 15000, 20000, 25000, 30000, 40000, 40000,}, -- 所需帮贡
+			levelLimit = {37, 38, 39, 40, 41, 42, 43, 44, 45, 46, }, -- 所需等级
+			guildLevelLimit = {1, 1, 2, 3, 4, 5, 6, 7, 8, 9, },  -- 所需帮派等级 
+			items = { -- 所需道具
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+			},
+			attrs = { -- 属性
+				{
+					{ type = 40, value = 0.01 },
+				},
+				{
+					{ type = 40, value = 0.0125 },
+				},
+				{
+					{ type = 40, value = 0.0175 },
+				},
+				{
+					{ type = 40, value = 0.025 },
+				},
+				{
+					{ type = 40, value = 0.035 },
+				},
+				{
+					{ type = 40, value = 0.05 },
+				},
+				{
+					{ type = 40, value = 0.07 },
+				},
+				{
+					{ type = 40, value = 0.1 },
+				},
+				{
+					{ type = 40, value = 0.14 },
+				},
+				{
+					{ type = 40, value = 0.2 },
+				},
+			},
+		},
+		{
+			skillId = 2, -- 技能ID，从1开始
+			skillName = "护盾", --技能名字
+			postionLimit = 0, --所需地位，0为帮众，1为精英，2为长老，3为副帮主，4为帮主
+			contribution = {1000, 3000, 6000, 10000, 15000, 20000, 25000, 30000, 40000, 40000,}, -- 所需帮贡
+			levelLimit = {37, 38, 39, 40, 41, 42, 43, 44, 45, 46, }, -- 所需等级
+			guildLevelLimit = {1, 1, 2, 3, 4, 5, 6, 7, 8, 9, },  -- 所需帮派等级 
+			items = { -- 所需道具
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+			},
+			attrs = { -- 属性
+				{
+					{ type = 26, value = 0.01 },
+				},
+				{
+					{ type = 26, value = 0.0125 },
+				},
+				{
+					{ type = 26, value = 0.0175 },
+				},
+				{
+					{ type = 26, value = 0.025 },
+				},
+				{
+					{ type = 26, value = 0.035 },
+				},
+				{
+					{ type = 26, value = 0.05 },
+				},
+				{
+					{ type = 26, value = 0.07 },
+				},
+				{
+					{ type = 26, value = 0.1 },
+				},
+				{
+					{ type = 26, value = 0.14 },
+				},
+				{
+					{ type = 26, value = 0.2 },
+				},
+			},
+		},
+		{
+			skillId = 3, -- 技能ID，从1开始
+			skillName = "强甲", --技能名字
+			postionLimit = 0, --所需地位，0为帮众，1为精英，2为长老，3为副帮主，4为帮主
+			contribution = {1000, 3000, 6000, 10000, 15000, 20000, 25000, 30000, 40000, 40000,}, -- 所需帮贡
+			levelLimit = {37, 38, 39, 40, 41, 42, 43, 44, 45, 46, }, -- 所需等级
+			guildLevelLimit = {1, 1, 2, 3, 4, 5, 6, 7, 8, 9, },  -- 所需帮派等级 
+			items = { -- 所需道具
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+			},
+			attrs = { -- 属性
+				{
+					{ type = 38, value = 0.01 },
+				},
+				{
+					{ type = 38, value = 0.0125 },
+				},
+				{
+					{ type = 38, value = 0.0175 },
+				},
+				{
+					{ type = 38, value = 0.025 },
+				},
+				{
+					{ type = 38, value = 0.035 },
+				},
+				{
+					{ type = 38, value = 0.05 },
+				},
+				{
+					{ type = 38, value = 0.07 },
+				},
+				{
+					{ type = 38, value = 0.1 },
+				},
+				{
+					{ type = 38, value = 0.14 },
+				},
+				{
+					{ type = 38, value = 0.2 },
+				},
+			},
+		},
+		{
+			skillId = 4, -- 技能ID，从1开始
+			skillName = "强身术", --技能名字
+			postionLimit = 2, --所需地位，0为帮众，1为精英，2为长老，3为副帮主，4为帮主
+			contribution = {5000, 15000, 30000, 50000, 75000, 100000, 125000, 150000, 200000, 200000,}, -- 所需帮贡
+			levelLimit = {37, 38, 39, 40, 41, 42, 43, 44, 45, 46, }, -- 所需等级
+			guildLevelLimit = {1, 1, 2, 3, 4, 5, 6, 7, 8, 9, },  -- 所需帮派等级 
+			items = { -- 所需道具
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+			},
+			attrs = { -- 属性
+				{
+					{ type = 18, value = 0.01 },
+				},
+				{
+					{ type = 18, value = 0.0125 },
+				},
+				{
+					{ type = 18, value = 0.0175 },
+				},
+				{
+					{ type = 18, value = 0.025 },
+				},
+				{
+					{ type = 18, value = 0.035 },
+				},
+				{
+					{ type = 18, value = 0.05 },
+				},
+				{
+					{ type = 18, value = 0.07 },
+				},
+				{
+					{ type = 18, value = 0.1 },
+				},
+				{
+					{ type = 18, value = 0.14 },
+				},
+				{
+					{ type = 18, value = 0.2 },
+				},
+			},
+		},
+		{
+			skillId = 5, -- 技能ID，从1开始
+			skillName = "铜墙铁壁", --技能名字
+			postionLimit = 2, --所需地位，0为帮众，1为精英，2为长老，3为副帮主，4为帮主
+			contribution = {5000, 15000, 30000, 50000, 75000, 100000, 125000, 150000, 200000, 200000,}, -- 所需帮贡
+			levelLimit = {37, 38, 39, 40, 41, 42, 43, 44, 45, 46, }, -- 所需等级
+			guildLevelLimit = {1, 1, 2, 3, 4, 5, 6, 7, 8, 9, },  -- 所需帮派等级 
+			items = { -- 所需道具
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+			},
+			attrs = { -- 属性
+				{
+					{ type = 24, value = 0.01 },
+					{ type = 33, value = 0.01 },
+				},
+				{
+					{ type = 24, value = 0.0125 },
+					{ type = 34, value = 0.0125 },
+				},
+				{
+					{ type = 24, value = 0.0175 },
+					{ type = 34, value = 0.0175 },
+				},
+				{
+					{ type = 24, value = 0.025 },
+					{ type = 34, value = 0.025 },
+				},
+				{
+					{ type = 24, value = 0.035 },
+					{ type = 34, value = 0.035 },
+				},
+				{
+					{ type = 24, value = 0.05 },
+					{ type = 34, value = 0.05 },
+				},
+				{
+					{ type = 24, value = 0.07 },
+					{ type = 34, value = 0.07 },
+				},
+				{
+					{ type = 24, value = 0.1 },
+					{ type = 34, value = 0.1 },
+				},
+				{
+					{ type = 24, value = 0.14 },
+					{ type = 34, value = 0.14 },
+				},
+				{
+					{ type = 24, value = 0.2 },
+					{ type = 34, value = 0.2 },
+				},
+			},
+		},
+		{
+			skillId = 6, -- 技能ID，从1开始
+			skillName = "强袭", --技能名字
+			postionLimit = 4, --所需地位，0为帮众，1为精英，2为长老，3为副帮主，4为帮主
+			contribution = {10000, 30000, 60000, 100000, 150000, 200000, 250000, 300000, 400000, 400000,}, -- 所需帮贡
+			levelLimit = {37, 38, 39, 40, 41, 42, 43, 44, 45, 46, }, -- 所需等级
+			guildLevelLimit = {1, 1, 2, 3, 4, 5, 6, 7, 8, 9, },  -- 所需帮派等级 
+			items = { -- 所需道具
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+				{
+					{ id = 22116, count = 0 },
+				},
+			},
+			attrs = { -- 属性
+				{
+					{ type = 28, value = 0.01 },
+				},
+				{
+					{ type = 28, value = 0.0125 },
+				},
+				{
+					{ type = 28, value = 0.0175 },
+				},
+				{
+					{ type = 28, value = 0.025 },
+				},
+				{
+					{ type = 28, value = 0.035 },
+				},
+				{
+					{ type = 28, value = 0.05 },
+				},
+				{
+					{ type = 28, value = 0.07 },
+				},
+				{
+					{ type = 28, value = 0.1 },
+				},
+				{
+					{ type = 28, value = 0.14 },
+				},
+				{
+					{ type = 28, value = 0.2 },
+				},
+			},
+		},
+	},
+}

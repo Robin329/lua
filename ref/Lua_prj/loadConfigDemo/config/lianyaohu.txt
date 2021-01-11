@@ -1,0 +1,1988 @@
+--文件由脚本生成，请不要手动编辑
+lianyaohu =
+{
+	cardGroup = { --卡牌组
+		{
+			cardsId = {20011, 20012, 20013, 20014},--当前组包含的卡牌ID
+			rewardsItem = {{id=801, count=1}, {id=802, count=1}, {id=803, count=1}},--激活当前组卡牌获得的道具奖励
+			id = 1,--卡牌组ID
+			name = '卡牌组1',--卡牌组名
+		},
+		{
+			cardsId = {20015, 20016, 20017, 20018},--当前组包含的卡牌ID
+			rewardsItem = {{id=804, count=2}, {id=805, count=2}, {id=806, count=2}},--激活当前组卡牌获得的道具奖励
+			id = 2,--卡牌组ID
+			name = '卡牌组2',--卡牌组名
+		},
+	},
+	openLevel = 50,--开启等级
+	lianyaohuAttr = { --炼妖壶升级附加属性
+		{
+			--第1级,--
+			{type = 21, value = 100},--
+			{type = 23, value = 100},--
+			{type = 17, value = 100},--
+			{type = 35, value = 100},--
+			{type = 25, value = 100},--
+			{type = 171, value = 100},--
+			{type = 173, value = 100},--
+		},
+		{
+			--第2级,--
+			{type = 21, value = 110},--
+			{type = 23, value = 110},--
+			{type = 17, value = 110},--
+			{type = 35, value = 110},--
+			{type = 25, value = 110},--
+			{type = 171, value = 110},--
+			{type = 173, value = 110},--
+		},
+		{
+			--第3级,--
+			{type = 21, value = 120},--
+			{type = 23, value = 120},--
+			{type = 17, value = 120},--
+			{type = 35, value = 120},--
+			{type = 25, value = 120},--
+			{type = 171, value = 120},--
+			{type = 173, value = 120},--
+		},
+		{
+			--第4级,--
+			{type = 21, value = 130},--
+			{type = 23, value = 130},--
+			{type = 17, value = 130},--
+			{type = 35, value = 130},--
+			{type = 25, value = 130},--
+			{type = 171, value = 130},--
+			{type = 173, value = 130},--
+		},
+		{
+			--第5级,--
+			{type = 21, value = 140},--
+			{type = 23, value = 140},--
+			{type = 17, value = 140},--
+			{type = 35, value = 140},--
+			{type = 25, value = 140},--
+			{type = 171, value = 140},--
+			{type = 173, value = 140},--
+		},
+		{
+			--第6级,--
+			{type = 21, value = 150},--
+			{type = 23, value = 150},--
+			{type = 17, value = 150},--
+			{type = 35, value = 150},--
+			{type = 25, value = 150},--
+			{type = 171, value = 150},--
+			{type = 173, value = 150},--
+		},
+		{
+			--第7级,--
+			{type = 21, value = 160},--
+			{type = 23, value = 160},--
+			{type = 17, value = 160},--
+			{type = 35, value = 160},--
+			{type = 25, value = 160},--
+			{type = 171, value = 160},--
+			{type = 173, value = 160},--
+		},
+		{
+			--第8级,--
+			{type = 21, value = 170},--
+			{type = 23, value = 170},--
+			{type = 17, value = 170},--
+			{type = 35, value = 170},--
+			{type = 25, value = 170},--
+			{type = 171, value = 170},--
+			{type = 173, value = 170},--
+		},
+		{
+			--第9级,--
+			{type = 21, value = 180},--
+			{type = 23, value = 180},--
+			{type = 17, value = 180},--
+			{type = 35, value = 180},--
+			{type = 25, value = 180},--
+			{type = 171, value = 180},--
+			{type = 173, value = 180},--
+		},
+		{
+			--第10级,--
+			{type = 21, value = 190},--
+			{type = 23, value = 190},--
+			{type = 17, value = 190},--
+			{type = 35, value = 190},--
+			{type = 25, value = 190},--
+			{type = 171, value = 190},--
+			{type = 173, value = 190},--
+		},
+		{
+			--第11级,--
+			{type = 21, value = 200},--
+			{type = 23, value = 200},--
+			{type = 17, value = 200},--
+			{type = 35, value = 200},--
+			{type = 25, value = 200},--
+			{type = 171, value = 200},--
+			{type = 173, value = 200},--
+		},
+		{
+			--第12级,--
+			{type = 21, value = 210},--
+			{type = 23, value = 210},--
+			{type = 17, value = 210},--
+			{type = 35, value = 210},--
+			{type = 25, value = 210},--
+			{type = 171, value = 210},--
+			{type = 173, value = 210},--
+		},
+		{
+			--第13级,--
+			{type = 21, value = 220},--
+			{type = 23, value = 220},--
+			{type = 17, value = 220},--
+			{type = 35, value = 220},--
+			{type = 25, value = 220},--
+			{type = 171, value = 220},--
+			{type = 173, value = 220},--
+		},
+		{
+			--第14级,--
+			{type = 21, value = 230},--
+			{type = 23, value = 230},--
+			{type = 17, value = 230},--
+			{type = 35, value = 230},--
+			{type = 25, value = 230},--
+			{type = 171, value = 230},--
+			{type = 173, value = 230},--
+		},
+		{
+			--第15级,--
+			{type = 21, value = 240},--
+			{type = 23, value = 240},--
+			{type = 17, value = 240},--
+			{type = 35, value = 240},--
+			{type = 25, value = 240},--
+			{type = 171, value = 240},--
+			{type = 173, value = 240},--
+		},
+		{
+			--第16级,--
+			{type = 21, value = 250},--
+			{type = 23, value = 250},--
+			{type = 17, value = 250},--
+			{type = 35, value = 250},--
+			{type = 25, value = 250},--
+			{type = 171, value = 250},--
+			{type = 173, value = 250},--
+		},
+		{
+			--第17级,--
+			{type = 21, value = 260},--
+			{type = 23, value = 260},--
+			{type = 17, value = 260},--
+			{type = 35, value = 260},--
+			{type = 25, value = 260},--
+			{type = 171, value = 260},--
+			{type = 173, value = 260},--
+		},
+		{
+			--第18级,--
+			{type = 21, value = 270},--
+			{type = 23, value = 270},--
+			{type = 17, value = 270},--
+			{type = 35, value = 270},--
+			{type = 25, value = 270},--
+			{type = 171, value = 270},--
+			{type = 173, value = 270},--
+		},
+		{
+			--第19级,--
+			{type = 21, value = 280},--
+			{type = 23, value = 280},--
+			{type = 17, value = 280},--
+			{type = 35, value = 280},--
+			{type = 25, value = 280},--
+			{type = 171, value = 280},--
+			{type = 173, value = 280},--
+		},
+		{
+			--第20级,--
+			{type = 21, value = 290},--
+			{type = 23, value = 290},--
+			{type = 17, value = 290},--
+			{type = 35, value = 290},--
+			{type = 25, value = 290},--
+			{type = 171, value = 290},--
+			{type = 173, value = 290},--
+		},
+		{
+			--第21级,--
+			{type = 21, value = 300},--
+			{type = 23, value = 300},--
+			{type = 17, value = 300},--
+			{type = 35, value = 300},--
+			{type = 25, value = 300},--
+			{type = 171, value = 300},--
+			{type = 173, value = 300},--
+		},
+		{
+			--第22级,--
+			{type = 21, value = 310},--
+			{type = 23, value = 310},--
+			{type = 17, value = 310},--
+			{type = 35, value = 310},--
+			{type = 25, value = 310},--
+			{type = 171, value = 310},--
+			{type = 173, value = 310},--
+		},
+		{
+			--第23级,--
+			{type = 21, value = 320},--
+			{type = 23, value = 320},--
+			{type = 17, value = 320},--
+			{type = 35, value = 320},--
+			{type = 25, value = 320},--
+			{type = 171, value = 320},--
+			{type = 173, value = 320},--
+		},
+		{
+			--第24级,--
+			{type = 21, value = 330},--
+			{type = 23, value = 330},--
+			{type = 17, value = 330},--
+			{type = 35, value = 330},--
+			{type = 25, value = 330},--
+			{type = 171, value = 330},--
+			{type = 173, value = 330},--
+		},
+		{
+			--第25级,--
+			{type = 21, value = 340},--
+			{type = 23, value = 340},--
+			{type = 17, value = 340},--
+			{type = 35, value = 340},--
+			{type = 25, value = 340},--
+			{type = 171, value = 340},--
+			{type = 173, value = 340},--
+		},
+		{
+			--第26级,--
+			{type = 21, value = 350},--
+			{type = 23, value = 350},--
+			{type = 17, value = 350},--
+			{type = 35, value = 350},--
+			{type = 25, value = 350},--
+			{type = 171, value = 350},--
+			{type = 173, value = 350},--
+		},
+		{
+			--第27级,--
+			{type = 21, value = 360},--
+			{type = 23, value = 360},--
+			{type = 17, value = 360},--
+			{type = 35, value = 360},--
+			{type = 25, value = 360},--
+			{type = 171, value = 360},--
+			{type = 173, value = 360},--
+		},
+		{
+			--第28级,--
+			{type = 21, value = 370},--
+			{type = 23, value = 370},--
+			{type = 17, value = 370},--
+			{type = 35, value = 370},--
+			{type = 25, value = 370},--
+			{type = 171, value = 370},--
+			{type = 173, value = 370},--
+		},
+		{
+			--第29级,--
+			{type = 21, value = 380},--
+			{type = 23, value = 380},--
+			{type = 17, value = 380},--
+			{type = 35, value = 380},--
+			{type = 25, value = 380},--
+			{type = 171, value = 380},--
+			{type = 173, value = 380},--
+		},
+		{
+			--第30级,--
+			{type = 21, value = 390},--
+			{type = 23, value = 390},--
+			{type = 17, value = 390},--
+			{type = 35, value = 390},--
+			{type = 25, value = 390},--
+			{type = 171, value = 390},--
+			{type = 173, value = 390},--
+		},
+		{
+			--第31级,--
+			{type = 21, value = 400},--
+			{type = 23, value = 400},--
+			{type = 17, value = 400},--
+			{type = 35, value = 400},--
+			{type = 25, value = 400},--
+			{type = 171, value = 400},--
+			{type = 173, value = 400},--
+		},
+		{
+			--第32级,--
+			{type = 21, value = 410},--
+			{type = 23, value = 410},--
+			{type = 17, value = 410},--
+			{type = 35, value = 410},--
+			{type = 25, value = 410},--
+			{type = 171, value = 410},--
+			{type = 173, value = 410},--
+		},
+		{
+			--第33级,--
+			{type = 21, value = 420},--
+			{type = 23, value = 420},--
+			{type = 17, value = 420},--
+			{type = 35, value = 420},--
+			{type = 25, value = 420},--
+			{type = 171, value = 420},--
+			{type = 173, value = 420},--
+		},
+		{
+			--第34级,--
+			{type = 21, value = 430},--
+			{type = 23, value = 430},--
+			{type = 17, value = 430},--
+			{type = 35, value = 430},--
+			{type = 25, value = 430},--
+			{type = 171, value = 430},--
+			{type = 173, value = 430},--
+		},
+		{
+			--第35级,--
+			{type = 21, value = 440},--
+			{type = 23, value = 440},--
+			{type = 17, value = 440},--
+			{type = 35, value = 440},--
+			{type = 25, value = 440},--
+			{type = 171, value = 440},--
+			{type = 173, value = 440},--
+		},
+		{
+			--第36级,--
+			{type = 21, value = 450},--
+			{type = 23, value = 450},--
+			{type = 17, value = 450},--
+			{type = 35, value = 450},--
+			{type = 25, value = 450},--
+			{type = 171, value = 450},--
+			{type = 173, value = 450},--
+		},
+		{
+			--第37级,--
+			{type = 21, value = 460},--
+			{type = 23, value = 460},--
+			{type = 17, value = 460},--
+			{type = 35, value = 460},--
+			{type = 25, value = 460},--
+			{type = 171, value = 460},--
+			{type = 173, value = 460},--
+		},
+		{
+			--第38级,--
+			{type = 21, value = 470},--
+			{type = 23, value = 470},--
+			{type = 17, value = 470},--
+			{type = 35, value = 470},--
+			{type = 25, value = 470},--
+			{type = 171, value = 470},--
+			{type = 173, value = 470},--
+		},
+		{
+			--第39级,--
+			{type = 21, value = 480},--
+			{type = 23, value = 480},--
+			{type = 17, value = 480},--
+			{type = 35, value = 480},--
+			{type = 25, value = 480},--
+			{type = 171, value = 480},--
+			{type = 173, value = 480},--
+		},
+		{
+			--第40级,--
+			{type = 21, value = 490},--
+			{type = 23, value = 490},--
+			{type = 17, value = 490},--
+			{type = 35, value = 490},--
+			{type = 25, value = 490},--
+			{type = 171, value = 490},--
+			{type = 173, value = 490},--
+		},
+		{
+			--第41级,--
+			{type = 21, value = 500},--
+			{type = 23, value = 500},--
+			{type = 17, value = 500},--
+			{type = 35, value = 500},--
+			{type = 25, value = 500},--
+			{type = 171, value = 500},--
+			{type = 173, value = 500},--
+		},
+		{
+			--第42级,--
+			{type = 21, value = 510},--
+			{type = 23, value = 510},--
+			{type = 17, value = 510},--
+			{type = 35, value = 510},--
+			{type = 25, value = 510},--
+			{type = 171, value = 510},--
+			{type = 173, value = 510},--
+		},
+		{
+			--第43级,--
+			{type = 21, value = 520},--
+			{type = 23, value = 520},--
+			{type = 17, value = 520},--
+			{type = 35, value = 520},--
+			{type = 25, value = 520},--
+			{type = 171, value = 520},--
+			{type = 173, value = 520},--
+		},
+		{
+			--第44级,--
+			{type = 21, value = 530},--
+			{type = 23, value = 530},--
+			{type = 17, value = 530},--
+			{type = 35, value = 530},--
+			{type = 25, value = 530},--
+			{type = 171, value = 530},--
+			{type = 173, value = 530},--
+		},
+		{
+			--第45级,--
+			{type = 21, value = 540},--
+			{type = 23, value = 540},--
+			{type = 17, value = 540},--
+			{type = 35, value = 540},--
+			{type = 25, value = 540},--
+			{type = 171, value = 540},--
+			{type = 173, value = 540},--
+		},
+		{
+			--第46级,--
+			{type = 21, value = 550},--
+			{type = 23, value = 550},--
+			{type = 17, value = 550},--
+			{type = 35, value = 550},--
+			{type = 25, value = 550},--
+			{type = 171, value = 550},--
+			{type = 173, value = 550},--
+		},
+		{
+			--第47级,--
+			{type = 21, value = 560},--
+			{type = 23, value = 560},--
+			{type = 17, value = 560},--
+			{type = 35, value = 560},--
+			{type = 25, value = 560},--
+			{type = 171, value = 560},--
+			{type = 173, value = 560},--
+		},
+		{
+			--第48级,--
+			{type = 21, value = 570},--
+			{type = 23, value = 570},--
+			{type = 17, value = 570},--
+			{type = 35, value = 570},--
+			{type = 25, value = 570},--
+			{type = 171, value = 570},--
+			{type = 173, value = 570},--
+		},
+		{
+			--第49级,--
+			{type = 21, value = 580},--
+			{type = 23, value = 580},--
+			{type = 17, value = 580},--
+			{type = 35, value = 580},--
+			{type = 25, value = 580},--
+			{type = 171, value = 580},--
+			{type = 173, value = 580},--
+		},
+		{
+			--第50级,--
+			{type = 21, value = 590},--
+			{type = 23, value = 590},--
+			{type = 17, value = 590},--
+			{type = 35, value = 590},--
+			{type = 25, value = 590},--
+			{type = 171, value = 590},--
+			{type = 173, value = 590},--
+		},
+		{
+			--第51级,--
+			{type = 21, value = 600},--
+			{type = 23, value = 600},--
+			{type = 17, value = 600},--
+			{type = 35, value = 600},--
+			{type = 25, value = 600},--
+			{type = 171, value = 600},--
+			{type = 173, value = 600},--
+		},
+		{
+			--第52级,--
+			{type = 21, value = 610},--
+			{type = 23, value = 610},--
+			{type = 17, value = 610},--
+			{type = 35, value = 610},--
+			{type = 25, value = 610},--
+			{type = 171, value = 610},--
+			{type = 173, value = 610},--
+		},
+		{
+			--第53级,--
+			{type = 21, value = 620},--
+			{type = 23, value = 620},--
+			{type = 17, value = 620},--
+			{type = 35, value = 620},--
+			{type = 25, value = 620},--
+			{type = 171, value = 620},--
+			{type = 173, value = 620},--
+		},
+		{
+			--第54级,--
+			{type = 21, value = 630},--
+			{type = 23, value = 630},--
+			{type = 17, value = 630},--
+			{type = 35, value = 630},--
+			{type = 25, value = 630},--
+			{type = 171, value = 630},--
+			{type = 173, value = 630},--
+		},
+		{
+			--第55级,--
+			{type = 21, value = 640},--
+			{type = 23, value = 640},--
+			{type = 17, value = 640},--
+			{type = 35, value = 640},--
+			{type = 25, value = 640},--
+			{type = 171, value = 640},--
+			{type = 173, value = 640},--
+		},
+		{
+			--第56级,--
+			{type = 21, value = 650},--
+			{type = 23, value = 650},--
+			{type = 17, value = 650},--
+			{type = 35, value = 650},--
+			{type = 25, value = 650},--
+			{type = 171, value = 650},--
+			{type = 173, value = 650},--
+		},
+		{
+			--第57级,--
+			{type = 21, value = 660},--
+			{type = 23, value = 660},--
+			{type = 17, value = 660},--
+			{type = 35, value = 660},--
+			{type = 25, value = 660},--
+			{type = 171, value = 660},--
+			{type = 173, value = 660},--
+		},
+		{
+			--第58级,--
+			{type = 21, value = 670},--
+			{type = 23, value = 670},--
+			{type = 17, value = 670},--
+			{type = 35, value = 670},--
+			{type = 25, value = 670},--
+			{type = 171, value = 670},--
+			{type = 173, value = 670},--
+		},
+		{
+			--第59级,--
+			{type = 21, value = 680},--
+			{type = 23, value = 680},--
+			{type = 17, value = 680},--
+			{type = 35, value = 680},--
+			{type = 25, value = 680},--
+			{type = 171, value = 680},--
+			{type = 173, value = 680},--
+		},
+		{
+			--第60级,--
+			{type = 21, value = 690},--
+			{type = 23, value = 690},--
+			{type = 17, value = 690},--
+			{type = 35, value = 690},--
+			{type = 25, value = 690},--
+			{type = 171, value = 690},--
+			{type = 173, value = 690},--
+		},
+		{
+			--第61级,--
+			{type = 21, value = 700},--
+			{type = 23, value = 700},--
+			{type = 17, value = 700},--
+			{type = 35, value = 700},--
+			{type = 25, value = 700},--
+			{type = 171, value = 700},--
+			{type = 173, value = 700},--
+		},
+		{
+			--第62级,--
+			{type = 21, value = 710},--
+			{type = 23, value = 710},--
+			{type = 17, value = 710},--
+			{type = 35, value = 710},--
+			{type = 25, value = 710},--
+			{type = 171, value = 710},--
+			{type = 173, value = 710},--
+		},
+		{
+			--第63级,--
+			{type = 21, value = 720},--
+			{type = 23, value = 720},--
+			{type = 17, value = 720},--
+			{type = 35, value = 720},--
+			{type = 25, value = 720},--
+			{type = 171, value = 720},--
+			{type = 173, value = 720},--
+		},
+		{
+			--第64级,--
+			{type = 21, value = 730},--
+			{type = 23, value = 730},--
+			{type = 17, value = 730},--
+			{type = 35, value = 730},--
+			{type = 25, value = 730},--
+			{type = 171, value = 730},--
+			{type = 173, value = 730},--
+		},
+		{
+			--第65级,--
+			{type = 21, value = 740},--
+			{type = 23, value = 740},--
+			{type = 17, value = 740},--
+			{type = 35, value = 740},--
+			{type = 25, value = 740},--
+			{type = 171, value = 740},--
+			{type = 173, value = 740},--
+		},
+		{
+			--第66级,--
+			{type = 21, value = 750},--
+			{type = 23, value = 750},--
+			{type = 17, value = 750},--
+			{type = 35, value = 750},--
+			{type = 25, value = 750},--
+			{type = 171, value = 750},--
+			{type = 173, value = 750},--
+		},
+		{
+			--第67级,--
+			{type = 21, value = 760},--
+			{type = 23, value = 760},--
+			{type = 17, value = 760},--
+			{type = 35, value = 760},--
+			{type = 25, value = 760},--
+			{type = 171, value = 760},--
+			{type = 173, value = 760},--
+		},
+		{
+			--第68级,--
+			{type = 21, value = 770},--
+			{type = 23, value = 770},--
+			{type = 17, value = 770},--
+			{type = 35, value = 770},--
+			{type = 25, value = 770},--
+			{type = 171, value = 770},--
+			{type = 173, value = 770},--
+		},
+		{
+			--第69级,--
+			{type = 21, value = 780},--
+			{type = 23, value = 780},--
+			{type = 17, value = 780},--
+			{type = 35, value = 780},--
+			{type = 25, value = 780},--
+			{type = 171, value = 780},--
+			{type = 173, value = 780},--
+		},
+		{
+			--第70级,--
+			{type = 21, value = 790},--
+			{type = 23, value = 790},--
+			{type = 17, value = 790},--
+			{type = 35, value = 790},--
+			{type = 25, value = 790},--
+			{type = 171, value = 790},--
+			{type = 173, value = 790},--
+		},
+		{
+			--第71级,--
+			{type = 21, value = 800},--
+			{type = 23, value = 800},--
+			{type = 17, value = 800},--
+			{type = 35, value = 800},--
+			{type = 25, value = 800},--
+			{type = 171, value = 800},--
+			{type = 173, value = 800},--
+		},
+		{
+			--第72级,--
+			{type = 21, value = 810},--
+			{type = 23, value = 810},--
+			{type = 17, value = 810},--
+			{type = 35, value = 810},--
+			{type = 25, value = 810},--
+			{type = 171, value = 810},--
+			{type = 173, value = 810},--
+		},
+		{
+			--第73级,--
+			{type = 21, value = 820},--
+			{type = 23, value = 820},--
+			{type = 17, value = 820},--
+			{type = 35, value = 820},--
+			{type = 25, value = 820},--
+			{type = 171, value = 820},--
+			{type = 173, value = 820},--
+		},
+		{
+			--第74级,--
+			{type = 21, value = 830},--
+			{type = 23, value = 830},--
+			{type = 17, value = 830},--
+			{type = 35, value = 830},--
+			{type = 25, value = 830},--
+			{type = 171, value = 830},--
+			{type = 173, value = 830},--
+		},
+		{
+			--第75级,--
+			{type = 21, value = 840},--
+			{type = 23, value = 840},--
+			{type = 17, value = 840},--
+			{type = 35, value = 840},--
+			{type = 25, value = 840},--
+			{type = 171, value = 840},--
+			{type = 173, value = 840},--
+		},
+		{
+			--第76级,--
+			{type = 21, value = 850},--
+			{type = 23, value = 850},--
+			{type = 17, value = 850},--
+			{type = 35, value = 850},--
+			{type = 25, value = 850},--
+			{type = 171, value = 850},--
+			{type = 173, value = 850},--
+		},
+		{
+			--第77级,--
+			{type = 21, value = 860},--
+			{type = 23, value = 860},--
+			{type = 17, value = 860},--
+			{type = 35, value = 860},--
+			{type = 25, value = 860},--
+			{type = 171, value = 860},--
+			{type = 173, value = 860},--
+		},
+		{
+			--第78级,--
+			{type = 21, value = 870},--
+			{type = 23, value = 870},--
+			{type = 17, value = 870},--
+			{type = 35, value = 870},--
+			{type = 25, value = 870},--
+			{type = 171, value = 870},--
+			{type = 173, value = 870},--
+		},
+		{
+			--第79级,--
+			{type = 21, value = 880},--
+			{type = 23, value = 880},--
+			{type = 17, value = 880},--
+			{type = 35, value = 880},--
+			{type = 25, value = 880},--
+			{type = 171, value = 880},--
+			{type = 173, value = 880},--
+		},
+		{
+			--第80级,--
+			{type = 21, value = 890},--
+			{type = 23, value = 890},--
+			{type = 17, value = 890},--
+			{type = 35, value = 890},--
+			{type = 25, value = 890},--
+			{type = 171, value = 890},--
+			{type = 173, value = 890},--
+		},
+		{
+			--第81级,--
+			{type = 21, value = 900},--
+			{type = 23, value = 900},--
+			{type = 17, value = 900},--
+			{type = 35, value = 900},--
+			{type = 25, value = 900},--
+			{type = 171, value = 900},--
+			{type = 173, value = 900},--
+		},
+		{
+			--第82级,--
+			{type = 21, value = 910},--
+			{type = 23, value = 910},--
+			{type = 17, value = 910},--
+			{type = 35, value = 910},--
+			{type = 25, value = 910},--
+			{type = 171, value = 910},--
+			{type = 173, value = 910},--
+		},
+		{
+			--第83级,--
+			{type = 21, value = 920},--
+			{type = 23, value = 920},--
+			{type = 17, value = 920},--
+			{type = 35, value = 920},--
+			{type = 25, value = 920},--
+			{type = 171, value = 920},--
+			{type = 173, value = 920},--
+		},
+		{
+			--第84级,--
+			{type = 21, value = 930},--
+			{type = 23, value = 930},--
+			{type = 17, value = 930},--
+			{type = 35, value = 930},--
+			{type = 25, value = 930},--
+			{type = 171, value = 930},--
+			{type = 173, value = 930},--
+		},
+		{
+			--第85级,--
+			{type = 21, value = 940},--
+			{type = 23, value = 940},--
+			{type = 17, value = 940},--
+			{type = 35, value = 940},--
+			{type = 25, value = 940},--
+			{type = 171, value = 940},--
+			{type = 173, value = 940},--
+		},
+		{
+			--第86级,--
+			{type = 21, value = 950},--
+			{type = 23, value = 950},--
+			{type = 17, value = 950},--
+			{type = 35, value = 950},--
+			{type = 25, value = 950},--
+			{type = 171, value = 950},--
+			{type = 173, value = 950},--
+		},
+		{
+			--第87级,--
+			{type = 21, value = 960},--
+			{type = 23, value = 960},--
+			{type = 17, value = 960},--
+			{type = 35, value = 960},--
+			{type = 25, value = 960},--
+			{type = 171, value = 960},--
+			{type = 173, value = 960},--
+		},
+		{
+			--第88级,--
+			{type = 21, value = 970},--
+			{type = 23, value = 970},--
+			{type = 17, value = 970},--
+			{type = 35, value = 970},--
+			{type = 25, value = 970},--
+			{type = 171, value = 970},--
+			{type = 173, value = 970},--
+		},
+		{
+			--第89级,--
+			{type = 21, value = 980},--
+			{type = 23, value = 980},--
+			{type = 17, value = 980},--
+			{type = 35, value = 980},--
+			{type = 25, value = 980},--
+			{type = 171, value = 980},--
+			{type = 173, value = 980},--
+		},
+		{
+			--第90级,--
+			{type = 21, value = 990},--
+			{type = 23, value = 990},--
+			{type = 17, value = 990},--
+			{type = 35, value = 990},--
+			{type = 25, value = 990},--
+			{type = 171, value = 990},--
+			{type = 173, value = 990},--
+		},
+		{
+			--第91级,--
+			{type = 21, value = 1000},--
+			{type = 23, value = 1000},--
+			{type = 17, value = 1000},--
+			{type = 35, value = 1000},--
+			{type = 25, value = 1000},--
+			{type = 171, value = 1000},--
+			{type = 173, value = 1000},--
+		},
+		{
+			--第92级,--
+			{type = 21, value = 1010},--
+			{type = 23, value = 1010},--
+			{type = 17, value = 1010},--
+			{type = 35, value = 1010},--
+			{type = 25, value = 1010},--
+			{type = 171, value = 1010},--
+			{type = 173, value = 1010},--
+		},
+		{
+			--第93级,--
+			{type = 21, value = 1020},--
+			{type = 23, value = 1020},--
+			{type = 17, value = 1020},--
+			{type = 35, value = 1020},--
+			{type = 25, value = 1020},--
+			{type = 171, value = 1020},--
+			{type = 173, value = 1020},--
+		},
+		{
+			--第94级,--
+			{type = 21, value = 1030},--
+			{type = 23, value = 1030},--
+			{type = 17, value = 1030},--
+			{type = 35, value = 1030},--
+			{type = 25, value = 1030},--
+			{type = 171, value = 1030},--
+			{type = 173, value = 1030},--
+		},
+		{
+			--第95级,--
+			{type = 21, value = 1040},--
+			{type = 23, value = 1040},--
+			{type = 17, value = 1040},--
+			{type = 35, value = 1040},--
+			{type = 25, value = 1040},--
+			{type = 171, value = 1040},--
+			{type = 173, value = 1040},--
+		},
+		{
+			--第96级,--
+			{type = 21, value = 1050},--
+			{type = 23, value = 1050},--
+			{type = 17, value = 1050},--
+			{type = 35, value = 1050},--
+			{type = 25, value = 1050},--
+			{type = 171, value = 1050},--
+			{type = 173, value = 1050},--
+		},
+		{
+			--第97级,--
+			{type = 21, value = 1060},--
+			{type = 23, value = 1060},--
+			{type = 17, value = 1060},--
+			{type = 35, value = 1060},--
+			{type = 25, value = 1060},--
+			{type = 171, value = 1060},--
+			{type = 173, value = 1060},--
+		},
+		{
+			--第98级,--
+			{type = 21, value = 1070},--
+			{type = 23, value = 1070},--
+			{type = 17, value = 1070},--
+			{type = 35, value = 1070},--
+			{type = 25, value = 1070},--
+			{type = 171, value = 1070},--
+			{type = 173, value = 1070},--
+		},
+		{
+			--第99级,--
+			{type = 21, value = 1080},--
+			{type = 23, value = 1080},--
+			{type = 17, value = 1080},--
+			{type = 35, value = 1080},--
+			{type = 25, value = 1080},--
+			{type = 171, value = 1080},--
+			{type = 173, value = 1080},--
+		},
+		{
+			--第100级,--
+			{type = 21, value = 1090},--
+			{type = 23, value = 1090},--
+			{type = 17, value = 1090},--
+			{type = 35, value = 1090},--
+			{type = 25, value = 1090},--
+			{type = 171, value = 1090},--
+			{type = 173, value = 1090},--
+		},
+		{
+			--第101级,--
+			{type = 21, value = 1100},--
+			{type = 23, value = 1100},--
+			{type = 17, value = 1100},--
+			{type = 35, value = 1100},--
+			{type = 25, value = 1100},--
+			{type = 171, value = 1100},--
+			{type = 173, value = 1100},--
+		},
+		{
+			--第102级,--
+			{type = 21, value = 1110},--
+			{type = 23, value = 1110},--
+			{type = 17, value = 1110},--
+			{type = 35, value = 1110},--
+			{type = 25, value = 1110},--
+			{type = 171, value = 1110},--
+			{type = 173, value = 1110},--
+		},
+		{
+			--第103级,--
+			{type = 21, value = 1120},--
+			{type = 23, value = 1120},--
+			{type = 17, value = 1120},--
+			{type = 35, value = 1120},--
+			{type = 25, value = 1120},--
+			{type = 171, value = 1120},--
+			{type = 173, value = 1120},--
+		},
+		{
+			--第104级,--
+			{type = 21, value = 1130},--
+			{type = 23, value = 1130},--
+			{type = 17, value = 1130},--
+			{type = 35, value = 1130},--
+			{type = 25, value = 1130},--
+			{type = 171, value = 1130},--
+			{type = 173, value = 1130},--
+		},
+		{
+			--第105级,--
+			{type = 21, value = 1140},--
+			{type = 23, value = 1140},--
+			{type = 17, value = 1140},--
+			{type = 35, value = 1140},--
+			{type = 25, value = 1140},--
+			{type = 171, value = 1140},--
+			{type = 173, value = 1140},--
+		},
+		{
+			--第106级,--
+			{type = 21, value = 1150},--
+			{type = 23, value = 1150},--
+			{type = 17, value = 1150},--
+			{type = 35, value = 1150},--
+			{type = 25, value = 1150},--
+			{type = 171, value = 1150},--
+			{type = 173, value = 1150},--
+		},
+		{
+			--第107级,--
+			{type = 21, value = 1160},--
+			{type = 23, value = 1160},--
+			{type = 17, value = 1160},--
+			{type = 35, value = 1160},--
+			{type = 25, value = 1160},--
+			{type = 171, value = 1160},--
+			{type = 173, value = 1160},--
+		},
+		{
+			--第108级,--
+			{type = 21, value = 1170},--
+			{type = 23, value = 1170},--
+			{type = 17, value = 1170},--
+			{type = 35, value = 1170},--
+			{type = 25, value = 1170},--
+			{type = 171, value = 1170},--
+			{type = 173, value = 1170},--
+		},
+		{
+			--第109级,--
+			{type = 21, value = 1180},--
+			{type = 23, value = 1180},--
+			{type = 17, value = 1180},--
+			{type = 35, value = 1180},--
+			{type = 25, value = 1180},--
+			{type = 171, value = 1180},--
+			{type = 173, value = 1180},--
+		},
+		{
+			--第110级,--
+			{type = 21, value = 1190},--
+			{type = 23, value = 1190},--
+			{type = 17, value = 1190},--
+			{type = 35, value = 1190},--
+			{type = 25, value = 1190},--
+			{type = 171, value = 1190},--
+			{type = 173, value = 1190},--
+		},
+		{
+			--第111级,--
+			{type = 21, value = 1200},--
+			{type = 23, value = 1200},--
+			{type = 17, value = 1200},--
+			{type = 35, value = 1200},--
+			{type = 25, value = 1200},--
+			{type = 171, value = 1200},--
+			{type = 173, value = 1200},--
+		},
+		{
+			--第112级,--
+			{type = 21, value = 1210},--
+			{type = 23, value = 1210},--
+			{type = 17, value = 1210},--
+			{type = 35, value = 1210},--
+			{type = 25, value = 1210},--
+			{type = 171, value = 1210},--
+			{type = 173, value = 1210},--
+		},
+		{
+			--第113级,--
+			{type = 21, value = 1220},--
+			{type = 23, value = 1220},--
+			{type = 17, value = 1220},--
+			{type = 35, value = 1220},--
+			{type = 25, value = 1220},--
+			{type = 171, value = 1220},--
+			{type = 173, value = 1220},--
+		},
+		{
+			--第114级,--
+			{type = 21, value = 1230},--
+			{type = 23, value = 1230},--
+			{type = 17, value = 1230},--
+			{type = 35, value = 1230},--
+			{type = 25, value = 1230},--
+			{type = 171, value = 1230},--
+			{type = 173, value = 1230},--
+		},
+		{
+			--第115级,--
+			{type = 21, value = 1240},--
+			{type = 23, value = 1240},--
+			{type = 17, value = 1240},--
+			{type = 35, value = 1240},--
+			{type = 25, value = 1240},--
+			{type = 171, value = 1240},--
+			{type = 173, value = 1240},--
+		},
+		{
+			--第116级,--
+			{type = 21, value = 1250},--
+			{type = 23, value = 1250},--
+			{type = 17, value = 1250},--
+			{type = 35, value = 1250},--
+			{type = 25, value = 1250},--
+			{type = 171, value = 1250},--
+			{type = 173, value = 1250},--
+		},
+		{
+			--第117级,--
+			{type = 21, value = 1260},--
+			{type = 23, value = 1260},--
+			{type = 17, value = 1260},--
+			{type = 35, value = 1260},--
+			{type = 25, value = 1260},--
+			{type = 171, value = 1260},--
+			{type = 173, value = 1260},--
+		},
+		{
+			--第118级,--
+			{type = 21, value = 1270},--
+			{type = 23, value = 1270},--
+			{type = 17, value = 1270},--
+			{type = 35, value = 1270},--
+			{type = 25, value = 1270},--
+			{type = 171, value = 1270},--
+			{type = 173, value = 1270},--
+		},
+		{
+			--第119级,--
+			{type = 21, value = 1280},--
+			{type = 23, value = 1280},--
+			{type = 17, value = 1280},--
+			{type = 35, value = 1280},--
+			{type = 25, value = 1280},--
+			{type = 171, value = 1280},--
+			{type = 173, value = 1280},--
+		},
+		{
+			--第120级,--
+			{type = 21, value = 1290},--
+			{type = 23, value = 1290},--
+			{type = 17, value = 1290},--
+			{type = 35, value = 1290},--
+			{type = 25, value = 1290},--
+			{type = 171, value = 1290},--
+			{type = 173, value = 1290},--
+		},
+	},
+	aptitudeAffectPercent = 50,--资质影响属性占比(%)
+	--属性和资质对应关系
+	attrToAptitude = {{21, "武力"}, {23, "根骨"},{17,"体质"},{35,"致命"},{25,"不屈"},{171,"身法"},{173,"洞察"}},--属性对应资质
+	lianyaohuUpgrade = { --炼妖壶升级
+		{
+			modelId = 1,--模型ID
+			exp = 10,--升级经验
+			level = 1,--炼妖壶等级
+		},
+		{
+			modelId = 1,--模型ID
+			exp = 14,--升级经验
+			level = 2,--炼妖壶等级
+		},
+		{
+			modelId = 1,--模型ID
+			exp = 18,--升级经验
+			level = 3,--炼妖壶等级
+		},
+		{
+			modelId = 1,--模型ID
+			exp = 22,--升级经验
+			level = 4,--炼妖壶等级
+		},
+		{
+			modelId = 1,--模型ID
+			exp = 26,--升级经验
+			level = 5,--炼妖壶等级
+		},
+		{
+			modelId = 1,--模型ID
+			exp = 30,--升级经验
+			level = 6,--炼妖壶等级
+		},
+		{
+			modelId = 1,--模型ID
+			exp = 34,--升级经验
+			level = 7,--炼妖壶等级
+		},
+		{
+			modelId = 1,--模型ID
+			exp = 38,--升级经验
+			level = 8,--炼妖壶等级
+		},
+		{
+			modelId = 1,--模型ID
+			exp = 42,--升级经验
+			level = 9,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 46,--升级经验
+			level = 10,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 50,--升级经验
+			level = 11,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 54,--升级经验
+			level = 12,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 58,--升级经验
+			level = 13,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 62,--升级经验
+			level = 14,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 66,--升级经验
+			level = 15,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 70,--升级经验
+			level = 16,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 74,--升级经验
+			level = 17,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 78,--升级经验
+			level = 18,--炼妖壶等级
+		},
+		{
+			modelId = 2,--模型ID
+			exp = 82,--升级经验
+			level = 19,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 86,--升级经验
+			level = 20,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 90,--升级经验
+			level = 21,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 94,--升级经验
+			level = 22,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 98,--升级经验
+			level = 23,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 102,--升级经验
+			level = 24,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 106,--升级经验
+			level = 25,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 110,--升级经验
+			level = 26,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 114,--升级经验
+			level = 27,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 118,--升级经验
+			level = 28,--炼妖壶等级
+		},
+		{
+			modelId = 3,--模型ID
+			exp = 122,--升级经验
+			level = 29,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 126,--升级经验
+			level = 30,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 130,--升级经验
+			level = 31,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 134,--升级经验
+			level = 32,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 138,--升级经验
+			level = 33,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 142,--升级经验
+			level = 34,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 146,--升级经验
+			level = 35,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 150,--升级经验
+			level = 36,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 154,--升级经验
+			level = 37,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 158,--升级经验
+			level = 38,--炼妖壶等级
+		},
+		{
+			modelId = 4,--模型ID
+			exp = 162,--升级经验
+			level = 39,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 166,--升级经验
+			level = 40,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 170,--升级经验
+			level = 41,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 174,--升级经验
+			level = 42,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 178,--升级经验
+			level = 43,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 182,--升级经验
+			level = 44,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 186,--升级经验
+			level = 45,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 190,--升级经验
+			level = 46,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 194,--升级经验
+			level = 47,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 198,--升级经验
+			level = 48,--炼妖壶等级
+		},
+		{
+			modelId = 5,--模型ID
+			exp = 202,--升级经验
+			level = 49,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 206,--升级经验
+			level = 50,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 210,--升级经验
+			level = 51,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 214,--升级经验
+			level = 52,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 218,--升级经验
+			level = 53,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 222,--升级经验
+			level = 54,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 226,--升级经验
+			level = 55,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 230,--升级经验
+			level = 56,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 234,--升级经验
+			level = 57,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 238,--升级经验
+			level = 58,--炼妖壶等级
+		},
+		{
+			modelId = 6,--模型ID
+			exp = 242,--升级经验
+			level = 59,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 246,--升级经验
+			level = 60,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 250,--升级经验
+			level = 61,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 254,--升级经验
+			level = 62,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 258,--升级经验
+			level = 63,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 262,--升级经验
+			level = 64,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 266,--升级经验
+			level = 65,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 270,--升级经验
+			level = 66,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 274,--升级经验
+			level = 67,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 278,--升级经验
+			level = 68,--炼妖壶等级
+		},
+		{
+			modelId = 7,--模型ID
+			exp = 282,--升级经验
+			level = 69,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 286,--升级经验
+			level = 70,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 290,--升级经验
+			level = 71,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 294,--升级经验
+			level = 72,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 298,--升级经验
+			level = 73,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 302,--升级经验
+			level = 74,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 306,--升级经验
+			level = 75,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 310,--升级经验
+			level = 76,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 314,--升级经验
+			level = 77,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 318,--升级经验
+			level = 78,--炼妖壶等级
+		},
+		{
+			modelId = 8,--模型ID
+			exp = 322,--升级经验
+			level = 79,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 326,--升级经验
+			level = 80,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 330,--升级经验
+			level = 81,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 334,--升级经验
+			level = 82,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 338,--升级经验
+			level = 83,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 342,--升级经验
+			level = 84,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 346,--升级经验
+			level = 85,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 350,--升级经验
+			level = 86,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 354,--升级经验
+			level = 87,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 358,--升级经验
+			level = 88,--炼妖壶等级
+		},
+		{
+			modelId = 9,--模型ID
+			exp = 362,--升级经验
+			level = 89,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 366,--升级经验
+			level = 90,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 370,--升级经验
+			level = 91,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 374,--升级经验
+			level = 92,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 378,--升级经验
+			level = 93,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 382,--升级经验
+			level = 94,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 386,--升级经验
+			level = 95,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 390,--升级经验
+			level = 96,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 394,--升级经验
+			level = 97,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 398,--升级经验
+			level = 98,--炼妖壶等级
+		},
+		{
+			modelId = 10,--模型ID
+			exp = 402,--升级经验
+			level = 99,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 406,--升级经验
+			level = 100,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 410,--升级经验
+			level = 101,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 414,--升级经验
+			level = 102,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 418,--升级经验
+			level = 103,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 422,--升级经验
+			level = 104,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 426,--升级经验
+			level = 105,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 430,--升级经验
+			level = 106,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 434,--升级经验
+			level = 107,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 438,--升级经验
+			level = 108,--炼妖壶等级
+		},
+		{
+			modelId = 11,--模型ID
+			exp = 442,--升级经验
+			level = 109,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 446,--升级经验
+			level = 110,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 450,--升级经验
+			level = 111,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 454,--升级经验
+			level = 112,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 458,--升级经验
+			level = 113,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 462,--升级经验
+			level = 114,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 466,--升级经验
+			level = 115,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 470,--升级经验
+			level = 116,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 474,--升级经验
+			level = 117,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 478,--升级经验
+			level = 118,--炼妖壶等级
+		},
+		{
+			modelId = 12,--模型ID
+			exp = 482,--升级经验
+			level = 119,--炼妖壶等级
+		},
+		{
+			modelId = 13,--模型ID
+			exp = 486,--升级经验
+			level = 120,--炼妖壶等级
+		},
+	},
+	perAddExp = 10,--每次升级操作增加经验
+	perUpCostNums = 1,--每次升级操作消耗丹数量
+	SmeltingAffecId = 2,--炼化特效ID
+	aptitudeUp = 100,--资质上限
+	lianyaodanId = 10001,--炼妖丹道具ID
+	activatePlusAttr = { --激活卡牌附加属性
+		{
+			id = 20011,--卡牌ID
+			attrs = {
+				{type = 21, value = 10},--附加属性
+				{type = 17, value = 10},--
+			},
+		},
+		{
+			id = 20012,--卡牌ID
+			attrs = {
+				{type = 21, value = 11},--附加属性
+				{type = 17, value = 11},--
+			},
+		},
+		{
+			id = 20013,--卡牌ID
+			attrs = {
+				{type = 21, value = 12},--附加属性
+				{type = 17, value = 12},--
+			},
+		},
+		{
+			id = 20014,--卡牌ID
+			attrs = {
+				{type = 21, value = 13},--附加属性
+				{type = 17, value = 13},--
+			},
+		},
+		{
+			id = 20015,--卡牌ID
+			attrs = {
+				{type = 21, value = 14},--附加属性
+				{type = 17, value = 14},--
+			},
+		},
+		{
+			id = 20016,--卡牌ID
+			attrs = {
+				{type = 21, value = 15},--附加属性
+				{type = 17, value = 15},--
+			},
+		},
+		{
+			id = 20017,--卡牌ID
+			attrs = {
+				{type = 21, value = 16},--附加属性
+				{type = 17, value = 16},--
+			},
+		},
+		{
+			id = 20018,--卡牌ID
+			attrs = {
+				{type = 21, value = 17},--附加属性
+				{type = 17, value = 17},--
+			},
+		},
+	},
+	wanyaoluCards = { --万妖录卡牌
+		{
+			shenfa = {171, 20, 30},--身法
+			force = {21, 20, 30},--武力资质增加上下限
+			corporeity = {17, 20, 30},--体质
+			inside = {173, 20, 30},--洞察
+			deadliness = {35, 20, 30},--致命
+			unyielding = {25, 20, 30},--不屈
+			smeltingExp = 5,--炼化经验
+			smeltingLevelLimit = 5,--炼化限制炼妖壶等级
+			id = 20011,--卡牌ID
+			bone = {23, 20, 30},--根骨
+		},
+		{
+			shenfa = {171, 31, 40},--身法
+			force = {21, 31, 40},--武力资质增加上下限
+			corporeity = {17, 31, 40},--体质
+			inside = {173, 31, 40},--洞察
+			deadliness = {35, 31, 40},--致命
+			unyielding = {25, 31, 40},--不屈
+			smeltingExp = 10,--炼化经验
+			smeltingLevelLimit = 10,--炼化限制炼妖壶等级
+			id = 20012,--卡牌ID
+			bone = {23, 31, 40},--根骨
+		},
+		{
+			shenfa = {171, 41, 50},--身法
+			force = {21, 41, 50},--武力资质增加上下限
+			corporeity = {17, 41, 50},--体质
+			inside = {173, 41, 50},--洞察
+			deadliness = {35, 41, 50},--致命
+			unyielding = {25, 41, 50},--不屈
+			smeltingExp = 15,--炼化经验
+			smeltingLevelLimit = 15,--炼化限制炼妖壶等级
+			id = 20013,--卡牌ID
+			bone = {23, 41, 50},--根骨
+		},
+		{
+			shenfa = {171, 51, 60},--身法
+			force = {21, 51, 60},--武力资质增加上下限
+			corporeity = {17, 51, 60},--体质
+			inside = {173, 51, 60},--洞察
+			deadliness = {35, 51, 60},--致命
+			unyielding = {25, 51, 60},--不屈
+			smeltingExp = 20,--炼化经验
+			smeltingLevelLimit = 20,--炼化限制炼妖壶等级
+			id = 20014,--卡牌ID
+			bone = {23, 51, 60},--根骨
+		},
+		{
+			shenfa = {171, 61, 70},--身法
+			force = {21, 61, 70},--武力资质增加上下限
+			corporeity = {17, 61, 70},--体质
+			inside = {173, 61, 70},--洞察
+			deadliness = {35, 61, 70},--致命
+			unyielding = {25, 61, 70},--不屈
+			smeltingExp = 25,--炼化经验
+			smeltingLevelLimit = 25,--炼化限制炼妖壶等级
+			id = 20015,--卡牌ID
+			bone = {23, 61, 70},--根骨
+		},
+		{
+			shenfa = {171, 71, 80},--身法
+			force = {21, 71, 80},--武力资质增加上下限
+			corporeity = {17, 71, 80},--体质
+			inside = {173, 71, 80},--洞察
+			deadliness = {35, 71, 80},--致命
+			unyielding = {25, 71, 80},--不屈
+			smeltingExp = 30,--炼化经验
+			smeltingLevelLimit = 30,--炼化限制炼妖壶等级
+			id = 20016,--卡牌ID
+			bone = {23, 71, 80},--根骨
+		},
+		{
+			shenfa = {171, 81, 90},--身法
+			force = {21, 81, 90},--武力资质增加上下限
+			corporeity = {17, 81, 90},--体质
+			inside = {173, 81, 90},--洞察
+			deadliness = {35, 81, 90},--致命
+			unyielding = {25, 81, 90},--不屈
+			smeltingExp = 35,--炼化经验
+			smeltingLevelLimit = 35,--炼化限制炼妖壶等级
+			id = 20017,--卡牌ID
+			bone = {23, 81, 90},--根骨
+		},
+		{
+			shenfa = {171, 91, 100},--身法
+			force = {21, 91, 100},--武力资质增加上下限
+			corporeity = {17, 91, 100},--体质
+			inside = {173, 91, 100},--洞察
+			deadliness = {35, 91, 100},--致命
+			unyielding = {25, 91, 100},--不屈
+			smeltingExp = 40,--炼化经验
+			smeltingLevelLimit = 40,--炼化限制炼妖壶等级
+			id = 20018,--卡牌ID
+			bone = {23, 91, 100},--根骨
+		},
+	},
+	upAffectId = 1,--升级特效ID
+}

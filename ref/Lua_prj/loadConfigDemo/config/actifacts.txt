@@ -1,0 +1,3304 @@
+--#include "..\..\language\LangCode.txt"
+Artifact = {
+    openlevel =70,--开启等级
+	maxLing = 6, -- 最大灵数
+	maxMiLing = 10, -- 每日觅灵数
+	maxYinLing = 10, -- 每日免费引灵数
+	lingRate = 1667, -- 出灵的概率
+	ntylYb = { 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30, }, --第n次逆天引灵花费的元宝
+
+	lfCounts = { 200, 500, 1000, 2000, 5000, 10000,20000,}, -- 几个灵字对应几个灵符
+
+		-- 升阶自动购买物品ID
+	materialAutoBuy = 44891,
+
+	-- 升阶无时限物品列表(由于要万能进阶丹（限时）优先级最后，而默认为限时的优先级大于非限时的，所以万能进阶丹限时的也在里面)
+	normalMaterials = 
+	{	
+		44891,
+	}, 
+	-- 升阶有时限物品列表
+	timelimitMaterials = 
+	{	
+		54898,
+	}, 
+
+	-- 每阶的配置
+	dataStage = 
+	{
+		--1阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 1,
+			-- 最大祝福值
+		 	maxBless =  60,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 1},
+			 	{rate = 1500, bless = 2},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 500, bless = 5},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		
+		--2阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 1,
+			-- 最大祝福值
+		 	maxBless =  75,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 1},
+			 	{rate = 1500, bless = 2},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 500, bless = 5},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--3阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 1,
+			-- 最大祝福值
+		 	maxBless =  180,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 1},
+			 	{rate = 1500, bless = 2},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 500, bless = 5},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--4阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 1,
+			-- 最大祝福值
+		 	maxBless =  240,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 1},
+			 	{rate = 1500, bless = 2},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 500, bless = 5},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--5阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 2,
+			-- 最大祝福值
+		 	maxBless =  360,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 1},
+			 	{rate = 1500, bless = 2},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 500, bless = 5},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--6阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 2,
+			-- 最大祝福值
+		 	maxBless =  360,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 1},
+			 	{rate = 1500, bless = 2},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 500, bless = 5},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--7阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 2,
+			-- 最大祝福值
+		 	maxBless =  720,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 1},
+			 	{rate = 1500, bless = 2},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 500, bless = 5},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--8阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 3,
+			-- 最大祝福值
+		 	maxBless =  900,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 1},
+			 	{rate = 1500, bless = 2},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 3000, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 500, bless = 5},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--9阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 3,
+			-- 最大祝福值
+		 	maxBless =  1080,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 2},
+			 	{rate = 1500, bless = 3},
+			 	{rate = 3000, bless = 4},
+			 	{rate = 3000, bless = 4},
+			 	{rate = 1500, bless = 5},
+			 	{rate = 500, bless = 6},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--10阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 3,
+			-- 最大祝福值
+		 	maxBless =  1200,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 2},
+			 	{rate = 1500, bless = 3},
+			 	{rate = 3000, bless = 4},
+			 	{rate = 3000, bless = 4},
+			 	{rate = 1500, bless = 5},
+			 	{rate = 500, bless = 6},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--11阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 4,
+			-- 最大祝福值
+		 	maxBless =  1350,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 2},
+			 	{rate = 1500, bless = 3},
+			 	{rate = 3000, bless = 4},
+			 	{rate = 3000, bless = 4},
+			 	{rate = 1500, bless = 5},
+			 	{rate = 500, bless = 6},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--12阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 4,
+			-- 最大祝福值
+		 	maxBless =  1500,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 2},
+			 	{rate = 1500, bless = 3},
+			 	{rate = 3000, bless = 4},
+			 	{rate = 3000, bless = 4},
+			 	{rate = 1500, bless = 5},
+			 	{rate = 500, bless = 6},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--13阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 4,
+			-- 最大祝福值
+		 	maxBless =  1500,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 1500, bless = 6},
+			 	{rate = 500, bless = 7},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--14阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 4,
+			-- 最大祝福值
+		 	maxBless =  1500,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 1500, bless = 6},
+			 	{rate = 500, bless = 7},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--15阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 4,
+			-- 最大祝福值
+		 	maxBless =  1500,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 1500, bless = 6},
+			 	{rate = 500, bless = 7},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--16阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 5,
+			-- 最大祝福值
+		 	maxBless =  1950,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 1500, bless = 6},
+			 	{rate = 500, bless = 7},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--17阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 5,
+			-- 最大祝福值
+		 	maxBless =  2100,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 1500, bless = 6},
+			 	{rate = 500, bless = 7},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--18阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 5,
+			-- 最大祝福值
+		 	maxBless =  2100,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 3},
+			 	{rate = 1500, bless = 4},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 3000, bless = 5},
+			 	{rate = 1500, bless = 6},
+			 	{rate = 500, bless = 7},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--19阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 5,
+			-- 最大祝福值
+		 	maxBless =  2550,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 4},
+			 	{rate = 1500, bless = 5},
+			 	{rate = 3000, bless = 6},
+			 	{rate = 3000, bless = 6},
+			 	{rate = 1500, bless = 7},
+			 	{rate = 500, bless = 8},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+		--20阶配置
+		{
+		 	-- 升阶需要仙币
+		 	needXb = 10000, 
+		 	-- 升阶消耗材料数个数
+			materialCount = 5,
+			-- 最大祝福值
+		 	maxBless =  2700,
+			--祝福值在某个区间成功的概率，概率为rate（10000为100%）、否则达到最大祝福值100%成功
+		 	blessRate = 
+		 	{
+				{min = 0, max = 40, rate = 0 },
+				{min = 40, max = 45, rate = 1000 },
+				{min = 45, max = 50, rate = 3000 },				
+				{min = 50, max = 60, rate = 5000 },
+				{min = 60, max = 100, rate = 10000 },
+		 	}, 
+		 	--失败后的随机祝福值范围
+		 	giveRandomBless =
+		 	{
+				{rate = 500, bless = 4},
+			 	{rate = 1500, bless = 5},
+			 	{rate = 3000, bless = 6},
+			 	{rate = 3000, bless = 6},
+			 	{rate = 1500, bless = 7},
+			 	{rate = 500, bless = 8},
+		 	}, 
+		 	--祝福值保留的时间（小时）
+		 	blessStageTime = 0, 
+		 	--每一阶对应的技能槽数，不包含天赋技能占用的槽数
+		 	skillSlotNum = 0, 
+		},
+
+
+	},
+
+	reincarnationItemId = 44892, -- 转生道具
+	reincarnationItemCnt = { --转生需要的道具数
+		{
+			startLevel = 0,
+			endLevel = 0,
+			cnt = 1250,
+		},
+		{
+			startLevel = 1,
+			endLevel = 1,
+			cnt = 3125,
+		},
+		{
+			startLevel = 2,
+			endLevel = 2,
+			cnt = 6250,
+		},
+		{
+			startLevel = 3,
+			endLevel = 3,
+			cnt = 12500,
+		},
+		{
+			startLevel = 4,
+			endLevel = 4,
+			cnt = 31250,
+		},
+		{
+			startLevel = 5,
+			endLevel = 5,
+			cnt = 50000,
+		},
+		{
+			startLevel = 6,
+			endLevel = 6,
+			cnt = 87500,
+		},
+		{
+			startLevel = 7,
+			endLevel = 7,
+			cnt = 137500,
+		},
+		{
+			startLevel = 8,
+			endLevel = 8,
+			cnt = 200000,
+		},
+		{
+			startLevel = 9,
+			endLevel = 9,
+			cnt = 275000 ,
+		},
+
+	},
+	reinStarEachLevel = 10, -- 几转是一星
+
+	skillMemoryItemID = 44893, -- 普通回忆物品ID
+	skillPerfectMemoryItemId = 44894, -- 完美回忆物品ID
+	skillMemoryItemCnt = 1, -- 普通回忆物品数量
+	skillMemoryYB = 50, -- 完美回忆花费元宝
+	skillMemoryRate = {20, 50, 30}, -- 回忆碎片级别概率，三个分别是初级，中级，高级概率，三个概率总和为100
+	normalMemory = { {5, 11}, 40, 80}, -- 普通回忆经验值
+	perfectMemory = { {20, 40}, 150, 300}, -- 完美回忆经验值
+	normalCompensation = {type = 0, value = 10000}, -- 普通回忆补偿
+	perfectCompensation = {type = 0, value = 50000}, -- 完美回忆补偿
+
+	levelProp = {
+		{ --神器1
+			{ -- 等级1
+				{type = 165, value = 1500}, -- 属性1
+				
+			},
+			{ -- 等级2
+			    {type = 165, value = 5250}, -- 属性1
+		
+			},
+			{ -- 等级3
+				{type = 165, value = 8250}, -- 属性1
+				
+			},
+			{ -- 等级4
+				{type = 165, value = 11250}, -- 属性1
+				
+			},
+			{ -- 等级5
+				{type = 165, value = 15000}, -- 属性1
+				{type = 17 , value = 1000000}, -- 属性1
+			
+			},
+			{ -- 等级6
+				{type = 165, value = 18750}, -- 属性1
+				{type = 17 , value = 1250000}, -- 属性1
+				
+			},
+			{ -- 等级7
+				{type = 165, value = 24750}, -- 属性1
+				{type = 17 , value = 1650000}, -- 属性1
+				
+			},
+			{ -- 等级8
+				{type = 165, value = 30750}, -- 属性1
+				{type = 17 , value = 2050000}, -- 属性1
+				
+			},
+			{ -- 等级9
+				{type = 165, value = 36750}, -- 属性1
+				{type = 17 , value = 2450000}, -- 属性1
+			
+			},
+			{ -- 等级10
+				{type = 165, value = 45000}, -- 属性1
+				{type = 17 , value = 3000000}, -- 属性1
+				{type = 27 , value = 90000}, -- 属性1
+			},
+			{ -- 等级11
+				{type = 165, value = 53250}, -- 属性1
+				{type = 17 , value = 3550000}, -- 属性1
+				{type = 27 , value = 106500}, -- 属性1
+			},
+			{ -- 等级12
+				{type = 165, value = 61500}, -- 属性1
+				{type = 17 , value = 4100000}, -- 属性1
+				{type = 27 , value = 123000}, -- 属性1
+			},
+			{ -- 等级13
+				{type = 165, value = 70500}, -- 属性1
+				{type = 17 , value = 4700000}, -- 属性1
+				{type = 27 , value = 141000}, -- 属性1
+			},
+			{ -- 等级14
+				{type = 165, value = 79500}, -- 属性1
+				{type = 17 , value = 5300000}, -- 属性1
+				{type = 27 , value = 159000}, -- 属性1
+			},
+			{ -- 等级15
+				{type = 165, value = 88500}, -- 属性1
+				{type = 17 , value = 5900000}, -- 属性1
+				{type = 27 , value = 177000}, -- 属性1
+			},
+			{ -- 等级16
+				{type = 165, value = 99750}, -- 属性1
+				{type = 17 , value = 6650000}, -- 属性1
+				{type = 27 , value = 199500}, -- 属性1
+			},
+			{ -- 等级17
+				{type = 165, value = 111000}, -- 属性1
+				{type = 17 , value = 7400000}, -- 属性1
+				{type = 27 , value = 222000}, -- 属性1
+			},
+			{ -- 等级18
+				{type = 165, value = 122250}, -- 属性1
+				{type = 17 , value = 8150000}, -- 属性1
+				{type = 27 , value = 244500}, -- 属性1
+			},
+			{ -- 等级19
+				{type = 165, value = 135750}, -- 属性1
+				{type = 17 , value = 9050000}, -- 属性1
+				{type = 27 , value = 271500}, -- 属性1
+			},
+			{ -- 等级20
+				{type = 165, value = 150000}, -- 属性1
+				{type = 17 , value = 10000000}, -- 属性1
+				{type = 27 , value = 300000}, -- 属性1
+			},
+			
+		},
+		{
+			{ -- 等级1
+				{type = 163, value = 1500}, -- 属性1
+				
+			},
+			{ -- 等级2
+			    {type = 163, value = 5250}, -- 属性1
+		
+			},
+			{ -- 等级3
+				{type = 163, value = 8250}, -- 属性1
+				
+			},
+			{ -- 等级4
+				{type = 163, value = 11250}, -- 属性1
+				
+			},
+			{ -- 等级5
+				{type = 163, value = 15000}, -- 属性1
+				{type = 17 , value = 1000000}, -- 属性1
+			
+			},
+			{ -- 等级6
+				{type = 163, value = 18750}, -- 属性1
+				{type = 17 , value = 1250000}, -- 属性1
+				
+			},
+			{ -- 等级7
+				{type = 163, value = 24750}, -- 属性1
+				{type = 17 , value = 1630000}, -- 属性1
+				
+			},
+			{ -- 等级8
+				{type = 163, value = 30750}, -- 属性1
+				{type = 17 , value = 2050000}, -- 属性1
+				
+			},
+			{ -- 等级9
+				{type = 163, value = 36750}, -- 属性1
+				{type = 17 , value = 2450000}, -- 属性1
+			
+			},
+			{ -- 等级10
+				{type = 163, value = 45000}, -- 属性1
+				{type = 17 , value = 3000000}, -- 属性1
+				{type = 27 , value = 90000}, -- 属性1
+			},
+			{ -- 等级11
+				{type = 163, value = 53250}, -- 属性1
+				{type = 17 , value = 3550000}, -- 属性1
+				{type = 27 , value = 106500}, -- 属性1
+			},
+			{ -- 等级12
+				{type = 163, value = 61500}, -- 属性1
+				{type = 17 , value = 4100000}, -- 属性1
+				{type = 27 , value = 123000}, -- 属性1
+			},
+			{ -- 等级13
+				{type = 163, value = 70500}, -- 属性1
+				{type = 17 , value = 4700000}, -- 属性1
+				{type = 27 , value = 141000}, -- 属性1
+			},
+			{ -- 等级14
+				{type = 163, value = 79500}, -- 属性1
+				{type = 17 , value = 5300000}, -- 属性1
+				{type = 27 , value = 159000}, -- 属性1
+			},
+			{ -- 等级15
+				{type = 163, value = 88500}, -- 属性1
+				{type = 17 , value = 5900000}, -- 属性1
+				{type = 27 , value = 177000}, -- 属性1
+			},
+			{ -- 等级16
+				{type = 163, value = 99750}, -- 属性1
+				{type = 17 , value = 6650000}, -- 属性1
+				{type = 27 , value = 199500}, -- 属性1
+			},
+			{ -- 等级17
+				{type = 163, value = 111000}, -- 属性1
+				{type = 17 , value = 7400000}, -- 属性1
+				{type = 27 , value = 222000}, -- 属性1
+			},
+			{ -- 等级18
+				{type = 163, value = 122250}, -- 属性1
+				{type = 17 , value = 8150000}, -- 属性1
+				{type = 27 , value = 244500}, -- 属性1
+			},
+			{ -- 等级19
+				{type = 163, value = 135750}, -- 属性1
+				{type = 17 , value = 9050000}, -- 属性1
+				{type = 27 , value = 271500}, -- 属性1
+			},
+			{ -- 等级20
+				{type = 163, value = 150000}, -- 属性1
+				{type = 17 , value = 10000000}, -- 属性1
+				{type = 27 , value = 300000}, -- 属性1
+			},
+			
+		},
+		{
+			{ -- 等级1
+				{type = 169, value = 1500}, -- 属性1
+				
+			},
+			{ -- 等级2
+			    {type = 169, value = 5250}, -- 属性1
+		
+			},
+			{ -- 等级3
+				{type = 169, value = 8250}, -- 属性1
+				
+			},
+			{ -- 等级4
+				{type = 169, value = 11250}, -- 属性1
+				
+			},
+			{ -- 等级5
+				{type = 169, value = 15000}, -- 属性1
+				{type = 17 , value = 1000000}, -- 属性1
+			
+			},
+			{ -- 等级6
+				{type = 169, value = 18750}, -- 属性1
+				{type = 17 , value = 1250000}, -- 属性1
+				
+			},
+			{ -- 等级7
+				{type = 169, value = 24750}, -- 属性1
+				{type = 17 , value = 1690000}, -- 属性1
+				
+			},
+			{ -- 等级8
+				{type = 169, value = 30750}, -- 属性1
+				{type = 17 , value = 2050000}, -- 属性1
+				
+			},
+			{ -- 等级9
+				{type = 169, value = 36750}, -- 属性1
+				{type = 17 , value = 2450000}, -- 属性1
+			
+			},
+			{ -- 等级10
+				{type = 169, value = 45000}, -- 属性1
+				{type = 17 , value = 3000000}, -- 属性1
+				{type = 27 , value = 90000}, -- 属性1
+			},
+			{ -- 等级11
+				{type = 169, value = 53250}, -- 属性1
+				{type = 17 , value = 3550000}, -- 属性1
+				{type = 27 , value = 106500}, -- 属性1
+			},
+			{ -- 等级12
+				{type = 169, value = 61500}, -- 属性1
+				{type = 17 , value = 4100000}, -- 属性1
+				{type = 27 , value = 123000}, -- 属性1
+			},
+			{ -- 等级13
+				{type = 169, value = 70500}, -- 属性1
+				{type = 17 , value = 4700000}, -- 属性1
+				{type = 27 , value = 141000}, -- 属性1
+			},
+			{ -- 等级14
+				{type = 169, value = 79500}, -- 属性1
+				{type = 17 , value = 5300000}, -- 属性1
+				{type = 27 , value = 159000}, -- 属性1
+			},
+			{ -- 等级15
+				{type = 169, value = 88500}, -- 属性1
+				{type = 17 , value = 5900000}, -- 属性1
+				{type = 27 , value = 177000}, -- 属性1
+			},
+			{ -- 等级16
+				{type = 169, value = 99750}, -- 属性1
+				{type = 17 , value = 6650000}, -- 属性1
+				{type = 27 , value = 199500}, -- 属性1
+			},
+			{ -- 等级17
+				{type = 169, value = 111000}, -- 属性1
+				{type = 17 , value = 7400000}, -- 属性1
+				{type = 27 , value = 222000}, -- 属性1
+			},
+			{ -- 等级18
+				{type = 169, value = 122250}, -- 属性1
+				{type = 17 , value = 8150000}, -- 属性1
+				{type = 27 , value = 244500}, -- 属性1
+			},
+			{ -- 等级19
+				{type = 169, value = 135750}, -- 属性1
+				{type = 17 , value = 9050000}, -- 属性1
+				{type = 27 , value = 271500}, -- 属性1
+			},
+			{ -- 等级20
+				{type = 169, value = 150000}, -- 属性1
+				{type = 17 , value = 10000000}, -- 属性1
+				{type = 27 , value = 300000}, -- 属性1
+			},
+			
+		},
+		{
+			{ -- 等级1
+				{type = 167, value = 1500}, -- 属性1
+				
+			},
+			{ -- 等级2
+			    {type = 167, value = 5250}, -- 属性1
+		
+			},
+			{ -- 等级3
+				{type = 167, value = 8250}, -- 属性1
+				
+			},
+			{ -- 等级4
+				{type = 167, value = 11250}, -- 属性1
+				
+			},
+			{ -- 等级5
+				{type = 167, value = 15000}, -- 属性1
+				{type = 17 , value = 1000000}, -- 属性1
+			
+			},
+			{ -- 等级6
+				{type = 167, value = 18750}, -- 属性1
+				{type = 17 , value = 1250000}, -- 属性1
+				
+			},
+			{ -- 等级7
+				{type = 167, value = 24750}, -- 属性1
+				{type = 17 , value = 1670000}, -- 属性1
+				
+			},
+			{ -- 等级8
+				{type = 167, value = 30750}, -- 属性1
+				{type = 17 , value = 2050000}, -- 属性1
+				
+			},
+			{ -- 等级9
+				{type = 167, value = 36750}, -- 属性1
+				{type = 17 , value = 2450000}, -- 属性1
+			
+			},
+			{ -- 等级10
+				{type = 167, value = 45000}, -- 属性1
+				{type = 17 , value = 3000000}, -- 属性1
+				{type = 27 , value = 90000}, -- 属性1
+			},
+			{ -- 等级11
+				{type = 167, value = 53250}, -- 属性1
+				{type = 17 , value = 3550000}, -- 属性1
+				{type = 27 , value = 106500}, -- 属性1
+			},
+			{ -- 等级12
+				{type = 167, value = 61500}, -- 属性1
+				{type = 17 , value = 4100000}, -- 属性1
+				{type = 27 , value = 123000}, -- 属性1
+			},
+			{ -- 等级13
+				{type = 167, value = 70500}, -- 属性1
+				{type = 17 , value = 4700000}, -- 属性1
+				{type = 27 , value = 141000}, -- 属性1
+			},
+			{ -- 等级14
+				{type = 167, value = 79500}, -- 属性1
+				{type = 17 , value = 5300000}, -- 属性1
+				{type = 27 , value = 159000}, -- 属性1
+			},
+			{ -- 等级15
+				{type = 167, value = 88500}, -- 属性1
+				{type = 17 , value = 5900000}, -- 属性1
+				{type = 27 , value = 177000}, -- 属性1
+			},
+			{ -- 等级16
+				{type = 167, value = 99750}, -- 属性1
+				{type = 17 , value = 6650000}, -- 属性1
+				{type = 27 , value = 199500}, -- 属性1
+			},
+			{ -- 等级17
+				{type = 167, value = 111000}, -- 属性1
+				{type = 17 , value = 7400000}, -- 属性1
+				{type = 27 , value = 222000}, -- 属性1
+			},
+			{ -- 等级18
+				{type = 167, value = 122250}, -- 属性1
+				{type = 17 , value = 8150000}, -- 属性1
+				{type = 27 , value = 244500}, -- 属性1
+			},
+			{ -- 等级19
+				{type = 167, value = 135750}, -- 属性1
+				{type = 17 , value = 9050000}, -- 属性1
+				{type = 27 , value = 271500}, -- 属性1
+			},
+			{ -- 等级20
+				{type = 167, value = 150000}, -- 属性1
+				{type = 17 , value = 10000000}, -- 属性1
+				{type = 27 , value = 300000}, -- 属性1
+			},
+		},
+	},
+
+	zsProp = {
+		{ --神器1
+			{ -- 0转
+				{ -- 等级1
+				{type = 166, value = 0.005}, -- 属性1
+				{type = 18, value = 0.005}, -- 属性1
+				{type = 28, value = 0.005}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.01}, -- 属性1
+				{type = 18, value = 0.01}, -- 属性1
+				{type = 28, value = 0.01}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.015}, -- 属性1
+				{type = 18, value = 0.015}, -- 属性1
+				{type = 28, value = 0.015}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.02}, -- 属性1
+				{type = 18, value = 0.02}, -- 属性1
+				{type = 28, value = 0.02}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.025}, -- 属性1
+				{type = 18, value = 0.025}, -- 属性1
+				{type = 28, value = 0.025}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.03}, -- 属性1
+				{type = 18, value = 0.03}, -- 属性1
+				{type = 28, value = 0.03}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.035}, -- 属性1
+				{type = 18, value = 0.035}, -- 属性1
+				{type = 28, value = 0.035}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.04}, -- 属性1
+				{type = 18, value = 0.04}, -- 属性1
+				{type = 28, value = 0.04}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.045}, -- 属性1
+				{type = 18, value = 0.045}, -- 属性1
+				{type = 28, value = 0.045}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.05}, -- 属性1
+				{type = 18, value = 0.05}, -- 属性1
+				{type = 28, value = 0.05}, -- 属性1
+			},
+
+			},
+			{ -- 1转
+
+				{ -- 等级1
+				{type = 166, value = 0.055}, -- 属性1
+				{type = 18, value = 0.055}, -- 属性1
+				{type = 28, value = 0.055}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.06}, -- 属性1
+				{type = 18, value = 0.06}, -- 属性1
+				{type = 28, value = 0.06}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.065}, -- 属性1
+				{type = 18, value = 0.065}, -- 属性1
+				{type = 28, value = 0.065}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.07}, -- 属性1
+				{type = 18, value = 0.07}, -- 属性1
+				{type = 28, value = 0.07}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.075}, -- 属性1
+				{type = 18, value = 0.075}, -- 属性1
+				{type = 28, value = 0.075}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.08}, -- 属性1
+				{type = 18, value = 0.08}, -- 属性1
+				{type = 28, value = 0.08}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.085}, -- 属性1
+				{type = 18, value = 0.085}, -- 属性1
+				{type = 28, value = 0.085}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.09}, -- 属性1
+				{type = 18, value = 0.09}, -- 属性1
+				{type = 28, value = 0.09}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.095}, -- 属性1
+				{type = 18, value = 0.095}, -- 属性1
+				{type = 28, value = 0.095}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.1}, -- 属性1
+				{type = 18, value = 0.1}, -- 属性1
+				{type = 28, value = 0.1}, -- 属性1
+			},
+			},
+			{ -- 2转
+				{ -- 等级1
+				{type = 166, value = 0.11}, -- 属性1
+				{type = 18, value = 0.11}, -- 属性1
+				{type = 28, value = 0.11}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.12}, -- 属性1
+				{type = 18, value = 0.12}, -- 属性1
+				{type = 28, value = 0.12}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.13}, -- 属性1
+				{type = 18, value = 0.13}, -- 属性1
+				{type = 28, value = 0.13}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.14}, -- 属性1
+				{type = 18, value = 0.14}, -- 属性1
+				{type = 28, value = 0.14}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.15}, -- 属性1
+				{type = 18, value = 0.15}, -- 属性1
+				{type = 28, value = 0.15}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.16}, -- 属性1
+				{type = 18, value = 0.16}, -- 属性1
+				{type = 28, value = 0.16}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.17}, -- 属性1
+				{type = 18, value = 0.17}, -- 属性1
+				{type = 28, value = 0.17}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.18}, -- 属性1
+				{type = 18, value = 0.18}, -- 属性1
+				{type = 28, value = 0.18}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.19}, -- 属性1
+				{type = 18, value = 0.19}, -- 属性1
+				{type = 28, value = 0.19}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.2}, -- 属性1
+				{type = 18, value = 0.2}, -- 属性1
+				{type = 28, value = 0.2}, -- 属性1
+			},		
+			},
+			{ -- 3转
+				{ -- 等级1
+				{type = 166, value = 0.21}, -- 属性1
+				{type = 18, value = 0.21}, -- 属性1
+				{type = 28, value = 0.21}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.22}, -- 属性1
+				{type = 18, value = 0.22}, -- 属性1
+				{type = 28, value = 0.22}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.23}, -- 属性1
+				{type = 18, value = 0.23}, -- 属性1
+				{type = 28, value = 0.23}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.24}, -- 属性1
+				{type = 18, value = 0.24}, -- 属性1
+				{type = 28, value = 0.24}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.25}, -- 属性1
+				{type = 18, value = 0.25}, -- 属性1
+				{type = 28, value = 0.25}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.26}, -- 属性1
+				{type = 18, value = 0.26}, -- 属性1
+				{type = 28, value = 0.26}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.27}, -- 属性1
+				{type = 18, value = 0.27}, -- 属性1
+				{type = 28, value = 0.27}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.28}, -- 属性1
+				{type = 18, value = 0.28}, -- 属性1
+				{type = 28, value = 0.28}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.29}, -- 属性1
+				{type = 18, value = 0.29}, -- 属性1
+				{type = 28, value = 0.29}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.3}, -- 属性1
+				{type = 18, value = 0.3}, -- 属性1
+				{type = 28, value = 0.3}, -- 属性1
+			},		
+			},
+			{ -- 4转
+				{ -- 等级1
+				{type = 166, value = 0.31}, -- 属性1
+				{type = 18, value = 0.31}, -- 属性1
+				{type = 28, value = 0.31}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.32}, -- 属性1
+				{type = 18, value = 0.32}, -- 属性1
+				{type = 28, value = 0.32}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.33}, -- 属性1
+				{type = 18, value = 0.33}, -- 属性1
+				{type = 28, value = 0.33}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.34}, -- 属性1
+				{type = 18, value = 0.34}, -- 属性1
+				{type = 28, value = 0.34}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.35}, -- 属性1
+				{type = 18, value = 0.35}, -- 属性1
+				{type = 28, value = 0.35}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.36}, -- 属性1
+				{type = 18, value = 0.36}, -- 属性1
+				{type = 28, value = 0.36}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.37}, -- 属性1
+				{type = 18, value = 0.37}, -- 属性1
+				{type = 28, value = 0.37}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.38}, -- 属性1
+				{type = 18, value = 0.38}, -- 属性1
+				{type = 28, value = 0.38}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.39}, -- 属性1
+				{type = 18, value = 0.39}, -- 属性1
+				{type = 28, value = 0.39}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.4}, -- 属性1
+				{type = 18, value = 0.4}, -- 属性1
+				{type = 28, value = 0.4}, -- 属性1
+			},		
+			},
+			{ -- 5转
+				{ -- 等级1
+				{type = 166, value = 0.412}, -- 属性1
+				{type = 18, value = 0.412}, -- 属性1
+				{type = 28, value = 0.412}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.424}, -- 属性1
+				{type = 18, value = 0.424}, -- 属性1
+				{type = 28, value = 0.424}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.4166}, -- 属性1
+				{type = 18, value = 0.4166}, -- 属性1
+				{type = 28, value = 0.4166}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.448}, -- 属性1
+				{type = 18, value = 0.448}, -- 属性1
+				{type = 28, value = 0.448}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.46}, -- 属性1
+				{type = 18, value = 0.46}, -- 属性1
+				{type = 28, value = 0.46}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.472}, -- 属性1
+				{type = 18, value = 0.472}, -- 属性1
+				{type = 28, value = 0.472}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.484}, -- 属性1
+				{type = 18, value = 0.484}, -- 属性1
+				{type = 28, value = 0.484}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.496}, -- 属性1
+				{type = 18, value = 0.496}, -- 属性1
+				{type = 28, value = 0.496}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.508}, -- 属性1
+				{type = 18, value = 0.508}, -- 属性1
+				{type = 28, value = 0.508}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.52}, -- 属性1
+				{type = 18, value = 0.52}, -- 属性1
+				{type = 28, value = 0.52}, -- 属性1
+			},			
+			},
+			{ -- 6转
+				{ -- 等级1
+				{type = 166, value = 0.532}, -- 属性1
+				{type = 18, value = 0.532}, -- 属性1
+				{type = 28, value = 0.532}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.544}, -- 属性1
+				{type = 18, value = 0.544}, -- 属性1
+				{type = 28, value = 0.544}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.556}, -- 属性1
+				{type = 18, value = 0.556}, -- 属性1
+				{type = 28, value = 0.556}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.568}, -- 属性1
+				{type = 18, value = 0.568}, -- 属性1
+				{type = 28, value = 0.568}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.58}, -- 属性1
+				{type = 18, value = 0.58}, -- 属性1
+				{type = 28, value = 0.58}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.592}, -- 属性1
+				{type = 18, value = 0.592}, -- 属性1
+				{type = 28, value = 0.592}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.604}, -- 属性1
+				{type = 18, value = 0.604}, -- 属性1
+				{type = 28, value = 0.604}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.616}, -- 属性1
+				{type = 18, value = 0.616}, -- 属性1
+				{type = 28, value = 0.616}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.628}, -- 属性1
+				{type = 18, value = 0.628}, -- 属性1
+				{type = 28, value = 0.628}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.64}, -- 属性1
+				{type = 18, value = 0.64}, -- 属性1
+				{type = 28, value = 0.64}, -- 属性1
+			},		
+			},
+			{ -- 7转
+				{ -- 等级1
+				{type = 166, value = 0.652}, -- 属性1
+				{type = 18, value = 0.652}, -- 属性1
+				{type = 28, value = 0.652}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.664}, -- 属性1
+				{type = 18, value = 0.664}, -- 属性1
+				{type = 28, value = 0.664}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.676}, -- 属性1
+				{type = 18, value = 0.676}, -- 属性1
+				{type = 28, value = 0.676}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.688}, -- 属性1
+				{type = 18, value = 0.688}, -- 属性1
+				{type = 28, value = 0.688}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.7}, -- 属性1
+				{type = 18, value = 0.7}, -- 属性1
+				{type = 28, value = 0.7}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.712}, -- 属性1
+				{type = 18, value = 0.712}, -- 属性1
+				{type = 28, value = 0.712}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.724}, -- 属性1
+				{type = 18, value = 0.724}, -- 属性1
+				{type = 28, value = 0.724}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.7166}, -- 属性1
+				{type = 18, value = 0.7166}, -- 属性1
+				{type = 28, value = 0.7166}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.748}, -- 属性1
+				{type = 18, value = 0.748}, -- 属性1
+				{type = 28, value = 0.748}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.76}, -- 属性1
+				{type = 18, value = 0.76}, -- 属性1
+				{type = 28, value = 0.76}, -- 属性1
+			},				
+			},
+			{ -- 8转
+				{ -- 等级1
+				{type = 166, value = 0.772}, -- 属性1
+				{type = 18, value = 0.772}, -- 属性1
+				{type = 28, value = 0.772}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.784}, -- 属性1
+				{type = 18, value = 0.784}, -- 属性1
+				{type = 28, value = 0.784}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.796}, -- 属性1
+				{type = 18, value = 0.796}, -- 属性1
+				{type = 28, value = 0.796}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.808}, -- 属性1
+				{type = 18, value = 0.808}, -- 属性1
+				{type = 28, value = 0.808}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.82}, -- 属性1
+				{type = 18, value = 0.82}, -- 属性1
+				{type = 28, value = 0.82}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.832}, -- 属性1
+				{type = 18, value = 0.832}, -- 属性1
+				{type = 28, value = 0.832}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.844}, -- 属性1
+				{type = 18, value = 0.844}, -- 属性1
+				{type = 28, value = 0.844}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.856}, -- 属性1
+				{type = 18, value = 0.856}, -- 属性1
+				{type = 28, value = 0.856}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.868}, -- 属性1
+				{type = 18, value = 0.868}, -- 属性1
+				{type = 28, value = 0.868}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 0.880}, -- 属性1
+				{type = 18, value = 0.880}, -- 属性1
+				{type = 28, value = 0.880}, -- 属性1
+			},
+					
+			},
+			{ -- 9转
+				{ -- 等级1
+				{type = 166, value = 0.892}, -- 属性1
+				{type = 18, value = 0.892}, -- 属性1
+				{type = 28, value = 0.892}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 166, value = 0.904}, -- 属性1
+				{type = 18, value = 0.904}, -- 属性1
+				{type = 28, value = 0.904}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 166, value = 0.916}, -- 属性1
+				{type = 18, value = 0.916}, -- 属性1
+				{type = 28, value = 0.916}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 166, value = 0.928}, -- 属性1
+				{type = 18, value = 0.928}, -- 属性1
+				{type = 28, value = 0.928}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 166, value = 0.94}, -- 属性1
+				{type = 18, value = 0.94}, -- 属性1
+				{type = 28, value = 0.94}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 166, value = 0.952}, -- 属性1
+				{type = 18, value = 0.952}, -- 属性1
+				{type = 28, value = 0.952}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 166, value = 0.964}, -- 属性1
+				{type = 18, value = 0.964}, -- 属性1
+				{type = 28, value = 0.964}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 166, value = 0.976}, -- 属性1
+				{type = 18, value = 0.976}, -- 属性1
+				{type = 28, value = 0.976}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 166, value = 0.988}, -- 属性1
+				{type = 18, value = 0.988}, -- 属性1
+				{type = 28, value = 0.988}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 166, value = 1}, -- 属性1
+				{type = 18, value = 1}, -- 属性1
+				{type = 28, value = 1}, -- 属性1
+			},				
+			},
+		},
+		{ --神器2
+			{ -- 0转
+				{ -- 等级1
+				{type = 164, value = 0.005}, -- 属性1
+				{type = 18, value = 0.005}, -- 属性1
+				{type = 28, value = 0.005}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.01}, -- 属性1
+				{type = 18, value = 0.01}, -- 属性1
+				{type = 28, value = 0.01}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.015}, -- 属性1
+				{type = 18, value = 0.015}, -- 属性1
+				{type = 28, value = 0.015}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.02}, -- 属性1
+				{type = 18, value = 0.02}, -- 属性1
+				{type = 28, value = 0.02}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.025}, -- 属性1
+				{type = 18, value = 0.025}, -- 属性1
+				{type = 28, value = 0.025}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.03}, -- 属性1
+				{type = 18, value = 0.03}, -- 属性1
+				{type = 28, value = 0.03}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.035}, -- 属性1
+				{type = 18, value = 0.035}, -- 属性1
+				{type = 28, value = 0.035}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.04}, -- 属性1
+				{type = 18, value = 0.04}, -- 属性1
+				{type = 28, value = 0.04}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.045}, -- 属性1
+				{type = 18, value = 0.045}, -- 属性1
+				{type = 28, value = 0.045}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.05}, -- 属性1
+				{type = 18, value = 0.05}, -- 属性1
+				{type = 28, value = 0.05}, -- 属性1
+			},
+
+			},
+			{ -- 1转
+
+				{ -- 等级1
+				{type = 164, value = 0.055}, -- 属性1
+				{type = 18, value = 0.055}, -- 属性1
+				{type = 28, value = 0.055}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.06}, -- 属性1
+				{type = 18, value = 0.06}, -- 属性1
+				{type = 28, value = 0.06}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.065}, -- 属性1
+				{type = 18, value = 0.065}, -- 属性1
+				{type = 28, value = 0.065}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.07}, -- 属性1
+				{type = 18, value = 0.07}, -- 属性1
+				{type = 28, value = 0.07}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.075}, -- 属性1
+				{type = 18, value = 0.075}, -- 属性1
+				{type = 28, value = 0.075}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.08}, -- 属性1
+				{type = 18, value = 0.08}, -- 属性1
+				{type = 28, value = 0.08}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.085}, -- 属性1
+				{type = 18, value = 0.085}, -- 属性1
+				{type = 28, value = 0.085}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.09}, -- 属性1
+				{type = 18, value = 0.09}, -- 属性1
+				{type = 28, value = 0.09}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.095}, -- 属性1
+				{type = 18, value = 0.095}, -- 属性1
+				{type = 28, value = 0.095}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.1}, -- 属性1
+				{type = 18, value = 0.1}, -- 属性1
+				{type = 28, value = 0.1}, -- 属性1
+			},
+			},
+			{ -- 2转
+				{ -- 等级1
+				{type = 164, value = 0.11}, -- 属性1
+				{type = 18, value = 0.11}, -- 属性1
+				{type = 28, value = 0.11}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.12}, -- 属性1
+				{type = 18, value = 0.12}, -- 属性1
+				{type = 28, value = 0.12}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.13}, -- 属性1
+				{type = 18, value = 0.13}, -- 属性1
+				{type = 28, value = 0.13}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.14}, -- 属性1
+				{type = 18, value = 0.14}, -- 属性1
+				{type = 28, value = 0.14}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.15}, -- 属性1
+				{type = 18, value = 0.15}, -- 属性1
+				{type = 28, value = 0.15}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.16}, -- 属性1
+				{type = 18, value = 0.16}, -- 属性1
+				{type = 28, value = 0.16}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.17}, -- 属性1
+				{type = 18, value = 0.17}, -- 属性1
+				{type = 28, value = 0.17}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.18}, -- 属性1
+				{type = 18, value = 0.18}, -- 属性1
+				{type = 28, value = 0.18}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.19}, -- 属性1
+				{type = 18, value = 0.19}, -- 属性1
+				{type = 28, value = 0.19}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.2}, -- 属性1
+				{type = 18, value = 0.2}, -- 属性1
+				{type = 28, value = 0.2}, -- 属性1
+			},		
+			},
+			{ -- 3转
+				{ -- 等级1
+				{type = 164, value = 0.21}, -- 属性1
+				{type = 18, value = 0.21}, -- 属性1
+				{type = 28, value = 0.21}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.22}, -- 属性1
+				{type = 18, value = 0.22}, -- 属性1
+				{type = 28, value = 0.22}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.23}, -- 属性1
+				{type = 18, value = 0.23}, -- 属性1
+				{type = 28, value = 0.23}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.24}, -- 属性1
+				{type = 18, value = 0.24}, -- 属性1
+				{type = 28, value = 0.24}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.25}, -- 属性1
+				{type = 18, value = 0.25}, -- 属性1
+				{type = 28, value = 0.25}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.26}, -- 属性1
+				{type = 18, value = 0.26}, -- 属性1
+				{type = 28, value = 0.26}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.27}, -- 属性1
+				{type = 18, value = 0.27}, -- 属性1
+				{type = 28, value = 0.27}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.28}, -- 属性1
+				{type = 18, value = 0.28}, -- 属性1
+				{type = 28, value = 0.28}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.29}, -- 属性1
+				{type = 18, value = 0.29}, -- 属性1
+				{type = 28, value = 0.29}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.3}, -- 属性1
+				{type = 18, value = 0.3}, -- 属性1
+				{type = 28, value = 0.3}, -- 属性1
+			},		
+			},
+			{ -- 4转
+				{ -- 等级1
+				{type = 164, value = 0.31}, -- 属性1
+				{type = 18, value = 0.31}, -- 属性1
+				{type = 28, value = 0.31}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.32}, -- 属性1
+				{type = 18, value = 0.32}, -- 属性1
+				{type = 28, value = 0.32}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.33}, -- 属性1
+				{type = 18, value = 0.33}, -- 属性1
+				{type = 28, value = 0.33}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.34}, -- 属性1
+				{type = 18, value = 0.34}, -- 属性1
+				{type = 28, value = 0.34}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.35}, -- 属性1
+				{type = 18, value = 0.35}, -- 属性1
+				{type = 28, value = 0.35}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.36}, -- 属性1
+				{type = 18, value = 0.36}, -- 属性1
+				{type = 28, value = 0.36}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.37}, -- 属性1
+				{type = 18, value = 0.37}, -- 属性1
+				{type = 28, value = 0.37}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.38}, -- 属性1
+				{type = 18, value = 0.38}, -- 属性1
+				{type = 28, value = 0.38}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.39}, -- 属性1
+				{type = 18, value = 0.39}, -- 属性1
+				{type = 28, value = 0.39}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.4}, -- 属性1
+				{type = 18, value = 0.4}, -- 属性1
+				{type = 28, value = 0.4}, -- 属性1
+			},		
+			},
+			{ -- 5转
+				{ -- 等级1
+				{type = 164, value = 0.412}, -- 属性1
+				{type = 18, value = 0.412}, -- 属性1
+				{type = 28, value = 0.412}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.4164}, -- 属性1
+				{type = 18, value = 0.4164}, -- 属性1
+				{type = 28, value = 0.4164}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.436}, -- 属性1
+				{type = 18, value = 0.436}, -- 属性1
+				{type = 28, value = 0.436}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.448}, -- 属性1
+				{type = 18, value = 0.448}, -- 属性1
+				{type = 28, value = 0.448}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.46}, -- 属性1
+				{type = 18, value = 0.46}, -- 属性1
+				{type = 28, value = 0.46}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.472}, -- 属性1
+				{type = 18, value = 0.472}, -- 属性1
+				{type = 28, value = 0.472}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.484}, -- 属性1
+				{type = 18, value = 0.484}, -- 属性1
+				{type = 28, value = 0.484}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.496}, -- 属性1
+				{type = 18, value = 0.496}, -- 属性1
+				{type = 28, value = 0.496}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.508}, -- 属性1
+				{type = 18, value = 0.508}, -- 属性1
+				{type = 28, value = 0.508}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.52}, -- 属性1
+				{type = 18, value = 0.52}, -- 属性1
+				{type = 28, value = 0.52}, -- 属性1
+			},			
+			},
+			{ -- 6转
+				{ -- 等级1
+				{type = 164, value = 0.532}, -- 属性1
+				{type = 18, value = 0.532}, -- 属性1
+				{type = 28, value = 0.532}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.544}, -- 属性1
+				{type = 18, value = 0.544}, -- 属性1
+				{type = 28, value = 0.544}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.556}, -- 属性1
+				{type = 18, value = 0.556}, -- 属性1
+				{type = 28, value = 0.556}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.568}, -- 属性1
+				{type = 18, value = 0.568}, -- 属性1
+				{type = 28, value = 0.568}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.58}, -- 属性1
+				{type = 18, value = 0.58}, -- 属性1
+				{type = 28, value = 0.58}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.592}, -- 属性1
+				{type = 18, value = 0.592}, -- 属性1
+				{type = 28, value = 0.592}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.604}, -- 属性1
+				{type = 18, value = 0.604}, -- 属性1
+				{type = 28, value = 0.604}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.616}, -- 属性1
+				{type = 18, value = 0.616}, -- 属性1
+				{type = 28, value = 0.616}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.628}, -- 属性1
+				{type = 18, value = 0.628}, -- 属性1
+				{type = 28, value = 0.628}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.64}, -- 属性1
+				{type = 18, value = 0.64}, -- 属性1
+				{type = 28, value = 0.64}, -- 属性1
+			},		
+			},
+			{ -- 7转
+				{ -- 等级1
+				{type = 164, value = 0.652}, -- 属性1
+				{type = 18, value = 0.652}, -- 属性1
+				{type = 28, value = 0.652}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.664}, -- 属性1
+				{type = 18, value = 0.664}, -- 属性1
+				{type = 28, value = 0.664}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.676}, -- 属性1
+				{type = 18, value = 0.676}, -- 属性1
+				{type = 28, value = 0.676}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.688}, -- 属性1
+				{type = 18, value = 0.688}, -- 属性1
+				{type = 28, value = 0.688}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.7}, -- 属性1
+				{type = 18, value = 0.7}, -- 属性1
+				{type = 28, value = 0.7}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.712}, -- 属性1
+				{type = 18, value = 0.712}, -- 属性1
+				{type = 28, value = 0.712}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.7164}, -- 属性1
+				{type = 18, value = 0.7164}, -- 属性1
+				{type = 28, value = 0.7164}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.736}, -- 属性1
+				{type = 18, value = 0.736}, -- 属性1
+				{type = 28, value = 0.736}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.748}, -- 属性1
+				{type = 18, value = 0.748}, -- 属性1
+				{type = 28, value = 0.748}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.76}, -- 属性1
+				{type = 18, value = 0.76}, -- 属性1
+				{type = 28, value = 0.76}, -- 属性1
+			},				
+			},
+			{ -- 8转
+				{ -- 等级1
+				{type = 164, value = 0.772}, -- 属性1
+				{type = 18, value = 0.772}, -- 属性1
+				{type = 28, value = 0.772}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.784}, -- 属性1
+				{type = 18, value = 0.784}, -- 属性1
+				{type = 28, value = 0.784}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.796}, -- 属性1
+				{type = 18, value = 0.796}, -- 属性1
+				{type = 28, value = 0.796}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.808}, -- 属性1
+				{type = 18, value = 0.808}, -- 属性1
+				{type = 28, value = 0.808}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.82}, -- 属性1
+				{type = 18, value = 0.82}, -- 属性1
+				{type = 28, value = 0.82}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.832}, -- 属性1
+				{type = 18, value = 0.832}, -- 属性1
+				{type = 28, value = 0.832}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.844}, -- 属性1
+				{type = 18, value = 0.844}, -- 属性1
+				{type = 28, value = 0.844}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.856}, -- 属性1
+				{type = 18, value = 0.856}, -- 属性1
+				{type = 28, value = 0.856}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.868}, -- 属性1
+				{type = 18, value = 0.868}, -- 属性1
+				{type = 28, value = 0.868}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 0.880}, -- 属性1
+				{type = 18, value = 0.880}, -- 属性1
+				{type = 28, value = 0.880}, -- 属性1
+			},
+					
+			},
+			{ -- 9转
+				{ -- 等级1
+				{type = 164, value = 0.892}, -- 属性1
+				{type = 18, value = 0.892}, -- 属性1
+				{type = 28, value = 0.892}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 164, value = 0.904}, -- 属性1
+				{type = 18, value = 0.904}, -- 属性1
+				{type = 28, value = 0.904}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 164, value = 0.916}, -- 属性1
+				{type = 18, value = 0.916}, -- 属性1
+				{type = 28, value = 0.916}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 164, value = 0.928}, -- 属性1
+				{type = 18, value = 0.928}, -- 属性1
+				{type = 28, value = 0.928}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 164, value = 0.94}, -- 属性1
+				{type = 18, value = 0.94}, -- 属性1
+				{type = 28, value = 0.94}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 164, value = 0.952}, -- 属性1
+				{type = 18, value = 0.952}, -- 属性1
+				{type = 28, value = 0.952}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 164, value = 0.964}, -- 属性1
+				{type = 18, value = 0.964}, -- 属性1
+				{type = 28, value = 0.964}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 164, value = 0.976}, -- 属性1
+				{type = 18, value = 0.976}, -- 属性1
+				{type = 28, value = 0.976}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 164, value = 0.988}, -- 属性1
+				{type = 18, value = 0.988}, -- 属性1
+				{type = 28, value = 0.988}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 164, value = 1}, -- 属性1
+				{type = 18, value = 1}, -- 属性1
+				{type = 28, value = 1}, -- 属性1
+			},				
+			},
+		},
+		{ --神器3
+			{ -- 0转
+				{ -- 等级1
+				{type = 170, value = 0.005}, -- 属性1
+				{type = 18, value = 0.005}, -- 属性1
+				{type = 28, value = 0.005}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.01}, -- 属性1
+				{type = 18, value = 0.01}, -- 属性1
+				{type = 28, value = 0.01}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.015}, -- 属性1
+				{type = 18, value = 0.015}, -- 属性1
+				{type = 28, value = 0.015}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.02}, -- 属性1
+				{type = 18, value = 0.02}, -- 属性1
+				{type = 28, value = 0.02}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.025}, -- 属性1
+				{type = 18, value = 0.025}, -- 属性1
+				{type = 28, value = 0.025}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.03}, -- 属性1
+				{type = 18, value = 0.03}, -- 属性1
+				{type = 28, value = 0.03}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.035}, -- 属性1
+				{type = 18, value = 0.035}, -- 属性1
+				{type = 28, value = 0.035}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.04}, -- 属性1
+				{type = 18, value = 0.04}, -- 属性1
+				{type = 28, value = 0.04}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.045}, -- 属性1
+				{type = 18, value = 0.045}, -- 属性1
+				{type = 28, value = 0.045}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.05}, -- 属性1
+				{type = 18, value = 0.05}, -- 属性1
+				{type = 28, value = 0.05}, -- 属性1
+			},
+
+			},
+			{ -- 1转
+
+				{ -- 等级1
+				{type = 170, value = 0.055}, -- 属性1
+				{type = 18, value = 0.055}, -- 属性1
+				{type = 28, value = 0.055}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.06}, -- 属性1
+				{type = 18, value = 0.06}, -- 属性1
+				{type = 28, value = 0.06}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.065}, -- 属性1
+				{type = 18, value = 0.065}, -- 属性1
+				{type = 28, value = 0.065}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.07}, -- 属性1
+				{type = 18, value = 0.07}, -- 属性1
+				{type = 28, value = 0.07}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.075}, -- 属性1
+				{type = 18, value = 0.075}, -- 属性1
+				{type = 28, value = 0.075}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.08}, -- 属性1
+				{type = 18, value = 0.08}, -- 属性1
+				{type = 28, value = 0.08}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.085}, -- 属性1
+				{type = 18, value = 0.085}, -- 属性1
+				{type = 28, value = 0.085}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.09}, -- 属性1
+				{type = 18, value = 0.09}, -- 属性1
+				{type = 28, value = 0.09}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.095}, -- 属性1
+				{type = 18, value = 0.095}, -- 属性1
+				{type = 28, value = 0.095}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.1}, -- 属性1
+				{type = 18, value = 0.1}, -- 属性1
+				{type = 28, value = 0.1}, -- 属性1
+			},
+			},
+			{ -- 2转
+				{ -- 等级1
+				{type = 170, value = 0.11}, -- 属性1
+				{type = 18, value = 0.11}, -- 属性1
+				{type = 28, value = 0.11}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.12}, -- 属性1
+				{type = 18, value = 0.12}, -- 属性1
+				{type = 28, value = 0.12}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.13}, -- 属性1
+				{type = 18, value = 0.13}, -- 属性1
+				{type = 28, value = 0.13}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.14}, -- 属性1
+				{type = 18, value = 0.14}, -- 属性1
+				{type = 28, value = 0.14}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.15}, -- 属性1
+				{type = 18, value = 0.15}, -- 属性1
+				{type = 28, value = 0.15}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.16}, -- 属性1
+				{type = 18, value = 0.16}, -- 属性1
+				{type = 28, value = 0.16}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.17}, -- 属性1
+				{type = 18, value = 0.17}, -- 属性1
+				{type = 28, value = 0.17}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.18}, -- 属性1
+				{type = 18, value = 0.18}, -- 属性1
+				{type = 28, value = 0.18}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.19}, -- 属性1
+				{type = 18, value = 0.19}, -- 属性1
+				{type = 28, value = 0.19}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.2}, -- 属性1
+				{type = 18, value = 0.2}, -- 属性1
+				{type = 28, value = 0.2}, -- 属性1
+			},		
+			},
+			{ -- 3转
+				{ -- 等级1
+				{type = 170, value = 0.21}, -- 属性1
+				{type = 18, value = 0.21}, -- 属性1
+				{type = 28, value = 0.21}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.22}, -- 属性1
+				{type = 18, value = 0.22}, -- 属性1
+				{type = 28, value = 0.22}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.23}, -- 属性1
+				{type = 18, value = 0.23}, -- 属性1
+				{type = 28, value = 0.23}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.24}, -- 属性1
+				{type = 18, value = 0.24}, -- 属性1
+				{type = 28, value = 0.24}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.25}, -- 属性1
+				{type = 18, value = 0.25}, -- 属性1
+				{type = 28, value = 0.25}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.26}, -- 属性1
+				{type = 18, value = 0.26}, -- 属性1
+				{type = 28, value = 0.26}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.27}, -- 属性1
+				{type = 18, value = 0.27}, -- 属性1
+				{type = 28, value = 0.27}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.28}, -- 属性1
+				{type = 18, value = 0.28}, -- 属性1
+				{type = 28, value = 0.28}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.29}, -- 属性1
+				{type = 18, value = 0.29}, -- 属性1
+				{type = 28, value = 0.29}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.3}, -- 属性1
+				{type = 18, value = 0.3}, -- 属性1
+				{type = 28, value = 0.3}, -- 属性1
+			},		
+			},
+			{ -- 4转
+				{ -- 等级1
+				{type = 170, value = 0.31}, -- 属性1
+				{type = 18, value = 0.31}, -- 属性1
+				{type = 28, value = 0.31}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.32}, -- 属性1
+				{type = 18, value = 0.32}, -- 属性1
+				{type = 28, value = 0.32}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.33}, -- 属性1
+				{type = 18, value = 0.33}, -- 属性1
+				{type = 28, value = 0.33}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.34}, -- 属性1
+				{type = 18, value = 0.34}, -- 属性1
+				{type = 28, value = 0.34}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.35}, -- 属性1
+				{type = 18, value = 0.35}, -- 属性1
+				{type = 28, value = 0.35}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.36}, -- 属性1
+				{type = 18, value = 0.36}, -- 属性1
+				{type = 28, value = 0.36}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.37}, -- 属性1
+				{type = 18, value = 0.37}, -- 属性1
+				{type = 28, value = 0.37}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.38}, -- 属性1
+				{type = 18, value = 0.38}, -- 属性1
+				{type = 28, value = 0.38}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.39}, -- 属性1
+				{type = 18, value = 0.39}, -- 属性1
+				{type = 28, value = 0.39}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.4}, -- 属性1
+				{type = 18, value = 0.4}, -- 属性1
+				{type = 28, value = 0.4}, -- 属性1
+			},		
+			},
+			{ -- 5转
+				{ -- 等级1
+				{type = 170, value = 0.412}, -- 属性1
+				{type = 18, value = 0.412}, -- 属性1
+				{type = 28, value = 0.412}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.424}, -- 属性1
+				{type = 18, value = 0.424}, -- 属性1
+				{type = 28, value = 0.424}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.436}, -- 属性1
+				{type = 18, value = 0.436}, -- 属性1
+				{type = 28, value = 0.436}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.448}, -- 属性1
+				{type = 18, value = 0.448}, -- 属性1
+				{type = 28, value = 0.448}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.46}, -- 属性1
+				{type = 18, value = 0.46}, -- 属性1
+				{type = 28, value = 0.46}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.472}, -- 属性1
+				{type = 18, value = 0.472}, -- 属性1
+				{type = 28, value = 0.472}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.484}, -- 属性1
+				{type = 18, value = 0.484}, -- 属性1
+				{type = 28, value = 0.484}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.496}, -- 属性1
+				{type = 18, value = 0.496}, -- 属性1
+				{type = 28, value = 0.496}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.508}, -- 属性1
+				{type = 18, value = 0.508}, -- 属性1
+				{type = 28, value = 0.508}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.52}, -- 属性1
+				{type = 18, value = 0.52}, -- 属性1
+				{type = 28, value = 0.52}, -- 属性1
+			},			
+			},
+			{ -- 6转
+				{ -- 等级1
+				{type = 170, value = 0.532}, -- 属性1
+				{type = 18, value = 0.532}, -- 属性1
+				{type = 28, value = 0.532}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.544}, -- 属性1
+				{type = 18, value = 0.544}, -- 属性1
+				{type = 28, value = 0.544}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.556}, -- 属性1
+				{type = 18, value = 0.556}, -- 属性1
+				{type = 28, value = 0.556}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.568}, -- 属性1
+				{type = 18, value = 0.568}, -- 属性1
+				{type = 28, value = 0.568}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.58}, -- 属性1
+				{type = 18, value = 0.58}, -- 属性1
+				{type = 28, value = 0.58}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.592}, -- 属性1
+				{type = 18, value = 0.592}, -- 属性1
+				{type = 28, value = 0.592}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.604}, -- 属性1
+				{type = 18, value = 0.604}, -- 属性1
+				{type = 28, value = 0.604}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.616}, -- 属性1
+				{type = 18, value = 0.616}, -- 属性1
+				{type = 28, value = 0.616}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.628}, -- 属性1
+				{type = 18, value = 0.628}, -- 属性1
+				{type = 28, value = 0.628}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.64}, -- 属性1
+				{type = 18, value = 0.64}, -- 属性1
+				{type = 28, value = 0.64}, -- 属性1
+			},		
+			},
+			{ -- 7转
+				{ -- 等级1
+				{type = 170, value = 0.652}, -- 属性1
+				{type = 18, value = 0.652}, -- 属性1
+				{type = 28, value = 0.652}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.664}, -- 属性1
+				{type = 18, value = 0.664}, -- 属性1
+				{type = 28, value = 0.664}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.676}, -- 属性1
+				{type = 18, value = 0.676}, -- 属性1
+				{type = 28, value = 0.676}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.688}, -- 属性1
+				{type = 18, value = 0.688}, -- 属性1
+				{type = 28, value = 0.688}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.7}, -- 属性1
+				{type = 18, value = 0.7}, -- 属性1
+				{type = 28, value = 0.7}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.712}, -- 属性1
+				{type = 18, value = 0.712}, -- 属性1
+				{type = 28, value = 0.712}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.724}, -- 属性1
+				{type = 18, value = 0.724}, -- 属性1
+				{type = 28, value = 0.724}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.736}, -- 属性1
+				{type = 18, value = 0.736}, -- 属性1
+				{type = 28, value = 0.736}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.748}, -- 属性1
+				{type = 18, value = 0.748}, -- 属性1
+				{type = 28, value = 0.748}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.76}, -- 属性1
+				{type = 18, value = 0.76}, -- 属性1
+				{type = 28, value = 0.76}, -- 属性1
+			},				
+			},
+			{ -- 8转
+				{ -- 等级1
+				{type = 170, value = 0.772}, -- 属性1
+				{type = 18, value = 0.772}, -- 属性1
+				{type = 28, value = 0.772}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.784}, -- 属性1
+				{type = 18, value = 0.784}, -- 属性1
+				{type = 28, value = 0.784}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.796}, -- 属性1
+				{type = 18, value = 0.796}, -- 属性1
+				{type = 28, value = 0.796}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.808}, -- 属性1
+				{type = 18, value = 0.808}, -- 属性1
+				{type = 28, value = 0.808}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.82}, -- 属性1
+				{type = 18, value = 0.82}, -- 属性1
+				{type = 28, value = 0.82}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.832}, -- 属性1
+				{type = 18, value = 0.832}, -- 属性1
+				{type = 28, value = 0.832}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.844}, -- 属性1
+				{type = 18, value = 0.844}, -- 属性1
+				{type = 28, value = 0.844}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.856}, -- 属性1
+				{type = 18, value = 0.856}, -- 属性1
+				{type = 28, value = 0.856}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.868}, -- 属性1
+				{type = 18, value = 0.868}, -- 属性1
+				{type = 28, value = 0.868}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 0.880}, -- 属性1
+				{type = 18, value = 0.880}, -- 属性1
+				{type = 28, value = 0.880}, -- 属性1
+			},
+					
+			},
+			{ -- 9转
+				{ -- 等级1
+				{type = 170, value = 0.892}, -- 属性1
+				{type = 18, value = 0.892}, -- 属性1
+				{type = 28, value = 0.892}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 170, value = 0.904}, -- 属性1
+				{type = 18, value = 0.904}, -- 属性1
+				{type = 28, value = 0.904}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 170, value = 0.916}, -- 属性1
+				{type = 18, value = 0.916}, -- 属性1
+				{type = 28, value = 0.916}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 170, value = 0.928}, -- 属性1
+				{type = 18, value = 0.928}, -- 属性1
+				{type = 28, value = 0.928}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 170, value = 0.94}, -- 属性1
+				{type = 18, value = 0.94}, -- 属性1
+				{type = 28, value = 0.94}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 170, value = 0.952}, -- 属性1
+				{type = 18, value = 0.952}, -- 属性1
+				{type = 28, value = 0.952}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 170, value = 0.964}, -- 属性1
+				{type = 18, value = 0.964}, -- 属性1
+				{type = 28, value = 0.964}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 170, value = 0.976}, -- 属性1
+				{type = 18, value = 0.976}, -- 属性1
+				{type = 28, value = 0.976}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 170, value = 0.988}, -- 属性1
+				{type = 18, value = 0.988}, -- 属性1
+				{type = 28, value = 0.988}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 170, value = 1}, -- 属性1
+				{type = 18, value = 1}, -- 属性1
+				{type = 28, value = 1}, -- 属性1
+			},				
+			},
+		},
+		{ --神器4
+			{ -- 0转
+				{ -- 等级1
+				{type = 168, value = 0.005}, -- 属性1
+				{type = 18, value = 0.005}, -- 属性1
+				{type = 28, value = 0.005}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.01}, -- 属性1
+				{type = 18, value = 0.01}, -- 属性1
+				{type = 28, value = 0.01}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.015}, -- 属性1
+				{type = 18, value = 0.015}, -- 属性1
+				{type = 28, value = 0.015}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.02}, -- 属性1
+				{type = 18, value = 0.02}, -- 属性1
+				{type = 28, value = 0.02}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.025}, -- 属性1
+				{type = 18, value = 0.025}, -- 属性1
+				{type = 28, value = 0.025}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.03}, -- 属性1
+				{type = 18, value = 0.03}, -- 属性1
+				{type = 28, value = 0.03}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.035}, -- 属性1
+				{type = 18, value = 0.035}, -- 属性1
+				{type = 28, value = 0.035}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.04}, -- 属性1
+				{type = 18, value = 0.04}, -- 属性1
+				{type = 28, value = 0.04}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.045}, -- 属性1
+				{type = 18, value = 0.045}, -- 属性1
+				{type = 28, value = 0.045}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.05}, -- 属性1
+				{type = 18, value = 0.05}, -- 属性1
+				{type = 28, value = 0.05}, -- 属性1
+			},
+
+			},
+			{ -- 1转
+
+				{ -- 等级1
+				{type = 168, value = 0.055}, -- 属性1
+				{type = 18, value = 0.055}, -- 属性1
+				{type = 28, value = 0.055}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.06}, -- 属性1
+				{type = 18, value = 0.06}, -- 属性1
+				{type = 28, value = 0.06}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.065}, -- 属性1
+				{type = 18, value = 0.065}, -- 属性1
+				{type = 28, value = 0.065}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.07}, -- 属性1
+				{type = 18, value = 0.07}, -- 属性1
+				{type = 28, value = 0.07}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.075}, -- 属性1
+				{type = 18, value = 0.075}, -- 属性1
+				{type = 28, value = 0.075}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.08}, -- 属性1
+				{type = 18, value = 0.08}, -- 属性1
+				{type = 28, value = 0.08}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.085}, -- 属性1
+				{type = 18, value = 0.085}, -- 属性1
+				{type = 28, value = 0.085}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.09}, -- 属性1
+				{type = 18, value = 0.09}, -- 属性1
+				{type = 28, value = 0.09}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.095}, -- 属性1
+				{type = 18, value = 0.095}, -- 属性1
+				{type = 28, value = 0.095}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.1}, -- 属性1
+				{type = 18, value = 0.1}, -- 属性1
+				{type = 28, value = 0.1}, -- 属性1
+			},
+			},
+			{ -- 2转
+				{ -- 等级1
+				{type = 168, value = 0.11}, -- 属性1
+				{type = 18, value = 0.11}, -- 属性1
+				{type = 28, value = 0.11}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.12}, -- 属性1
+				{type = 18, value = 0.12}, -- 属性1
+				{type = 28, value = 0.12}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.13}, -- 属性1
+				{type = 18, value = 0.13}, -- 属性1
+				{type = 28, value = 0.13}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.14}, -- 属性1
+				{type = 18, value = 0.14}, -- 属性1
+				{type = 28, value = 0.14}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.15}, -- 属性1
+				{type = 18, value = 0.15}, -- 属性1
+				{type = 28, value = 0.15}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.16}, -- 属性1
+				{type = 18, value = 0.16}, -- 属性1
+				{type = 28, value = 0.16}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.17}, -- 属性1
+				{type = 18, value = 0.17}, -- 属性1
+				{type = 28, value = 0.17}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.18}, -- 属性1
+				{type = 18, value = 0.18}, -- 属性1
+				{type = 28, value = 0.18}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.19}, -- 属性1
+				{type = 18, value = 0.19}, -- 属性1
+				{type = 28, value = 0.19}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.2}, -- 属性1
+				{type = 18, value = 0.2}, -- 属性1
+				{type = 28, value = 0.2}, -- 属性1
+			},		
+			},
+			{ -- 3转
+				{ -- 等级1
+				{type = 168, value = 0.21}, -- 属性1
+				{type = 18, value = 0.21}, -- 属性1
+				{type = 28, value = 0.21}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.22}, -- 属性1
+				{type = 18, value = 0.22}, -- 属性1
+				{type = 28, value = 0.22}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.23}, -- 属性1
+				{type = 18, value = 0.23}, -- 属性1
+				{type = 28, value = 0.23}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.24}, -- 属性1
+				{type = 18, value = 0.24}, -- 属性1
+				{type = 28, value = 0.24}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.25}, -- 属性1
+				{type = 18, value = 0.25}, -- 属性1
+				{type = 28, value = 0.25}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.26}, -- 属性1
+				{type = 18, value = 0.26}, -- 属性1
+				{type = 28, value = 0.26}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.27}, -- 属性1
+				{type = 18, value = 0.27}, -- 属性1
+				{type = 28, value = 0.27}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.28}, -- 属性1
+				{type = 18, value = 0.28}, -- 属性1
+				{type = 28, value = 0.28}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.29}, -- 属性1
+				{type = 18, value = 0.29}, -- 属性1
+				{type = 28, value = 0.29}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.3}, -- 属性1
+				{type = 18, value = 0.3}, -- 属性1
+				{type = 28, value = 0.3}, -- 属性1
+			},		
+			},
+			{ -- 4转
+				{ -- 等级1
+				{type = 168, value = 0.31}, -- 属性1
+				{type = 18, value = 0.31}, -- 属性1
+				{type = 28, value = 0.31}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.32}, -- 属性1
+				{type = 18, value = 0.32}, -- 属性1
+				{type = 28, value = 0.32}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.33}, -- 属性1
+				{type = 18, value = 0.33}, -- 属性1
+				{type = 28, value = 0.33}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.34}, -- 属性1
+				{type = 18, value = 0.34}, -- 属性1
+				{type = 28, value = 0.34}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.35}, -- 属性1
+				{type = 18, value = 0.35}, -- 属性1
+				{type = 28, value = 0.35}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.36}, -- 属性1
+				{type = 18, value = 0.36}, -- 属性1
+				{type = 28, value = 0.36}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.37}, -- 属性1
+				{type = 18, value = 0.37}, -- 属性1
+				{type = 28, value = 0.37}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.38}, -- 属性1
+				{type = 18, value = 0.38}, -- 属性1
+				{type = 28, value = 0.38}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.39}, -- 属性1
+				{type = 18, value = 0.39}, -- 属性1
+				{type = 28, value = 0.39}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.4}, -- 属性1
+				{type = 18, value = 0.4}, -- 属性1
+				{type = 28, value = 0.4}, -- 属性1
+			},		
+			},
+			{ -- 5转
+				{ -- 等级1
+				{type = 168, value = 0.412}, -- 属性1
+				{type = 18, value = 0.412}, -- 属性1
+				{type = 28, value = 0.412}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.424}, -- 属性1
+				{type = 18, value = 0.424}, -- 属性1
+				{type = 28, value = 0.424}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.436}, -- 属性1
+				{type = 18, value = 0.436}, -- 属性1
+				{type = 28, value = 0.436}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.448}, -- 属性1
+				{type = 18, value = 0.448}, -- 属性1
+				{type = 28, value = 0.448}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.46}, -- 属性1
+				{type = 18, value = 0.46}, -- 属性1
+				{type = 28, value = 0.46}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.472}, -- 属性1
+				{type = 18, value = 0.472}, -- 属性1
+				{type = 28, value = 0.472}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.484}, -- 属性1
+				{type = 18, value = 0.484}, -- 属性1
+				{type = 28, value = 0.484}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.496}, -- 属性1
+				{type = 18, value = 0.496}, -- 属性1
+				{type = 28, value = 0.496}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.508}, -- 属性1
+				{type = 18, value = 0.508}, -- 属性1
+				{type = 28, value = 0.508}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.52}, -- 属性1
+				{type = 18, value = 0.52}, -- 属性1
+				{type = 28, value = 0.52}, -- 属性1
+			},			
+			},
+			{ -- 6转
+				{ -- 等级1
+				{type = 168, value = 0.532}, -- 属性1
+				{type = 18, value = 0.532}, -- 属性1
+				{type = 28, value = 0.532}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.544}, -- 属性1
+				{type = 18, value = 0.544}, -- 属性1
+				{type = 28, value = 0.544}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.556}, -- 属性1
+				{type = 18, value = 0.556}, -- 属性1
+				{type = 28, value = 0.556}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.568}, -- 属性1
+				{type = 18, value = 0.568}, -- 属性1
+				{type = 28, value = 0.568}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.58}, -- 属性1
+				{type = 18, value = 0.58}, -- 属性1
+				{type = 28, value = 0.58}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.592}, -- 属性1
+				{type = 18, value = 0.592}, -- 属性1
+				{type = 28, value = 0.592}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.604}, -- 属性1
+				{type = 18, value = 0.604}, -- 属性1
+				{type = 28, value = 0.604}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.616}, -- 属性1
+				{type = 18, value = 0.616}, -- 属性1
+				{type = 28, value = 0.616}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.628}, -- 属性1
+				{type = 18, value = 0.628}, -- 属性1
+				{type = 28, value = 0.628}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.64}, -- 属性1
+				{type = 18, value = 0.64}, -- 属性1
+				{type = 28, value = 0.64}, -- 属性1
+			},		
+			},
+			{ -- 7转
+				{ -- 等级1
+				{type = 168, value = 0.652}, -- 属性1
+				{type = 18, value = 0.652}, -- 属性1
+				{type = 28, value = 0.652}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.664}, -- 属性1
+				{type = 18, value = 0.664}, -- 属性1
+				{type = 28, value = 0.664}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.676}, -- 属性1
+				{type = 18, value = 0.676}, -- 属性1
+				{type = 28, value = 0.676}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.688}, -- 属性1
+				{type = 18, value = 0.688}, -- 属性1
+				{type = 28, value = 0.688}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.7}, -- 属性1
+				{type = 18, value = 0.7}, -- 属性1
+				{type = 28, value = 0.7}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.712}, -- 属性1
+				{type = 18, value = 0.712}, -- 属性1
+				{type = 28, value = 0.712}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.724}, -- 属性1
+				{type = 18, value = 0.724}, -- 属性1
+				{type = 28, value = 0.724}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.736}, -- 属性1
+				{type = 18, value = 0.736}, -- 属性1
+				{type = 28, value = 0.736}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.748}, -- 属性1
+				{type = 18, value = 0.748}, -- 属性1
+				{type = 28, value = 0.748}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.76}, -- 属性1
+				{type = 18, value = 0.76}, -- 属性1
+				{type = 28, value = 0.76}, -- 属性1
+			},				
+			},
+			{ -- 8转
+				{ -- 等级1
+				{type = 168, value = 0.772}, -- 属性1
+				{type = 18, value = 0.772}, -- 属性1
+				{type = 28, value = 0.772}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.784}, -- 属性1
+				{type = 18, value = 0.784}, -- 属性1
+				{type = 28, value = 0.784}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.796}, -- 属性1
+				{type = 18, value = 0.796}, -- 属性1
+				{type = 28, value = 0.796}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.808}, -- 属性1
+				{type = 18, value = 0.808}, -- 属性1
+				{type = 28, value = 0.808}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.82}, -- 属性1
+				{type = 18, value = 0.82}, -- 属性1
+				{type = 28, value = 0.82}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.832}, -- 属性1
+				{type = 18, value = 0.832}, -- 属性1
+				{type = 28, value = 0.832}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.844}, -- 属性1
+				{type = 18, value = 0.844}, -- 属性1
+				{type = 28, value = 0.844}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.856}, -- 属性1
+				{type = 18, value = 0.856}, -- 属性1
+				{type = 28, value = 0.856}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.868}, -- 属性1
+				{type = 18, value = 0.868}, -- 属性1
+				{type = 28, value = 0.868}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 0.880}, -- 属性1
+				{type = 18, value = 0.880}, -- 属性1
+				{type = 28, value = 0.880}, -- 属性1
+			},
+					
+			},
+			{ -- 9转
+				{ -- 等级1
+				{type = 168, value = 0.892}, -- 属性1
+				{type = 18, value = 0.892}, -- 属性1
+				{type = 28, value = 0.892}, -- 属性1
+			},
+			{ -- 等级2
+			    {type = 168, value = 0.904}, -- 属性1
+				{type = 18, value = 0.904}, -- 属性1
+				{type = 28, value = 0.904}, -- 属性1
+			},
+			{ -- 等级3
+				{type = 168, value = 0.916}, -- 属性1
+				{type = 18, value = 0.916}, -- 属性1
+				{type = 28, value = 0.916}, -- 属性1
+			},
+			{ -- 等级4
+				{type = 168, value = 0.928}, -- 属性1
+				{type = 18, value = 0.928}, -- 属性1
+				{type = 28, value = 0.928}, -- 属性1
+			},
+			{ -- 等级5
+				{type = 168, value = 0.94}, -- 属性1
+				{type = 18, value = 0.94}, -- 属性1
+				{type = 28, value = 0.94}, -- 属性1
+			},
+			{ -- 等级6
+				{type = 168, value = 0.952}, -- 属性1
+				{type = 18, value = 0.952}, -- 属性1
+				{type = 28, value = 0.952}, -- 属性1
+			},
+			{ -- 等级7
+				{type = 168, value = 0.964}, -- 属性1
+				{type = 18, value = 0.964}, -- 属性1
+				{type = 28, value = 0.964}, -- 属性1
+			},
+			{ -- 等级8
+				{type = 168, value = 0.976}, -- 属性1
+				{type = 18, value = 0.976}, -- 属性1
+				{type = 28, value = 0.976}, -- 属性1
+			},
+			{ -- 等级9
+				{type = 168, value = 0.988}, -- 属性1
+				{type = 18, value = 0.988}, -- 属性1
+				{type = 28, value = 0.988}, -- 属性1
+			},
+			{ -- 等级10
+				{type = 168, value = 1}, -- 属性1
+				{type = 18, value = 1}, -- 属性1
+				{type = 28, value = 1}, -- 属性1
+			},				
+			},
+		},
+	},
+
+	skill = {
+		{ -- 神器1技能
+			{
+				skillid = 112, -- 技能ID
+				levels = {2,2,2,2,2,2,6,7,8,9}, -- 几级需要几转
+			},
+			{
+				skillid = 116, -- 技能ID
+				levels = {5,5,5,5,5,5,6,7,8,9}, -- 几级需要几转
+			},
+		},
+		{ -- 神器2技能
+			{
+				skillid = 113, -- 技能ID
+				levels = {2,2,2,2,2,2,6,7,8,9}, -- 几级需要几转
+			},
+			{
+				skillid = 117, -- 技能ID
+				levels = {5,5,5,5,5,5,6,7,8,9},-- 几级需要几转
+			},
+		},
+		{ -- 神器3技能
+			{
+				skillid = 110, -- 技能ID
+				levels = {2,2,2,2,2,2,6,7,8,9}, -- 几级需要几转
+			},
+			{
+				skillid = 114, -- 技能ID
+				levels = {5,5,5,5,5,5,6,7,8,9}, -- 几级需要几转
+			},
+		},
+		{ -- 神器4技能
+			{
+				skillid = 111, -- 技能ID
+				levels = {2,2,2,2,2,2,6,7,8,9}, -- 几级需要几转
+			},
+			{
+				skillid = 115, -- 技能ID
+				levels = {5,5,5,5,5,5,6,7,8,9}, -- 几级需要几转
+			},
+		},
+	},
+
+	skillExp = { -- 技能经验，第一个表示1升2所需经验，以此类推
+		204,678,1733,2973,5211,7653,11637,15378,19651,
+	},
+	
+	openMemory = 4, -- 几个技能能开启回忆
+
+	-- 神器技能名称，顺序为女娲，昆仑，东皇，翻天
+	skillNames = {Lang.shenqi.sq002Name, Lang.shenqi.sq003Name, Lang.shenqi.sq004Name, Lang.shenqi.sq005Name},
+
+	--神器名字
+	artifactNames = {
+		"炼妖壶", "女娲石", "惊邪", "芭蕉扇"
+	},
+	lingyeItem = 
+	{
+		{43432,1000},
+		{43433,10000},
+		{43434,100000},
+		{43435,1000000},
+	},
+}
