@@ -1,0 +1,347 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"j",
+				"join"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"for",
+				"forp\tfor k,v in pairs()"
+			],
+			[
+				"s",
+				"search"
+			],
+			[
+				"tab",
+				"tab"
+			],
+			[
+				"t",
+				"tab"
+			],
+			[
+				"fo",
+				"fori\tfor i,v in ipairs()"
+			],
+			[
+				"fun",
+				"function\tfunction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "practices/sendRedPaper.lua",
+			"settings":
+			{
+				"buffer_size": 713,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "sendRedPaper.lua"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_4.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_5.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_9.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_10.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_11.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_12.lua",
+		"/D/zhh/learns/Lua_prj/strDemo.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_18_20_lib.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/test.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/packageTest1.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/TimeUtil.lua",
+		"/D/zhh/learns/Lua_prj/practices/packagePractice_15_0.lua",
+		"/D/zhh/learns/Lua_prj/practices/weakTable17_1.lua",
+		"/D/zhh/learns/Lua_prj/practices/strPractice.lua",
+		"/D/zhh/learns/Lua_prj/practices/debugLibPractice.lua",
+		"/D/zhh/learns/Lua_prj/practices/dateTimePractice_22_1.lua",
+		"/D/zhh/learns/Lua_prj/practices/oop.lua",
+		"/D/zhh/learns/Lua_prj/practices/Car_15_1.lua",
+		"/D/zhh/learns/Lua_prj/practices/metaTablePractice.lua",
+		"/D/zhh/learns/Lua_prj/practices/packagePractice.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/ModuleTest.lua",
+		"/D/zhh/learns/Lua_prj/practice_01.lua",
+		"/C/Users/37/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_22_OSLib.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_23_debug_lib.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Account.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_17_weakTable.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_15.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_21.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/packageTest.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/CommonFunc.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_13.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_14.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/MyTest.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_16.lua",
+		"/D/zhh/learns/Lua_prj/Chapter/Chapter_1.lua",
+		"/D/zhh/learns/Lua_prj/loadConfigDemo/config.lua",
+		"/D/zhh/learns/Lua_prj/loadConfigDemo/build_AS3.lua",
+		"/D/zhh/learns/Lua_prj/loadConfigDemo/clearAS3.bat",
+		"/D/learnNote/Lua_prj/loadConfigDemo/config.lua",
+		"/D/learnNote/Lua_prj/strDemo.lua",
+		"/D/learnNote/Lua_prj/Chapter/Chapter_1.lua",
+		"/D/learnNote/Lua_prj/Chapter/Chapter_4.lua",
+		"/D/learnNote/Lua_prj/loadConfigDemo/Mount.txt",
+		"/D/learnNote/Lua_prj/loadConfigDemo/loadCfgDemo.lua",
+		"/D/learnNote/Lua_prj/Chapter/Chapter_10.lua",
+		"/D/learnNote/Lua_prj/Chapter/Chapter_12.lua",
+		"/D/learnNote/Lua_prj/Chapter/Chapter_5.lua",
+		"/D/learnNote/Lua_prj/Chapter/Chapter_9.lua",
+		"/C/Users/kongfu/AppData/Roaming/Sublime Text 3/Packages/User/lua.sublime-build",
+		"/C/Users/kongfu/Desktop/test.py",
+		"/D/learnNote/Lua_prj/Chapter/Mount.txt",
+		"/C/Users/kongfu/AppData/Roaming/Sublime Text 3/Packages/User/luaCMD.sublime-build",
+		"/C/Users/kongfu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/learnNote/Lua_prj/lua_learn.sublime-project"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"()))",
+			"S",
+			")\n",
+			"))",
+			"sidebar_tree",
+			"Mount",
+			"{},\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "practices/sendRedPaper.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"auto_name": "sendRedPaper.lua",
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 146.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Lua/Lua.sublime-build",
+	"project": "lua_learn.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

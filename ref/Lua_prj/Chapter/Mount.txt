@@ -1,0 +1,11 @@
+Mount={
+	level = 49,
+
+	baseAttrs={
+		{
+			{type=1,value=2},
+			{type=2,value=4},
+			
+		}
+	},
+}

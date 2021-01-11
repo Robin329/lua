@@ -1,0 +1,2620 @@
+﻿zh_CNDefines = 
+{
+	LANGUAGE = "zh-CN",
+}
+
+zh_TWDefines = 
+{
+	LANGUAGE = "zh-TW",
+}
+
+files = 
+{
+	{
+		source = "..\\data\\config\\tianming\\tianmingconf.txt", 
+		dest = "..\\..\\client\\data\\tianming.cfg", 
+		table = "TianmingConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+	},
+	  {
+		source = "..\\data\\Config\\quest\\StdQuests.txt", 
+		dest = "..\\..\\client\\data\\std_quest.cfg", 
+		table = "StdQuest",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.CompMsTip",
+			"*.PromMsTalks",
+			"*.CompMsTalks",
+			"*.PromCheck",
+			"*.PromCheckArg",
+			"*.PromCallBack",
+			"*.PromCallBackArg",
+			"*.CompCheck",
+			"*.CompCallBack",
+			"*.CompCallbackArg",
+			"*.GiveUpCallBack",
+			"*.GiveUpCallBackArg",
+			"*.PassMsTip",
+			"*.automount",
+			"*.AnswerTip",
+			"*.expEffect",
+			"*.hideAccept",
+			"*.PromMsSelfTalks",
+			"*.CompMsSelfTalks",
+			"*.PassMsSelfTip",
+			"*.triggerScriptOnAccept",
+			"*.triggerScriptOnCanFinish",
+			"*.triggerScriptOnFinish",
+			"*.target.*.param",
+		}
+	},
+	{
+		source = "..\\data\\config\\fuben\\jinbiconf.txt", 
+		dest = "..\\..\\client\\data\\jinbiconf.cfg", 
+		table = "JinbiFubenConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+           "MobNpc",
+           "mobPos",
+           "mailTips",
+           "levelCoe",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\fuben\\zhanchang\\zhanchang.txt", 
+		dest = "..\\..\\client\\data\\zhanchang.cfg", 
+		table = "WarFuebnConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+           "monsters",
+           "bekillTips",
+           "lianzhangtips",
+           "featsCriRate",
+           "featsMailTips",
+           "featsRankMailTips",
+           "victoryAwardMailTips",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\fuben\\zhanchang\\zhanchangawards.txt", 
+		dest = "..\\..\\client\\data\\zhanchangawards.cfg", 
+		table = "WarFubenAwardConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+           "feats_cri",
+		},
+	},
+	
+	{
+		source = "..\\data\\config\\chat\\chatconf.txt", 
+		dest = "..\\..\\client\\data\\chatconf.cfg", 
+		table = "ChatConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+            "allChannelChatCD",    
+			"worldChannelChatCD",  
+			"guideChannelChatCD",  
+			"localMapChannelChatCD",
+			"campChannelChatCD",	
+			"noTeamChannelChatCD",
+		},
+	},
+	
+	{
+		source = "..\\data\\config\\fuben\\jingyanconf.txt", 
+		dest = "..\\..\\client\\data\\expFubenConf.cfg", 
+		table = "JingyanFubenConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+           "Scene",
+           "nx",
+           "ny",
+           "fullAnger",
+           "MobNpc",
+           "StepCount",
+           "tipStep",
+           "awardFbIds",
+           "posY2",
+           "posY1",
+           "posX1",
+           "posX2",
+           "delaytime",
+           "tipStep",
+           "JingyanMonster",
+           "monsterexp",
+		},
+	},
+	{
+		source = "..\\data\\config\\skill\\sysskilldefine.lua", 
+		dest = "..\\..\\client\\data\\sysskilldefine.cfg", 
+		table = "SSDefine",
+		define = zh_CNDefines,
+		filters = 
+		{
+           "ReplaceRate",
+		},
+	},
+
+	{
+
+		source = "..\\data\\config\\yingji\\yingjiconf.lua", 
+		dest = "..\\..\\client\\data\\yingjiconf.cfg", 
+		table = "YingjiConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"openCondition",
+			"skillScore",
+			"yingjiSkills",
+			"learSkillRate",
+			"dataStage.*.blessRate",
+			"dataStage.*.giveRandomBless",
+			"dataStage.*.blessStageTime",			
+		},
+		
+	},
+
+	{
+		source = "..\\data\\config\\smelt\\smeltreturnconf.lua", 
+		dest = "..\\..\\client\\data\\smeltreturnconf.cfg", 
+		table = "SmeltReturnConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"SkillFight",
+		},
+			
+	},
+	{
+		source = "..\\data\\config\\activity\\allplatformrecharge\\aprconf.lua", 
+		dest = "..\\..\\client\\data\\aprconf.cfg", 
+		table = "APRConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+			
+	},
+	
+	{
+		source = "..\\data\\config\\activity\\cumulatechargeconf.lua", 
+		dest = "..\\..\\client\\data\\cumulatechargeconf.cfg", 
+		table = "CumalateChargeConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+			
+	},
+
+	{
+		source = "..\\data\\config\\fuben\\zhongshenzhizhan\\zszzawardunionconf.lua", 
+		dest = "..\\..\\client\\data\\zszzawardunionconf.cfg", 
+		table = "zszzAwards",
+		define = zh_CNDefines,
+		filters = {
+			"*.min",
+			"*.max",
+		},		
+	},   
+	
+	{
+		source = "..\\data\\config\\fuben\\zhongshenzhizhan\\zszzawardconf.lua", 
+		dest = "..\\..\\client\\data\\zszzawardconf.cfg", 
+		table = "zszzAwards",
+		define = zh_CNDefines,
+		filters = {
+			"*.min",
+			"*.max",
+		},		
+	},
+    {
+		source = "..\\data\\config\\bianshensystem\\bianshenconf.lua", 
+		dest = "..\\..\\client\\data\\transform.cfg", 
+		table = "BianShenConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+	},
+
+
+	{
+		source = "..\\data\\config\\activity\\shengshiduihuanconfig.lua", 
+		dest = "..\\..\\client\\data\\shengshiduihuanconfig.cfg", 
+		table = "ShengShiDuiHuanConfigAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+	},
+
+	{
+		source = "..\\data\\config\\activity\\qqbrowserconfig.lua",
+		dest = "..\\..\\client\\data\\qqbrowserconfig.cfg",
+		table = "QQBrowserConf_All",
+		define = zh_CNDefines,
+		filters = 
+		{
+		
+		},
+	},
+
+	{
+		source = "..\\data\\config\\activity\\chaojixianzunconf.lua",
+		dest = "..\\..\\client\\data\\chaojixianzunconf.cfg",
+		table = "ChaoJiXianZunConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"libaoid",
+		},
+	},
+	{
+		source = "..\\data\\config\\item\\itemenhance\\sysequipenhanceconf.lua", 
+		dest = "..\\..\\client\\data\\sysequipenhanceconf.cfg", 
+		table = "SysEquipEnhanceConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+	},
+	
+
+	{
+		source = "..\\data\\config\\activity\\chongzhifanyuanbaoconf.lua", 
+		dest = "..\\..\\client\\data\\chongzhiconf.cfg", 
+		table = "ChongZhiFanYuanBaoAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			
+		},
+	},
+
+	{
+		source = "..\\data\\config\\activity\\tenyearsspecialdealconfig.lua", 
+		dest = "..\\..\\client\\data\\tenyearsspecialdealconfig.cfg", 
+		table = "TenYearsSpecialDealConfigAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+				
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\qzone10zhounianfanhuanconf.lua", 
+		dest = "..\\..\\client\\data\\qzone10zhounianfanhuanconf.cfg", 
+		table = "ConsumegiftConf_All",
+		define = zh_CNDefines,
+		filters = 
+		{
+				
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\actctrlconf.lua", 
+		dest = "..\\..\\client\\data\\actctrlconf.cfg", 
+		table = "QzoneTenYearConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			
+		},
+	},
+	
+	{
+		source = "..\\data\\config\\fuben\\fengmozhanchang\\fmzzawardconf.lua", 
+		dest = "..\\..\\client\\data\\fmzzawardconf.cfg", 
+		table = "fmzcAwards",
+		define = zh_CNDefines,
+		filters = 
+		{
+			
+			"*.caption",
+			"*.min",
+			"*.max",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\lpyigui\\lpclothesconf.lua", 
+		dest = "..\\..\\client\\data\\lpclothesconf.cfg", 
+		table = "LpClothesConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			
+			"ColorName",
+			"*.*.srate",
+			"normalMarryItem",
+			"normalMarryId",
+		},
+			
+	},
+	
+	{
+		source = "..\\data\\config\\fuben\\fubenweituoconf.lua", 
+		dest = "..\\..\\client\\data\\fubenweituo.cfg", 
+		table = "FbWeituoConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+			
+	},
+
+	{
+		source = "..\\data\\config\\activity\\allcomsumerconf.lua", 
+		dest = "..\\..\\client\\data\\allcomsumerconf.cfg", 
+		table = "AllComsumeConf_All",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.hasRepeateAward",
+			"*.reward",
+			"*.repeatAward",
+			"*.repeateValue",
+			"*.items"
+		},
+			
+	},
+	{
+		source = "..\\data\\config\\activity\\allrechargeconf.lua", 
+		dest = "..\\..\\client\\data\\allrechargeconf.cfg", 
+		table = "AllRechargeConf_All",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.hasRepeateAward",
+			"*.reward",
+			"*.repeatAward",
+			"*.repeateValue",
+			"*.items"
+		},
+			
+	},
+
+	{
+		source = "..\\data\\config\\activity\\comsumegiftconfig.lua", 
+		dest = "..\\..\\client\\data\\newyearRechargeGiftConfig.cfg", 
+		table = "ComsumegiftConf_All",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.serverPf",
+			"*.oldServerId",
+			"*.newServerId",
+			"*.Gifts",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\qqguanjiaconfig.lua", 
+		dest = "..\\..\\client\\data\\qqguanjiaconfig.cfg", 
+		table = "qqGuanJiaConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.openLevel",
+			"*.startTime",
+			"*.endTime",
+		},			
+	},
+	{
+		source = "..\\data\\config\\activity\\bluediamonddreamconf.lua", 
+		dest = "..\\..\\client\\data\\bluediamonddreamconf.cfg", 
+		table = "BlueDiamondDreamAwardAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+				
+	},
+
+	{
+		source = "..\\data\\config\\activity\\zaixianyouliconf.lua", 
+		dest = "..\\..\\client\\data\\zaixianyouliconf.cfg", 
+		table = "AonlineRewardConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.TimeLevel",
+			"*.RewardsOld",
+			"*.Rewards",
+		},			
+	},
+
+	{
+		source = "..\\data\\config\\hetuluoshu\\hetuluoshuconf.lua", 
+		dest = "..\\..\\client\\data\\collectcardConf.cfg", 
+		table = "HetuluoshuConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+	      "*.attrsServer",
+	      "*.countEx",
+	      "*.bind",
+	      "exchangeCount",
+		},
+	},
+		
+	{
+		source = "..\\data\\config\\guild\\duobaoconf.lua",
+		dest = "..\\..\\client\\data\\duobaoconf.cfg",
+		table = "DuobaoConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+	},
+
+	{
+		source = "..\\data\\config\\guild\\guildbuffconfig.lua",
+		dest = "..\\..\\client\\data\\guildbuffconfig.cfg",
+		table = "GuildBuffConfig",
+		define = zh_CNDefines,
+		filters = 
+		{			
+		},
+	},
+
+
+	{
+	    source = "..\\data\\config\\misc\\jiehunfbconf.lua", 
+		dest = "..\\..\\client\\data\\jiehunfbconf.cfg", 
+		table = "JiehunFbConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+           "sceneid",
+           "monsterx",
+           "monstery",
+           "enterx",
+           "entery",
+           "gametime",
+           "roundinterval",
+           "roundTime",
+           "passEffect",
+           "failEffect",
+           "finalEffect",
+           "roundexp",
+           "*.monid",
+           "*.count",
+		},
+	},
+
+	{
+
+		source = "..\\data\\config\\activity\\tiaozhanfubenconf.lua", 
+		dest = "..\\..\\client\\data\\tiaozhanfubenconf.cfg", 
+		table = "TiaoZhanFuBenConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+		},
+	},
+
+	{
+
+		source = "..\\data\\config\\activity\\guajiyouliconf.lua", 
+		dest = "..\\..\\client\\data\\guajiyouliconf.cfg", 
+		table = "GuaJiYouLiConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.monsterid",
+			"*.award",
+		},
+		
+	},
+	
+	{
+
+		source = "..\\data\\config\\activity\\xianshiqianggouconfig.lua", 
+		dest = "..\\..\\client\\data\\xianshiqianggouconfig.cfg", 
+		table = "xianshiqianggouConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.startHour",
+			"*.preBroadcastSec",
+			"*.price",
+			"*.broadcastmsg",
+			"*.jipinbroadcastmsg",
+			"*.onRoundTime",
+			"*.qiangouAwardCount",
+			"*.qianggouAward",
+			"*.canyuAward",
+			"*.awardGroup",
+			"*.startHour",
+			"*.startMin",
+			"*.endHour",
+			"*.endMin",
+			"*.jipinmailmsg",
+			"*.canyumailmsg",
+			"*.jipinAward",
+			"*.start",
+			"*.qianggoumailmsg",
+		},
+		
+	},
+	{
+
+		source = "..\\data\\config\\activity\\gridgameconf.lua", 
+		dest = "..\\..\\client\\data\\gridgameconf.cfg", 
+		table = "GridGame_ex_all",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.confType",
+			"*.rpGift",
+			"*.rpGrid",
+			"*.reward",
+			"*.gridRate",
+			"*.xbToYb",
+			"*.ylToYb",
+			"*.bcItem",
+			"*.from",
+			"*.to",
+			
+		},
+		
+	},
+	{
+
+		source = "..\\data\\config\\item\\scriptitemconfig\\buffitemdatas.txt", 
+		dest = "..\\..\\client\\data\\buffitemdatasConfig.cfg", 
+		table = "AddExpBuffItems",
+		define = zh_CNDefines,
+		filters = 
+		{
+
+		},
+		
+	},
+	{		source = "..\\data\\config\\item\\scriptitemconfig\\everydayitemconfig.txt", 
+		dest = "..\\..\\client\\data\\everydayitemconfig.cfg", 
+		table = "EveryDayItemConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.award",
+			"*.needMinBagGrid",
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\misc\\roulettefubenconf.txt", 
+		dest = "..\\..\\client\\data\\fateconf.cfg", 
+		table = "RouletteFuBenConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"fbid",
+			"needLevel",
+            "gametime",
+            "sceneid",
+            "gMonXY",
+            "gMonId",
+            "gSurvivalT",
+            "gatherCount",
+            "maxRoundCount",
+            "starRoundDelay",
+            "autoLotteryDelay",
+            "lotteryAnimation",
+            "createGMonDelay",
+            "monBuffs",
+            "*.randoms",
+            "*.eventData",
+		},
+		
+	},
+    {
+		source = "..\\data\\config\\xiandun\\xiandunconf.lua", 
+		dest = "..\\..\\client\\data\\xiandunconf.cfg", 
+		table = "XiandunConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"openCondition",
+			"skillScore",
+			"xiandunSkills",
+			"learSkillRate",
+			"dataStage.*.blessRate",
+			"dataStage.*.giveRandomBless",
+			"dataStage.*.blessStageTime",
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\activity\\s360youxidatingconfig.lua", 
+		dest = "..\\..\\client\\data\\360gamehallconf.cfg", 
+		table = "s360youxidatingconfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"pf",
+			"clientpf",
+			"level",
+		},
+	},
+
+
+	{
+		source = "..\\data\\config\\activity\\vipsellconf.lua", 
+		dest = "..\\..\\client\\data\\vipsellconf.cfg", 
+		table = "VipSellConfigAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\activity\\huoyuehaoliconf.lua", 
+		dest = "..\\..\\client\\data\\huoyuehaoliconf.cfg", 
+		table = "HuoYueHaoLiConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.pointMax",
+			"*.minlevel",
+			"*.pointStage",
+			"*.award",
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\activity\\dailycomsumeconf.lua", 
+		dest = "..\\..\\client\\data\\dailycomsumeconf.cfg", 
+		table = "DailyComsumeAwardAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.minLevel",
+			"*.awardList",
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\activity\\cumulateloginconf.lua", 
+		dest = "..\\..\\client\\data\\cumulateloginconf.cfg", 
+		table = "LoginAwardAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.minLevel",
+			"*.awardList",
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\activity\\activitycenterconf.lua", 
+		dest = "..\\..\\client\\data\\activitycenterconf.cfg", 
+		table = "ActivityCenterConf",
+		define = zh_CNDefines,
+		filters = nil,
+		
+	},
+		
+	{
+		source = "..\\data\\config\\activity\\quanminglegouexconf.lua", 
+		dest = "..\\..\\client\\data\\quanminglegouexconf.cfg", 
+		table = "QuanMingLegou",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.confType",
+			"*.gifts",
+			"*.scoreMax",
+			"*.awardItemId",
+		},
+		
+	},
+
+	{
+		source = "..\\data\\config\\activity\\zadanconfig.lua", 
+		dest = "..\\..\\client\\data\\zadanconfig.cfg", 
+		table = "ZaDanConfigAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.serverDenyItem",
+			"*.bestRate",
+			"*.denyItem",
+			"*.eggCnt",
+			"*.eggPrice",
+			"*.eggItem",
+			"*.protectItem",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\smshopconfig.lua", 
+		dest = "..\\..\\client\\data\\smshopconf.cfg", 
+		table = "LimitShopConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.times",
+			"*.refreshTime",
+			"*.refreshCount",
+			"*.shopType",
+			"*.xb",
+			"*.yb",
+		},
+	},
+	{
+		source = "..\\data\\config\\task\\towerfightconf.lua", 
+		dest = "..\\..\\client\\data\\zhenxianzhiluconf.cfg", 
+		table = "TowerFightConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"freeReliveTimes",
+			"maxRanker",
+			"safeLayer",
+			"dieDecPoint",
+			"killActorPoint",
+			"killMonsterPoint",
+			"layerPoint",
+			"buffMaxOverlay",
+			"buff",
+			"model",
+			
+			"npcScript",
+			"npcIcon",
+			"boxCnt",
+			"countDown",
+			"topLayerReward",
+			"layers.*.sceneId",
+			"layers.*.target",
+			"layers.*.point",
+			"layers.*.modelPos",
+			"layers.*.monIds",
+			"layers.*.dieDecPoint",
+			"layers.*.killActorPoint",
+			"layers.*.killMonsterPoint",
+
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\zhanling\\zhanlingconf.lua", 
+		dest = "..\\..\\client\\data\\zhanlingconf.cfg", 
+		table = "ZhanlingConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"openCondition",
+			"skillScore",
+			"learSkillRate",
+			"dataStage.*.blessRate",
+			"dataStage.*.giveRandomBless",
+			"dataStage.*.blessStageTime",
+			"skillOnAttack",
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\fazhen\\fazhenconf.lua", 
+		dest = "..\\..\\client\\data\\fazhenconf.cfg", 
+		table = "FazhenConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"openCondition",
+			"fazhenSkills",
+			"skillScore",
+			"learSkillRate",
+			"dataStage.*.blessRate",
+			"dataStage.*.giveRandomBless",
+			"dataStage.*.blessStageTime",
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\somerewards\\lponlinerewardconf.txt", 
+		dest = "..\\..\\client\\data\\onlineAwardConfig.cfg", 
+		table = "onLineClient",
+		define = zh_CNDefines,
+		filters = nil,
+		
+	},
+	{
+		source = "..\\data\\config\\dailyattendance\\dailyattendanceconf.txt", 
+		dest = "..\\..\\client\\data\\dailyattendanceconf.cfg", 
+		table = "DailyAttendanceConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"needactivity",
+			"needyuanbao",
+			"vipfreecount",
+			"gift_pet_reward",
+			"*.startDay",
+			"*.endDay",
+		},
+	},
+	
+	{
+		source = "..\\data\\config\\fuben\\killdragonconf.lua", 
+		dest = "..\\..\\client\\data\\tuLongShengdian.cfg", 
+		table = "KillDragonConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"monDrop",
+			"*.monIds",
+			"*.enterpos",
+			"*.bossIds",
+			"*.bossCnt",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\zhuangbeicuilianconf.lua", 
+		dest = "..\\..\\client\\data\\equipCuiLian.cfg", 
+		table = "EquipCuilianConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"openEndServerId",
+			"continueDay",
+		},
+	},
+	
+	{
+		source = "..\\data\\config\\activity\\shouchong\\libaoconfig.lua", 
+		dest = "..\\..\\client\\data\\firstRechargeConf.cfg", 
+		table = "ShouChongLiBao",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"questId",
+			"xunhunIndex",
+			"xunhunCount",
+			"showLevel",
+			"hefuLibao.*.needbagcount",
+			"hefuLibao2.*.needbagcount",
+			"*.xunhunCount",
+		},
+	},
+
+
+	{
+		source = "..\\data\\config\\item\\scriptitemconfig\\staticaward.txt", 
+		dest = "..\\..\\client\\data\\staticaward.cfg", 
+		table = "StaticAwardConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.condition",
+			"*.condition2",
+			"*.condition3",
+			"*.grouptype",
+			"*.award.*.noworldrate",
+			"*.award.*.group",
+			"*.award.*.avgrate",
+			"*.award.*.rate",
+			"*.award.*.broadcasttext",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\activity\\kaifu\\mallbuy\\mallbuyconf.lua", 
+		dest = "..\\..\\client\\data\\mallbuyconf.cfg", 
+		table = "MallLimitBuyConf",
+		define = zh_CNDefines,
+		matchers = nil,	
+	},
+
+	{
+		source = "..\\data\\config\\quest\\chapter.lua",
+		dest = "..\\..\\client\\data\\chapterConf.cfg", 
+		table = "ChaptersClient",
+		define = zh_CNDefines,
+		
+	},
+
+	{
+		source = "..\\data\\config\\mars\\marsconfclient.txt",
+		dest = "..\\..\\client\\data\\marsclientconf.cfg", 
+		table = "MarsClientConf",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	{
+		source = "..\\data\\config\\task\\zhiyuanzhaohuiconf.lua",
+		dest = "..\\..\\client\\data\\zhiyuanzhaohuiconf.cfg", 
+		table = "ResourceBackConf",
+		define = zh_CNDefines,
+		filters = {
+              "openServerDay",
+              "maxFindDay",
+              "resourceDef",
+              "fubenDef",
+              "taskDef",
+              "activityDef",
+              "coinType",
+              "dntg_order",
+              "bathTime",
+              "dayType",
+              "*.dayNum",
+              "*.fbIds",
+              "*.resourceAwards",
+              "*.startCaleResourceOpenSeverDay",
+		},
+	},
+	{
+		source = "..\\data\\config\\mars\\marsconf.lua",
+		dest = "..\\..\\client\\data\\marsconf.cfg", 
+		table = "MarsConf",
+		define = zh_CNDefines,
+		filters = {
+			"supertime",
+			"reenterLimit",
+			"sceneid",
+			"rankCnt",
+			"Stage",
+			"sendRankCnt",
+			"Rewards",
+			"*.allKillReward",
+			"*.contiKillReward",
+		},
+	},
+	{
+		
+		source = "..\\data\\config\\peerlessweapon\\peerlessweapon.txt", 
+		dest = "..\\..\\client\\data\\shenBing.cfg", 
+		table = "peerlessWeapon",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"itemSkillId",
+			"skillAddXuzhan",
+			"skillNumXuzhanSpeed",
+			"*.qid",
+			"*.giveRandomBless",
+			"*.blessStageTime",
+			"skillScore",
+			"learSkillRate",
+			"*.name",
+			"*.blessStarBless",
+			"starToStageBuchang",
+			"minXuzhan",
+		},
+	
+
+	},
+
+	{
+		
+		source = "..\\data\\config\\tongtianta\\tongtiantaclient.txt", 
+		dest = "..\\..\\client\\data\\zhenyaotaConfig.cfg", 
+		table = "TongtiantaClient",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.rate",
+		},
+	
+
+	},
+
+	{
+		source = "..\\data\\config\\activity\\kaifu\\wendinglongpo3\\entertainlongpo.txt", 
+		dest = "..\\..\\client\\data\\entertainlongpo3.cfg", 
+		table = "EntertainLongpoConfig",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+
+	{
+		source = "..\\data\\config\\activity\\kaifu\\wendinglongpo3\\wdbosszbconf.lua", 
+		dest = "..\\..\\client\\data\\wdbosszbconf.cfg", 
+		table = "WdBossZbConf",
+		define = zh_CNDefines,
+		filters = {
+			"startday",
+			"endday",
+			"JionTimes",
+			"RankCount",
+			"Boss",
+			"JionBagCount",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\activity\\kaifu\\wendinglongpo3\\wdbangpaizbconf.lua", 
+		dest = "..\\..\\client\\data\\wdbangpaizbconf.cfg", 
+		table = "WdBangPaiZbConf",
+		define = zh_CNDefines,
+		filters = {
+			"startday",
+			"endday",
+			"JionTimes",
+			"RankCount",
+			"opencount",
+			"JionBagCount",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\activity\\kaifu\\wendinglongpo3\\wdshuangzhenyingconf.lua", 
+		dest = "..\\..\\client\\data\\wdshuangzhenyingconf.cfg", 
+		table = "WdShuangZhenYingConf",
+		define = zh_CNDefines,
+		filters = {
+			"startday",
+			"endday",
+			"JionTimes",
+			"RankCount",
+			"opencount",
+			"JionBagCount",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\activity\\kaifu\\wendinglongpo3\\wdzhanshenzbconf.lua", 
+		dest = "..\\..\\client\\data\\wdzhanshenzbconf.cfg", 
+		table = "WdZhanShenZbConf",
+		define = zh_CNDefines,
+		filters = {
+			"startday",
+			"endday",
+			"JionTimes",
+			"RankCount",
+			"JionBagCount",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\activity\\kaifu\\wendinglongpo3\\wdlingdizbconf.lua", 
+		dest = "..\\..\\client\\data\\wdlingdizbconf.cfg", 
+		table = "WdLingDiZbConf",
+		define = zh_CNDefines,
+		filters = {
+			"startday",
+			"endday",
+			"JionTimes",
+			"RankCount",
+			"opencount",
+			"JionBagCount",
+		},
+	},
+	
+
+	{
+		source = "..\\data\\config\\item\\scriptitemconfig\\skillassistitemconf.txt", 
+		dest = "..\\..\\client\\data\\skillassist.cfg", 
+		table = "SkillAssistItemConf",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+
+
+	{
+		source = "..\\data\\config\\buff\\bufffilter.txt",
+		dest = "..\\..\\client\\data\\buffFilter.cfg",
+		table = "BuffFilter",
+		define = zh_CNDefines,
+	},
+     {
+
+		source = "..\\data\\config\\item\\voucherCardItem.txt",
+		dest = "..\\..\\client\\data\\voucherCardItem.cfg", 
+		table = "VoucherCard",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\misc\\itemqianghuaconf.txt",
+		dest = "..\\..\\client\\data\\itemqianghua.cfg", 
+		table = "ItemStrongConf",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\smelt\\smeltconf.lua",
+		dest = "..\\..\\client\\data\\equipmeltconfig.cfg", 
+		table = "SmeltConfig",
+		filters = {
+			
+		},
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\activity\\funqaconfig.txt", 
+		dest = "..\\..\\client\\data\\funqaconfig.cfg", 
+		table = "FunQAConfig",
+		define = zh_CNDefines,
+		filters = {
+               "fubenId",
+               "sceneId",
+               "openServerday",
+               "mapCenterLine",
+               "enterPos",
+               "RightAnswerDelay",
+               "AnswerShow",
+               "QuestionCnt",
+               "RandomTimes",
+               "skill",
+               "protectBuff",
+               "protectBuffName",
+               "buffGroup",
+               "WrongRate",
+               "*.logid",
+		},
+		
+	},
+	{
+		source = "..\\data\\config\\fuben\\newtongguan\\newtongguanpingfenconf.txt", 
+		dest = "..\\..\\client\\data\\newtongguanpingfenconf.cfg", 
+		table = "NewTongGuanPingFenConf",
+		define = zh_CNDefines,
+		filters = {
+			"typeconf",
+			"*.monhp",
+		},
+	},
+  
+	{
+		source = "..\\data\\config\\fuben\\twocampwar\\twocampwarconf.txt", 
+		dest = "..\\..\\client\\data\\twocampwarconf.cfg", 
+		table = "TwoCampWarConf",
+		define = zh_CNDefines,
+		filters = {
+			"preTime",
+			"fubenTime",
+			"minLevel",
+			"campName",
+			"Timer",
+			"field",
+			"banner.refreshTime",
+			"banner.timeOutTime",
+			"point",
+			"buffGroup",
+			"bannerbuffGroup",
+			"bannerBuff",
+			"bannerEffect",
+			"areaEffect",
+			"effectPos2",
+			"buffHeaps",
+			"killbuffGroup",
+			"killBuff",
+			"deadbuffGroup",
+			"deadBuff",
+			"cureBuff",
+			"coinCureCost",
+			"ybCureCost",
+		},
+	},
+
+	 {
+	 	source = "..\\data\\config\\crosssystem\\crosssystemgateconf.txt", 
+	 	dest = "..\\..\\client\\data\\crosssystemgateconf.cfg", 
+	 	table = "CrossSystemGateConf",
+		define = zh_CNDefines,
+	 	filters = {
+	 		"*.logid",
+	 	},
+	 },
+
+	 {
+	 	source = "..\\data\\config\\crosssystem\\crosssystemchapterconf.txt", 
+	 	dest = "..\\..\\client\\data\\crosssystemchapterconf.cfg", 
+	 	table = "CrossSystemChapterConf",
+		define = zh_CNDefines,
+	 	filters = {
+	 	},
+	 },
+
+	 {
+	 	source = "..\\data\\config\\crosssystem\\crosssystemmedalconf.txt", 
+	 	dest = "..\\..\\client\\data\\crosssystemmedalconf.cfg", 
+	 	table = "CrossSystemMedalConf",
+		define = zh_CNDefines,
+	 	filters = {
+	 	},
+	 },
+
+	{
+		source = "..\\data\\config\\lottery\\lottery.txt", 
+		dest = "..\\..\\client\\data\\lottery.cfg", 
+		table = "LotteryConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"itemList",
+			"jobitems",
+			"firstItemList",
+			"specialItemId",
+			"maxTimes",
+			"ProtectedItem",
+			"TreasureRate",
+			"DenyItem",
+		},
+	},
+
+	--[[{
+		source = "..\\data\\config\\lottery\\lottery_sy.txt", 
+		dest = "..\\..\\client\\data\\lotteryactivity.cfg", 
+		table = "LotterySYConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"itemList",
+		},
+	},--]]
+	{
+		source = "..\\data\\config\\activity\\activity.txt", 
+		dest = "..\\..\\client\\data\\activity_config.cfg", 
+		table = "ActivityConfig",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+
+	{
+		source = "..\\data\\config\\item\\itemEnhance\\EquipEnhanceConfig.txt", 
+		dest = "..\\..\\client\\data\\equip_enhance_config.cfg", 
+		table = "EquipEnhance",
+		define = zh_CNDefines,
+		filters = 
+		{	
+			"additionAttrInfo.*.addInfo.*.attrProba",
+			"oneKeyMonveMoneyType",
+			"refreshRandProb",
+			"gaojiRefreshRandProb",
+			"*.broadcast",
+			"mountUpgrade",
+			"qualityDownRate",
+			"qualityBroadcast",
+			"stageBroadcast",
+			"equipAbsorbSkill",
+			"equipGroupSkill",
+			"insertPetMoneyType",
+			"insertPetMoney",
+			"removePetMoneyType",
+			"removePetMoney",
+			"strongPetLevels",
+			"nyxsNumPerDay",
+			"strengthenPetFailMoney",
+			"strengthenPetMaxBless",
+			"equipEffect",
+			"fashionColorBroadcast",
+			"qualityFailCompMoney",
+			"qualityFailCompMoneyPet",
+			"qualityFailCompMoneyType",
+			"qualityAttackMoneyPet",
+			"qualityDefenceMoneyPet",
+			"requireStrongLevForGemInser",
+			"petEquipCzNeed",
+			"strengthenFailItem",
+			"stageUpBroadcast",
+			"strengthenNeedLevel",
+			"strengthBroadcastTip",
+ 		},
+	
+	},
+
+	{
+		source = "..\\data\\config\\mounts\\Mountconf.txt", 
+		dest = "..\\..\\client\\data\\mount_config.cfg", 
+		table = "MountConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"threeGift",
+			"mountSkills",
+			"clearCountdown",
+			"noClearStage",
+			"learSkillRate",
+			"*.minZhufu",
+			"*.addZhufu",
+			"*.rate",
+			"*.tip",
+			"*.tip1",
+			"JinjieCondition",
+			"*.addTrain",
+			"*.needStar",
+			"*.train",
+			"*.defmul",
+			"*.def",
+			"*.*.mulA",
+			"*.*.mulB",
+		},	
+	},
+
+	{
+		source = "..\\data\\Config\\item\\StdItems.txt", 
+		dest = "..\\..\\client\\data\\std_items.cfg", 
+		table = "StdItems",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.smithAttrs",
+			"*.existScenes",
+			"*.strongShape",
+			"*.endTime",
+			"*.endDay",
+			"*.flags.useOnGet",
+			"*.flags.denyuseOnPractice",
+			"*.noXiLian",
+		},
+	},
+        {
+		source = "..\\data\\Config\\skill\\SkillConfig.txt", 
+		dest = "..\\..\\client\\data\\skill_config.cfg", 
+		table = "SkillConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.skillSubLevel.*.actRange",
+            "*.skillSubLevel.*.mjCooldownEffect",
+            "*.skillSubLevel.*.mjSingTimeEffect",
+            "*.priority",
+            "*.skillSubLevel.*.singEffectId",
+            "*.skillTargetType",
+            "*.defendSkillId",
+            "*.defendSkillSys",
+            "*.notSave",
+		},
+	},
+  
+	{
+		source = "..\\data\\Config\\store\\Store.txt", 
+		dest = "..\\..\\client\\data\\store.cfg", 
+		table = "GameStore",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.userCountLinit", 
+			"*.totalCountLimit", 
+			"*.showAreaId",
+			"*.clearType",
+			"*.hideId",
+		}
+	},
+
+	{
+		source = "..\\data\\Config\\item\\SuitConfig.txt", 
+		dest = "..\\..\\client\\data\\suit_config.cfg", 
+		table = "SuitConfig",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	
+	{
+		source = "..\\data\\envir\\staticZone.txt", 
+		dest = "..\\..\\client\\data\\scene.cfg", 
+		table = "FuBen",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"destoryTime",
+			"*.minlevel",
+			"*.forbiddenitem",
+			"*.nopk",
+			"*.area",
+			"*.count",
+			"*.time",
+			"*.firstTime",
+			"*.entitytype",
+			"*.entityLevel",
+			"*.progress",			
+			"*.zyType",
+			"*.triggerkillallmonster",
+			"*.funcid",
+			"*.monsterDynProp",
+			"*.monsterDynPropBaseOnOSD",
+			"*.MDPparam",
+			"*.comfirm",
+			"*.caleInfo",
+			"*.dynamic",
+			"*.pathid",
+			"*.activity",
+			"*.tower",
+			"*.hideActor",
+			"*.maxActor",
+			"*.minScene",
+			"*.guildRank",
+			"*.notChange",
+			"*.refresh.*.bornAtDiffGrid",
+			"*.refresh.*.bornDiffX",
+			"*.refresh.*.bornDiffY",
+			"*.sceneSrvIdx",
+		}
+	},
+	{
+		source = "..\\data\\config\\monster\\MonsterConfig.txt", 
+		dest = "..\\..\\client\\data\\monster.cfg", 
+		table = "Monster",
+		define = zh_CNDefines,
+		filters = 
+		{
+			--"*.*", --过滤所有，允许的在matchers表中
+			"*.useworldlevel",
+			"*.maxhpParamA",
+			"*.maxhpParamB",
+			"*.attackParamA",
+			"*.attackParamB",
+			"*.defenceParamA",
+			"*.defenceParamB",
+			"*.dodgeParamA",
+			"*.dodgeParamB",
+			"*.hitParamA",
+			"*.hitParamB",
+			"*.criticalParamA",
+			"*.criticalParamB",
+			"*.defcriticalParamA",
+			"*.dir",
+			"*.hprenew",
+			"*.mprenew",
+			"*.innercriticalstrikesrate",
+			"*.innerdodgerate",
+			"*.innerhitrate",
+			"*.outdodgerate",
+			"*.outhitrate",
+			"*.outcriticalstrikesrate",
+			"*.moveoneslottime",
+			"*.attackSpeed",
+			"*.attackInterval",
+			"*.maxDropHp",
+			"*.maxMonAttackDropHp",
+			"*.maxhp",
+			"*.maxmp",
+			"*.innerattack",
+			"*.outattack",
+			"*.outdefence",
+			"*.innerdefence",
+			"*.cure",
+			"*.expParamA",
+			"*.expParamB",
+			"*.exp",
+			"*.lilian",
+			"*.reSelTargetRate",
+			"*.aiConfigId",
+			"*.camp",
+			"*.attackLevel",
+			"*.nNearAttackRate",
+			"*.dontCountConsecutiveKill",
+			"*.bDeathTriggerScript",
+			"*.bCreateRank",
+			"*.monstercolor",
+			"*.drops",
+			"*.flags",
+			"*.priorTarget",
+			"*.nNearAttackType",
+			"*.talk",
+			"*.gatherTime",
+			"*.gatherDie",
+			"*.defcriticalstrikes",
+			"*.actionId",
+			"*.gatherCheck",
+			"*.color",
+			"*.lastKill",
+			"*.share",
+			"*.expMode",
+			"*.expRange",
+			"*.expFactor*",
+			"*.expfactor2",
+			"*.bHpChangedTriggerScript",
+			"*.bAttackTriggerScript",
+			"*.bAreaTriggerCloseBuffScript",
+			"*.triggerDamage",
+			"*.beCriticalTriggerScript",
+			"*.entityTypeClient",
+			"*.defcriticalParamB",
+			"*.belongFubenCamp",
+			"*.maxActorAttackDropHp",
+			"*.guildTowerBaseDrop",
+			"*.guildTowerAttackRate",
+			"*.volume",
+		},
+		--[[
+		matchers = 
+		{
+		  "*.entityid", 
+		  "*.name",
+		  "*.modelid",
+		  "*.level",
+		  --"*.mapfilename",
+		  "*.monsterType",
+		  "*.attackType",
+		},
+		--]]
+	},
+       {
+		source = "..\\data\\config\\skill\\NormalAttackEffects.txt", 
+		dest = "..\\..\\client\\data\\normal_attack_effects.cfg", 
+		table = "NormalAttackEffects",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+  
+
+   {
+		source = "..\\data\\config\\consignment\\ConsignmentType.txt", 
+		dest = "..\\..\\client\\data\\consignment_type.cfg", 
+		table = "ConsignmentType",
+		define = zh_CNDefines,
+		filters = 
+		{
+		"maxConsiSell",
+		"maxConsiBuy",
+		"minSellPrice",
+		"maxSellPrice",
+		},
+	},
+
+	{
+		source = "..\\data\\config\\rank\\RankConfig.txt", 
+		dest = "..\\..\\client\\data\\rank_config.cfg", 
+		table = "RankConfig",
+		define = zh_CNDefines,
+		filters = { "*.type" , "*.mapping" },		
+	},
+
+       {
+		source = "..\\data\\config\\vocation\\VocationConfig.txt", 
+		dest = "..\\..\\client\\data\\vocation_config.cfg", 
+		table = "VocationConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+		  "*.*", 
+		},
+		matchers = 
+		{
+		  "*.nDefaultMaleModelID", 
+		  "*.nDefaultFemaleModelID", 
+		},	
+	},
+
+       {
+		source = "..\\data\\config\\achieve\\titles.txt", 
+		dest = "..\\..\\client\\data\\titles.cfg", 
+		table = "Titles",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.mustShow",
+			"*.SceneSrvType",
+		},
+		matchers = nil,	
+	},
+
+ {
+		source = "..\\data\\config\\guide\\Guide.txt", 
+		dest = "..\\..\\client\\data\\guide.cfg", 
+		table = "Guide",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+        { 
+		source = "..\\data\\config\\item\\EquipValuation.txt", 
+		dest = "..\\..\\client\\data\\equip_valuation.cfg", 
+		table = "EquipValuation",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+      
+	{
+		source = "..\\data\\Config\\store\\RenownShopConfig.txt", 
+		dest = "..\\..\\client\\data\\renown_shop_config.cfg", 
+		table = "RenwnShopConfig",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	
+	{
+		source = "..\\data\\config\\camp\\CampConfig.txt", 
+		dest = "..\\..\\client\\data\\camp_config.cfg", 
+		table = "CampConfig",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+
+       {
+		source = "..\\data\\config\\misc\\MapLabels.txt", 
+		dest = "..\\..\\client\\data\\map_labels.cfg", 
+		table = "MapLabels",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+	
+	{
+		source = "..\\data\\config\\vip\\vip.lua", 
+		dest = "..\\..\\client\\data\\vip.cfg", 
+		table = "VIPConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.vipCardLevel",
+			"dayUpExp",
+			"vipCardToExp",
+			"descSpeed",
+			"firstAward",
+			"vipGift",
+			"vipEnlarge",
+			"levelUpExp",
+			"dayQuestAdds",
+			"freeLottery",
+			"vipcardid",
+			"itemidArray",
+			"privilegeId",
+			"WingGiftId",
+			"vipTitle",
+			"*.vipDress",
+			"vipDress",
+		},
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\config\\gem\\GemConfig.txt", 
+		dest = "..\\..\\client\\data\\gem_config.cfg", 
+		table = "GemConfig",
+		define = zh_CNDefines,
+		filters = 
+		{	
+			"Prefixs",
+			"JinjieFailBless",
+			"Bless",
+			"JinjieRate",
+			"GemOpenSlot",
+			"*.canbuyornot",
+			"*.BingYBCost",
+			"OpenDay",
+			"OpenLevel",
+			"FaBaoName",
+			"StageName",
+			"GemBaseAttrs",	
+			"gem_up_star_cond",
+			"*.GemName",
+			
+		},
+		matchers = nil,	
+	},
+        {
+		source = "..\\data\\config\\gem\\SoulSuitConfig.txt", 
+		dest = "..\\..\\client\\data\\soulsuit_config.cfg", 
+		table = "SoulSuitConfig",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\config\\roots\\Roots.txt", 
+		dest = "..\\..\\client\\data\\roots.cfg", 
+		table = "Roots",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\config\\ClientGlobalConfig.txt", 
+		dest = "..\\..\\client\\data\\client_global_config.cfg", 
+		table = "ClientGlobalConfig",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\config\\guild\\Guild.txt", 
+		dest = "..\\..\\client\\data\\guild.cfg", 
+		table = "Guild",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"touchEggExp",
+			"touchEggXb",
+			"totalTouch",
+			"ssLevelLimit",
+			"totalXianGuo",
+			"xianGuoBackDay",
+			"kickoutTimeLimit",
+			"guildFubenSceneId",
+			"impeachItem",
+			"autoImpeachTime",
+			"actorImpeachTime",
+			"impeachTime",
+			"autoImpeachOfflineTime",
+			"xianGuoItemEx",
+			"wealLimit",
+			"titleConf",
+		},
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\config\\guild\\Guildmon.txt", 
+		dest = "..\\..\\client\\data\\guildmon.cfg", 
+		table = "GuildMonster",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"lingdiSceneId",
+			"monsterId",
+			"buff",
+			"reliveCd",
+			"model",
+		},
+	},
+        {
+		source = "..\\data\\config\\misc\\ActivityAward.txt", 
+		dest = "..\\..\\client\\data\\activity_award.cfg", 
+		table = "ActivityAward",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\config\\plot\\Plot.txt", 
+		dest = "..\\..\\client\\data\\plot.cfg", 
+		table = "Plot",
+		define = zh_CNDefines,
+		filters = {
+			"skills.*.levels.*.actions",
+			"skills.*.levels.*.desc",
+			"skills.*.levels.*.iconID",
+			"skills.*.levels.*.actRangeWhenKill",
+			"skills.*.levels.*.trainConds",
+			"skills.*.levels.*.spellConds",
+			"skills.*.levels.*.singTime",
+			"skills.*.levels.*.cooldownTime",
+		},
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\envir\\FuBenTongjiClient.txt", 
+		dest = "..\\..\\client\\data\\fuben_tongji_client.cfg", 
+		table = "FuBenTongjiClient",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	{
+		source = "..\\data\\config\\misc\\MoneyTree.txt", 
+		dest = "..\\..\\client\\data\\money_tree.cfg", 
+		table = "MoneyTree",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"moneyItemRate",
+			"coinItemRate",
+			"expItemRate",
+		},
+	},
+	{
+		source = "..\\data\\config\\misc\\Miyou.txt", 
+		dest = "..\\..\\client\\data\\miyou.cfg", 
+		table = "MiYouConf",
+		define = zh_CNDefines,
+		filters = {
+			"sysFlag",
+			"closeTime",
+			"receiveLimit",
+			"days",
+		},
+		
+	},
+
+	{
+		source = "..\\data\\config\\activity\\WorldBoss.txt", 
+		dest = "..\\..\\client\\data\\world_boss.cfg", 
+		table = "WorldBoss",
+		define = zh_CNDefines,
+		filters = {
+			"*.firstTime",
+			"*.reliveTime",
+			"*.liveTime",
+			"*.x",
+			"*.y",
+			"*.masterTitle",
+			"*.masterBuff",
+			"*.shareBuff",
+			"*.externaward",
+			"*.monBuff",
+			"*.isLianFu",
+		},
+	},
+	{
+		source = "..\\data\\envir\\FuBen.txt", 
+		dest = "..\\..\\client\\data\\fuben.cfg", 
+		table = "FuBen",
+		define = zh_CNDefines,
+		filters = {
+			"*.cache",
+			"*.logname",
+		},
+	},
+	{
+		source = "..\\data\\config\\quest\\RefreshQuests.txt", 
+		dest = "..\\..\\client\\data\\refresh_quests.cfg", 
+		table = "RefreshQuests",
+		define = zh_CNDefines,
+		filters = {
+			"*.activityAward",
+			"*.infos",
+			"*.itemQuest",
+			"*.endTime",
+			"*.taskTime",
+			"*.showAcceptable",
+			"*.maxReward",
+			"*.refreshMoneyType",
+			"*.autoAccept",
+			"*.rewardRatio",
+			"*.refreshMoneyCount",
+			"*.finishMoneyType",
+			"*.finishMoneyCount",
+			"*.grades.*.quests",
+			"*.grades.*.minLevel",
+			},
+	},
+	{
+		source = "..\\data\\config\\startFlight\\StartFlight.lua", 
+		dest = "..\\..\\client\\data\\start_flight.cfg", 
+		table = "StartFlight",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	{
+		source = "..\\data\\language\\Zh-CN\\buff_desc.txt", 
+		dest = "..\\..\\client\\data\\buff_desc.cfg", 
+		table = "buff_descs",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	{
+		source = "..\\data\\config\\map_effect_config.lua", 
+		dest = "..\\..\\client\\data\\map_effect_config.cfg", 
+		table = "map_effect_config",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	{
+		source = "..\\data\\config\\item\\hpmpstore.txt", 
+		dest = "..\\..\\client\\data\\medicine_config.cfg", 
+		table = "HpMpStore",
+		define = zh_CNDefines,
+		filters = nil,
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\config\\store\\limitsecretshop.txt", 
+		dest = "..\\..\\client\\data\\limitsecretshop.cfg", 
+		table = "LimitSecretShop",
+		define = zh_CNDefines,
+		filters = {"*.userCountLinit", "*.totalCountLimit", "*.showAreaId" }
+	},
+	{
+		source = "..\\data\\config\\pet\\pet.txt", 
+		dest = "..\\..\\client\\data\\pet_config.cfg", 
+		table = "petConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"threeGift",
+			"luckClearTime",
+			"addLuckyValue",
+			"petSkillMaxLevel",
+			"luckyLevels",
+			"shakeAbandonAward",
+			"slotMachine",
+			"maxPet",
+			"maxSkill",
+			"storeItem",
+			"petItem",
+			"wxTip",
+			"growTip",
+			"mpDura",
+			"mpColGroup",
+			"mpColGroup",
+			"yhsRate.rate",
+			"mpColGroup",
+			"expItem",
+			"skillBuffGroup",
+			"specialSkillBook",
+			"stoneEff",
+			"battleHp",
+			"wxFailCoin",
+			"growFailCoin",
+			"hpItemLevel",
+			"wxItemPrice",
+			"wxProPrice",
+			"growItemPrice",
+			"growProPrice",
+			"lightEffect",
+			"petTitle",
+			"protected",
+			"*.succSection",
+			"*.addZhufu",
+			"JinjieCondition",
+			"*.tip",
+			"*.tip1",
+		},
+	},
+	{
+		source = "..\\data\\config\\wings\\wings.txt", 
+		dest = "..\\..\\client\\data\\wing.cfg", 
+		table = "Wings",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.broadcast",
+			"*.SkillId",
+			"skillOnAttack",
+			"skillOnBeAttacked",
+			"skillOnFighting",
+			"stageTip",
+			"stageTip1",
+			"wingConsume",	
+			"*.succSection",	
+			"noClearStage",
+			"clearCountdown",
+			"*.addZhufu",
+			"*.useAssistGDCount",
+			"learSkillRate",
+			"WingTyConf",
+			"RandSkill",
+			"Zhuling",
+		},
+	},
+	{
+		source = "..\\data\\config\\looptask\\looptaskconfig.txt", 
+		dest = "..\\..\\client\\data\\looptaskconfig.cfg", 
+		table = "loopTaskConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"SYSTEM_SWITCH",
+			"OPEN_LEVEL",
+			"resetLoopDay",
+			"maxLoopId",
+			"finishItemId",
+			"finishNeedYb",
+			"delay",
+			"loopTaskStarId",
+			"grade",
+			"expRate",
+			"questLoopId",
+			"*.needbagcount",
+		},
+	},
+{
+		source = "..\\data\\config\\task\\baguadigongclientconfig.txt", 
+		dest = "..\\..\\client\\data\\baguadigongconfig.cfg", 
+		table = "BaGuaConfig",
+		define = zh_CNDefines,
+
+	},
+          {
+                source = "..\\data\\config\\misc\\entrustconf.txt", 
+		dest = "..\\..\\client\\data\\entrustconf.cfg", 
+		table = "EntrustConf",
+		define = zh_CNDefines,
+	
+         },
+
+	{
+    	source = "..\\data\\config\\misc\\luckywheelconf.txt", 
+		dest = "..\\..\\client\\data\\luckywheelconf.cfg", 
+		table = "LuckyWheelConf",
+		define = zh_CNDefines,
+    },
+	{
+    	source = "..\\data\\config\\pk\\pkmatchconfig.txt", 
+		dest = "..\\..\\client\\data\\pkmatchconfig.cfg", 
+		table = "PkMatchConfig",
+		define = zh_CNDefines,
+
+    	},
+
+	{
+    	source = "..\\data\\config\\misc\\marryconf.txt", 
+		dest = "..\\..\\client\\data\\marry.cfg", 
+		table = "marryConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"canMarryTime",
+			"ringEquipPos",
+			"ringNotice",
+			"marchFee",
+			"xunyou",
+			"sweetCount",
+			"sweetItemId",
+			"sweetExpTime",
+			"divRingQY",
+			"weddingQM",
+			"useRingQm",
+			"gathId",
+			"expFactor",
+			"gathCountday",
+			"marryFactor",
+			"riviveTimes",
+			"skillItemId",
+			"transInterval",
+			"weddingMonsters",
+			"flowerTime",
+			"onlineQinmiAdd",
+			"onlineQinmiInterval",
+			"ringItemId",
+			"*.qinmi",
+			"xunyouInterval",
+			"xunyouItemCount",
+			"jumpInterval",
+			"gjjinjiemt",
+            "maxDivorceTimes",
+		}
+   	},
+	{
+		source = "..\\data\\config\\activity\\mergeactivityconfig.txt", 
+		dest = "..\\..\\client\\data\\mergeactivityconfig.cfg", 
+		table = "MergeActivity",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\Config\\store\\teampointshopconfig.txt", 
+		dest = "..\\..\\client\\data\\teampoint_shop_config.cfg", 
+		table = "TeamPointShopConfig",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	{
+		source = "..\\data\\Config\\team\\teamfuben.txt", 
+		dest = "..\\..\\client\\data\\team_copy.cfg", 
+		table = "TeamFuben",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	{
+		source = "..\\data\\config\\activity\\oldfriendconfig.txt", 
+		dest = "..\\..\\client\\data\\oldfriendconfig.cfg", 
+		table = "OldFriendActivity",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\rank\\famoustitle.txt",
+		dest = "..\\..\\client\\data\\famoustitleconfig.cfg",
+		table = "FamousTitle",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\fight\\fightconf.txt",
+		dest = "..\\..\\client\\data\\fightconf.cfg",
+		table = "FightConf",
+		define = zh_CNDefines,
+		filters = 
+		{					
+			"monsterId",
+			"pkTime",
+			"pkReady",
+			"pos1",
+			"pos2",
+			"petPos1",
+			"petPos2",
+			"petMonsterId",
+			"level",
+			"maxActor",
+			"canPkTop3",
+			"pkCD",		
+			"enemyColor",
+			"rankGroup",
+			"skills",
+			"clearSkills",
+			"noPetSkills",
+			"loginOpenDay",
+			"StrengthType",
+			"StrengthVakue",
+			"StrengthBuff",
+			"highestRankAward",
+			"limitCD",
+			"highestRankAward",
+			"maxSwapFightRank",
+			"npcBaseProperty",
+			"npcGrades",
+			"npcSkills",
+			"ClearBuff",
+			"GemSkill",				
+	        "ClearBuff",
+	        "Exchange", --此字段已经没用的了
+		}
+	},
+	{
+		source = "..\\data\\config\\loginAwards\\loginAwardsConf.txt",
+		dest = "..\\..\\client\\data\\loginAwardsConf.cfg",
+		table = "LoginAwardsConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"Sawards",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\mergeServerConfig.txt", 
+		dest = "..\\..\\client\\data\\mergeServerConfig.cfg", 
+		table = "MergeServerConf",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\misc\\wardrobeconfig.txt", 
+		dest = "..\\..\\client\\data\\wardrobeconfig.cfg", 
+		table = "WardrobeConf",
+		define = zh_CNDefines,
+		
+	},
+	{
+		source = "..\\data\\config\\pk\\pkmatchkuafuconfig.txt", 
+		dest = "..\\..\\client\\data\\pkmatchkuafuconfig.cfg", 
+		table = "PkMatchKuaFuConfig",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\artifact\\actifacts.txt", 
+		dest = "..\\..\\client\\data\\artifact.cfg", 
+		table = "Artifact",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"lingRate",
+			"practiceRange",
+			"practiceRate",
+			"reincarnationItemId",
+			"reinStarEachLevel",
+			"skillMemoryRate",
+			"normalCompensation",
+			"perfectCompensation",
+			"*.blessRate",
+			"*.giveRandomBless",
+			"lingyeItem",
+		},
+	},
+	{
+		source = "..\\data\\config\\pk\\citywarconfig.txt", 
+		dest = "..\\..\\client\\data\\citywarconfig.cfg", 
+		table = "CityWarConfig",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\pet\\petcrossconf.txt", 
+		dest = "..\\..\\client\\data\\petcrossconf.cfg", 
+		table = "petCrossConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.sceneId",
+			"*.posX",
+			"*.posY",
+			"*.mapx1",
+			"*.mapy1",
+			"*.mapx2",
+			"*.mapy2",
+			"*.rate",
+			"*.broadcast",
+			"*.pos",
+			"jinzhiScene",
+		},
+	},
+	-- {
+	-- 	source = "..\\data\\config\\skill\\mijiconfig.txt", 
+	-- 	dest = "..\\..\\client\\data\\mijiconfig.cfg", 
+	-- 	table = "MijiConf",
+	-- 	define = zh_CNDefines,
+	-- },
+	-- {
+	-- 	source = "..\\data\\config\\skill\\mijidata.txt", 
+	-- 	dest = "..\\..\\client\\data\\miji_score_data.cfg", 
+	-- 	table = "MijiScore",
+	-- 	define = zh_CNDefines,
+	-- },
+	-- {
+	-- 	source = "..\\data\\config\\skill\\mijidata.txt", 
+	-- 	dest = "..\\..\\client\\data\\miji_src_data.cfg", 
+	-- 	table = "MijiData",
+	-- 	define = zh_CNDefines,
+	-- 	filters = 
+	-- 	{
+	-- 		"*.basics.*.score",
+	-- 		"*.basics.*.attrs.*.skillid",
+	-- 		"*.basics.*.attrs.*.target",
+	-- 		"*.basics.*.attrs.*.actionType",
+	-- 		"*.basics.*.attrs.*.timeParam",
+	-- 		--"*.basics.*.attrs.*.type",
+	-- 		"*.basics.*.attrs.*.delay",
+	-- 		"*.basics.*.attrs.*.value.type",
+	-- 		--"*.basics.*.attrs.*.value.id",
+	-- 		"*.basics.*.attrs.*.value.interval",
+	-- 		--"*.basics.*.attrs.*.value.vt",
+	-- 		"*.extras.*.score",
+	-- 		"*.extras.*.actions.*.event",
+	-- 		"*.extras.*.actions.*.tp",
+	-- 		"*.extras.*.actions.*.target",
+	-- 		"*.extras.*.actions.*.attrtype",
+	-- 		"*.extras.*.actions.*.attrgroup",
+	-- 		"*.extras.*.actions.*.effect",
+	-- 		"*.extras.*.actions.*.attrtypeCheck",
+	-- 		"*.extras.*.actions.*.attrgroupCheck",
+	-- 		"*.extras.*.actions.*.skilllevel",
+	-- 	},
+	-- },
+	{
+		source = "..\\data\\config\\item\\itemenhance\\compoundconf.txt", 
+		dest = "..\\..\\client\\data\\compound.cfg", 
+		table = "CompundConf",
+		define = zh_CNDefines,
+		filters = nil,
+	},
+	{
+		source = "..\\data\\config\\fuben\\twocampwar\\twocampwarrewardconf.txt", 
+		dest = "..\\..\\client\\data\\twocampwar.cfg", 
+		table = "TwoCampWarAwards",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.min",
+			"*.max",
+			"gameAwards",
+		},
+	},
+	{
+		source = "..\\data\\config\\monster\\monstertimedropsconfig.txt", 
+		dest = "..\\..\\client\\data\\monstertimedrops.cfg", 
+		table = "MonsterTimeDropsConfig",
+		define = zh_CNDefines,
+		
+		filters = {
+			"timeconf",
+			"dropsconf",
+		},
+	},
+	{
+		source = "..\\data\\config\\item\\itemusetips.txt", 
+		dest = "..\\..\\client\\data\\itemUseTips.cfg", 
+		table = "ItemUseTips",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\fuben\\equip50conf.lua", 
+		dest = "..\\..\\client\\data\\equip50conf.cfg", 
+		table = "Equip50Conf",
+		define = zh_CNDefines,
+		filters = {
+			"mobNpc",
+			"pos",
+			"maxLeaveMon",
+			"Timer",
+			"monsterSteps",
+			"buffGroup",
+			"specialMon",
+			"crystals",
+			"monDieCreateMonster",
+			"expAddition",
+			"deadUseSkill",
+			"ConditionType1",
+			"ConditionType2",
+			"ConditionType3",
+			"ConditionType4",
+			"randomRewardsCondition.*.minstep",
+			"randomRewardsCondition.*.maxstep",
+			"randomRewardsCondition.*.monId",
+			"randomRewardsCondition.*.value",
+			"randomBossRewards",
+			"comboBuff.*.buff",
+		},
+	},
+	{
+		source = "..\\data\\config\\assetPreload\\assetPreload.txt",
+		dest = "..\\..\\client\\data\\assetPreload.cfg",
+		table = "AssetPreload",
+		define = zh_CNDefines,
+	},
+	{
+		source = "..\\data\\config\\activity\\worldbossdamageconf.lua", 
+		dest = "..\\..\\client\\data\\worldbossdamageconf.cfg", 
+		table = "WBDamageConf",
+		define = zh_CNDefines,
+		filters = {
+			"rewardsInfo",
+		},
+		matchers = nil,	
+	},
+	{
+		source = "..\\data\\config\\activity\\shouchong\\equipsuit.lua",
+		dest = "..\\..\\client\\data\\superpackage.cfg",
+		table = "EquipSuit",
+		define = zh_CNDefines,
+		filters = {
+			"activityTime",
+			"buySuccDelItem",
+		},
+	},
+	
+	{
+		source = "..\\data\\config\\vip\\yyvip.lua", 
+		dest = "..\\..\\client\\data\\yyvip.cfg", 
+		table = "YYVipConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"privilegeId",
+		},
+		matchers = nil,	
+	},
+
+	{
+		source = "..\\data\\config\\task\\fengkuangguajiconf.lua",
+		dest = "..\\..\\client\\data\\fengkuangguajiconf.cfg",
+		table = "CrazyGuajiConf",
+		define = zh_CNDefines,
+		filters = {
+			"locationInfo",
+			"timeInfo",
+			"bindYbGiftIds",
+			"killedMonsterIds",
+			"defaultSceneId",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\dailycomsumeexconf.lua",
+		dest = "..\\..\\client\\data\\dailyComsume.cfg",
+		table = "DailyComsumeAward_ex_all",
+		define = zh_CNDefines,
+		filters = {
+	    	"*.lastfordays",
+		    "*.confType",
+			"*.BuLingAddBasicValue",
+			"*.BuLingAddiionalValue",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\allserverlotteryconfig.lua", 
+		dest = "..\\..\\client\\data\\allServerLottery.cfg", 
+		table = "ASLConfigAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.startTime",
+			"*.endTime",
+			"*.dayTimes",
+			"*.lotteryYb",
+			"*.maxLuckyGuy",
+			"*.broadcast",
+			"*.rewardrate",
+			"*.resetServerId",
+			"*.resetFlag",
+			"*.resetYuanBao",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\xingyunfanpaiconf.lua",
+		dest = "..\\..\\client\\data\\flopCard.cfg",
+		table = "XingYunFanPaiConfAll",
+		define = zh_CNDefines,
+		filters = {
+			"*.PuKe",
+			"*.oneKeyDiscount",
+			"*.needTimes",
+			"*.jiesuanSec",
+			"*.rankAward",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\investplanconfig.lua",
+		dest = "..\\..\\client\\data\\invest.cfg",
+		table = "investplanConfAll",
+		define = zh_CNDefines,
+		filters = {
+			"*.maxDays",
+			"*.broadcastmsg2",
+			"*.broadcastmsg",
+			"*.name",
+			"*.award",
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\diychenhaoconf.lua",
+		dest = "..\\..\\client\\data\\diytitle.cfg",
+		table = "DIYChenHao",
+		define = zh_CNDefines,
+		filters = {
+			"onceRecharge",
+			"endTime",
+		},
+	},
+
+	{
+
+		source = "..\\data\\config\\item\\positionenhance\\positionenhanceconfig.lua", 
+		dest = "..\\..\\client\\data\\PositionEnhanceConfig.cfg", 
+		table = "PositionEnhanceConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"sysidMap",
+			"detailConfig.*.strengthenRate",
+		},
+		
+	},
+		{
+			source = "..\\data\\config\\jinjiesystem\\jinjiezhufuzhiconf.lua", 
+			dest = "..\\..\\client\\data\\jinjiezhufuzhiconf.cfg", 
+			table = "JinjiezhufuzhiConf",
+			define = zh_CNDefines,
+			filters = 
+			{
+			},
+			
+		},
+		{
+			source = "..\\data\\config\\activity\\yellowdiamondconf.lua", 
+			dest = "..\\..\\client\\data\\yellowdiamondconf.cfg", 
+			table = "YellowDiamondAwardAll",
+			define = zh_CNDefines,
+			filters = 
+			{
+			},
+			
+		},
+	
+	{
+		source = "..\\data\\config\\activity\\vipopenconf.lua",
+		dest = "..\\..\\client\\data\\vipopenconf.cfg",
+		table = "OpenYellowAwardConf",
+		define = zh_CNDefines,
+		filters = {
+
+		},
+	},
+	{
+
+		source = "..\\data\\config\\activity\\huanletanbaoconf.lua", 
+		dest = "..\\..\\client\\data\\huanletanbaoconf.cfg", 
+		table = "HuanLeTanBaoConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.minLevel",
+			"*.countConf",
+			"*.DenyItem",
+			"*.daojuId",
+			"*.TreasureRate",
+			"*.ProtectedItem",
+			"*.itemList",
+			"*.ServerDenyItem",
+			
+		},
+		
+	},
+	{
+
+		source = "..\\data\\config\\activity\\huanletanbaoconf2.lua", 
+		dest = "..\\..\\client\\data\\huanletanbaoconfhall.cfg", 
+		table = "HuanLeTanBaoConfAll2",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.minLevel",
+			"*.countConf",
+			"*.DenyItem",
+			"*.daojuId",
+			"*.TreasureRate",
+			"*.ProtectedItem",
+			"*.itemList",
+			"*.ServerDenyItem",
+			
+		},
+		
+	},
+	
+
+	{
+		source = "..\\data\\config\\activity\\nianshoulaixiconf.lua", 
+		dest = "..\\..\\client\\data\\BossAssaultConfig.cfg", 
+		table = "BossAssaultConfig",
+		define = zh_CNDefines,
+		filters = 
+		{
+					
+		},	
+	},
+
+	{
+		source = "..\\data\\config\\activity\\comsumejifenconf.lua",
+		dest = "..\\..\\client\\data\\comsumejifenconf.cfg",
+		table = "ComsumejifenconfAll",
+		define = zh_CNDefines,
+		filters = {
+		},
+	},
+	{
+		source = "..\\data\\config\\activity\\huanjingtansuoconf.lua", 
+		dest = "..\\..\\client\\data\\huanjingtansuoconf.cfg", 
+		table = "HuanJingTanSuoConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.extraAward",
+			"*.exchangeLib",
+			"*.awardLib",
+		},
+	},
+	
+	{
+		source = "..\\data\\config\\activity\\jianbaoconfig.lua", 
+		dest = "..\\..\\client\\data\\jianbaoconfig.cfg", 
+		table = "JianBaoConfAll",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"*.bjconf",
+			"*.levelvalue_server",
+		},
+			
+	},
+
+	{
+		source = "..\\data\\config\\fuben\\yunluozhanchangconf.lua", 
+		dest = "..\\..\\client\\data\\yunluozhanchangconf.cfg", 
+		table = "YunLuoZhanChangConf",
+		define = zh_CNDefines,
+		filters = 
+		{
+			"fubenid",
+			"expconf",
+			"exptime",
+			"*.bossrefreshtime",
+			"*.bossrefresh",
+			"*.dropitem",
+			"*.bosslist",
+			"*.monsterlist",
+			"*.xbdrop",
+			"*.*.refreshtime",
+			"*.*.mid",
+			"*.*.logid",
+		},
+	},
+
+
+	{
+		source = "..\\data\\config\\shenpo\\shenpoconf.lua", 
+		dest = "..\\..\\client\\data\\zhanqitupu.cfg", 
+		table = "ShenPoConfig",
+		define = zh_CNDefines,
+		filters = {
+			"openlevel",
+			"fuBenRaiders",
+			"shenhunBless.*.blesstime",
+			"shenhunBless.*.blessLev",
+			"shenhunBless.*.addbless",
+			"fenglingBless.*.blesstime",
+			"fenglingBless.*.blessLev",
+			"fenglingBless.*.addbless",
+		},		
+	},
+
+	{
+		source = "..\\data\\config\\activity\\carnivalexchangeconf.lua", 
+		dest = "..\\..\\client\\data\\happyexchange.cfg", 
+		table = "CarnivalExchangeConfAll",
+		define = zh_CNDefines,
+		filters = {
+		},		
+	},
+	
+	
+	
+}
+

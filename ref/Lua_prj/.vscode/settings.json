@@ -1,0 +1,19 @@
+{
+    "Lua.diagnostics.globals": [
+        "tab"
+    ],
+    "Lua.diagnostics.disable": [
+        "lowercase-global",
+        "undefined-global",
+        "unexpect-lfunc-name",
+        "miss-symbol",
+        
+    ],
+    "Lua.diagnostics.severity": {
+        "lowercase-global": "Hint",
+        "undefined-global": "Hint",
+        
+    }
+    
+}
+//Hint：不在问题栏显示，只在代码对应处显示问题。除了Hint还有Warning、Information、Error几种检查

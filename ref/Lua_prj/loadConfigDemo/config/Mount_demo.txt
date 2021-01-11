@@ -1,0 +1,46 @@
+Mount={
+	
+	train = {
+		cost = 400,
+		title = "牛逼",
+		star = {
+			lv = 1,
+			rootExp = 100,
+			title = "满",
+			root = {
+				need = 100,
+				desc = "hello",
+			}
+		},
+	},
+	
+	upgrade = {
+		lv=10,
+		money=10,
+		time=120025,
+		pays = {
+			{
+				{times=3,cost=100,name="aaa"},
+				{times=3,cost=100,name="aaa"},
+				{times=3,cost=100,name="aaa"},
+			}
+			
+		}
+	},
+	
+	attrs = {
+	{{lv=100,content="你好啊"}},
+	{{lv=101,content="你好啊"}},
+	{{lv=102,content="你好啊"}},
+	
+	},
+	
+	awards = {
+	{{lv=100,id=1,content="你好啊"}},
+	{{lv=101,id=2,content="你好啊"}},
+	{{lv=102,id=3,content="你好啊"}},
+	
+	},
+	
+
+}

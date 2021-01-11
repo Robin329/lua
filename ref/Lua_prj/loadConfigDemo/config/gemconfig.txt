@@ -1,0 +1,6378 @@
+--文件由脚本生成，请不要手动编辑
+--表头
+--#include "..\..\language\LangCode.txt"
+GemConfig = 
+{
+	gems = {
+		{
+			GemName = Lang.Gem.n01,--法宝名称
+			open_attr = {{type = 21, value = 400},{type = 23, value = 200},{type = 17, value = 8000},{type = 35, value = 50},{type = 25, value = 50},{type = 37, value = 50},{type = 39, value = 50},},--法宝开启属性
+			openCondition = {},--法宝激活条件
+			active_desc = Lang.Gem.lk01,--激活条件描述
+			gemid = 1,--法宝ID
+			order = 10,--排序
+			skillid = 5,--法宝技能ID
+		},
+		{
+			GemName = Lang.Gem.n02,--法宝名称
+			open_attr = {{type = 21, value = 400},{type = 23, value = 200},{type = 17, value = 8000},{type = 35, value = 50},{type = 25, value = 50},{type = 37, value = 50},{type = 39, value = 50},},--法宝开启属性
+			openCondition = {},--法宝激活条件
+			active_desc = Lang.Gem.lk02,--激活条件描述
+			gemid = 2,--法宝ID
+			order = 9,--排序
+			skillid = 5,--法宝技能ID
+		},
+		{
+			GemName = Lang.Gem.n03,--法宝名称
+			open_attr = {{type = 21, value = 400},{type = 23, value = 200},{type = 17, value = 8000},{type = 35, value = 50},{type = 25, value = 50},{type = 37, value = 50},{type = 39, value = 50},},--法宝开启属性
+			openCondition = {},--法宝激活条件
+			active_desc = Lang.Gem.lk03,--激活条件描述
+			gemid = 3,--法宝ID
+			order = 8,--排序
+			skillid = 5,--法宝技能ID
+		},
+		{
+			GemName = Lang.Gem.n04,--法宝名称
+			open_attr = {{type = 21, value = 600},{type = 23, value = 300},{type = 17, value = 12000},{type = 35, value = 75},{type = 25, value = 75},{type = 37, value = 75},{type = 39, value = 75},},--法宝开启属性
+			openCondition = {},--法宝激活条件
+			active_desc = Lang.Gem.lk04,--激活条件描述
+			gemid = 4,--法宝ID
+			order = 7,--排序
+			skillid = 5,--法宝技能ID
+		},
+		{
+			GemName = Lang.Gem.n05,--法宝名称
+			open_attr = {{type = 21, value = 600},{type = 23, value = 300},{type = 17, value = 12000},{type = 35, value = 75},{type = 25, value = 75},{type = 37, value = 75},{type = 39, value = 75},},--法宝开启属性
+			openCondition = {     {type = 1, id = 1, count = 1},     {type  = 2, id = 2},     {type = 3, count = 3},     {type = 4, count = 3,loginType = 0},},--法宝激活条件
+			active_desc = Lang.Gem.lk05,--激活条件描述
+			gemid = 5,--法宝ID
+			order = 6,--排序
+			skillid = 5,--法宝技能ID
+		},
+		{
+			GemName = Lang.Gem.n06,--法宝名称
+			open_attr = {{type = 21, value = 600},{type = 23, value = 300},{type = 17, value = 12000},{type = 35, value = 75},{type = 25, value = 75},{type = 37, value = 75},{type = 39, value = 75},},--法宝开启属性
+			openCondition = {     {type = 1, id = 1, count = 1},     {type  = 2, id = 2},     {type = 3, count = 3},     {type = 4, count = 3,loginType = 0},},--法宝激活条件
+			active_desc = Lang.Gem.lk06,--激活条件描述
+			gemid = 6,--法宝ID
+			order = 5,--排序
+			skillid = 5,--法宝技能ID
+		},
+		{
+			GemName = Lang.Gem.n07,--法宝名称
+			open_attr = {{type = 21, value = 800},{type = 23, value = 400},{type = 17, value = 16000},{type = 35, value = 100},{type = 25, value = 100},{type = 37, value = 100},{type = 39, value = 100},},--法宝开启属性
+			openCondition = {     {type = 1, id = 1, count = 1},     {type  = 2, id = 2},     {type = 3, count = 3},     {type = 4, count = 3,loginType = 0},},--法宝激活条件
+			active_desc = Lang.Gem.lk07,--激活条件描述
+			gemid = 7,--法宝ID
+			order = 4,--排序
+			skillid = 5,--法宝技能ID
+		},
+		{
+			GemName = Lang.Gem.n08,--法宝名称
+			open_attr = {{type = 21, value = 800},{type = 23, value = 400},{type = 17, value = 16000},{type = 35, value = 100},{type = 25, value = 100},{type = 37, value = 100},{type = 39, value = 100},},--法宝开启属性
+			openCondition = {     {type = 1, id = 1, count = 1},     {type  = 2, id = 2},     {type = 3, count = 3},     {type = 4, count = 3,loginType = 0},},--法宝激活条件
+			active_desc = Lang.Gem.lk08,--激活条件描述
+			gemid = 8,--法宝ID
+			order = 3,--排序
+			skillid = 5,--法宝技能ID
+		},
+		{
+			GemName = Lang.Gem.n09,--法宝名称
+			open_attr = {{type = 21, value = 800},{type = 23, value = 400},{type = 17, value = 16000},{type = 35, value = 100},{type = 25, value = 100},{type = 37, value = 100},{type = 39, value = 100},},--法宝开启属性
+			openCondition = {     {type = 1, id = 1, count = 1},     {type  = 2, id = 2},     {type = 3, count = 3},     {type = 4, count = 3,loginType = 0},},--法宝激活条件
+			active_desc = Lang.Gem.lk09,--激活条件描述
+			gemid = 9,--法宝ID
+			order = 2,--排序
+			skillid = 5,--法宝技能ID
+		},
+	},
+	gem_stars = {
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 1,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 2,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 3,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 4,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 5,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 6,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 7,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 8,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+		{
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 27000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 1,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 79800,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 2,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 15}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 231000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 3,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 4,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 62}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 2500}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 16}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 1780000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 63}},--提供属性
+					gem_star_map = 5,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 3055}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 19}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 3550000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 76}},--提供属性
+					gem_star_map = 6,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 97}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 3889}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 24}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 5320000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 98}},--提供属性
+					gem_star_map = 7,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 7090000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 8,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 32}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 8870000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 9,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 10050000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 10,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 12410000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 11,--星图ID
+				},
+			},
+			{
+				{
+					gem_star = 1,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 23,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 2,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 35,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 3,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 37,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 4,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 5,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 39,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 6,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 17,value = 5000}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 7,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 25,value = 31}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+				{
+					gem_star = 8,--星级
+					up_star_con = {root_exp_ = 15070000,bind_coin=0},--升星条件
+					gemid = 9,--法宝ID
+					attrs = {{type = 21,value = 125}},--提供属性
+					gem_star_map = 12,--星图ID
+				},
+			},
+		},
+	},
+	OpenLevel = 51,--开启等级
+	fightSkillCd = 30000,--技能出战公共cd
+	baseAttrType =  { 21,23,17,35,25,37,39},--属性值(攻击、防御、生命上限、暴击、抗暴击、闪避、命中)
+	changeGemCd = 5000,--法宝切换cd
+}
+--表尾
