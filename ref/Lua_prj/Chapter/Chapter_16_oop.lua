@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 --16章 面向对象
 
 require "Account"

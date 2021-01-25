@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 --第十七章 weak表
 
 --创建weak table

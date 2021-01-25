@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 -- 21уб IO©Б
 
 require "CommonFunc";

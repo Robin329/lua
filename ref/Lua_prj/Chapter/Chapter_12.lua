@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 --12章  数据文件与持久化
 
 function basicSerialize(o)

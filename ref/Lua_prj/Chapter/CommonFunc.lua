@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 Global={};
 
 function Global.PrintTabKV(t)

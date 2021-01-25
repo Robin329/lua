@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 --15章 包
 
 --Lua主要是通过表来描述package

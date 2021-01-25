@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 -- 23уб  debug lib
 
 require "CommonFunc"

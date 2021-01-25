@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 
 tutil = require "TimeUtil"
 

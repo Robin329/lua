@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 
 --第一章
 print("hello world");

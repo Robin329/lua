@@ -1,4 +1,5 @@
-﻿--数组操作
+#!/usr/local/bin/lua
+--数组操作
 
 local fields = {"power","lv","timev","hh"}
 

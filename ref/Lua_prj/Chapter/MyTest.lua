@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 
 myTab = {10,20,30}
 

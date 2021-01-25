@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 --14章 环境 也就是lua中的环境变量
 
 require "CommonFunc";

@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 --Module Demo
 require "ModuleTest"
 print(My.tool.EMoneyType.Gold);

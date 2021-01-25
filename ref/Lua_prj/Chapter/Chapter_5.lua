@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 --第五章 函数
 
 --lua函数可以返回多个值

@@ -1,3 +1,4 @@
+#!/usr/local/bin/lua
 --第十三章
 --Metatable Metamethed
 
