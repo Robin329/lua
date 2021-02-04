@@ -1,4 +1,4 @@
-#!/usr/bin/lua
+#!/usr/local/bin/lua
 -- 这是单行注释
 --[[
     这是多行注释

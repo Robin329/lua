@@ -1,4 +1,5 @@
 #!/usr/bin/lua
+#!/usr/local/bin/lua
 -- 1. 函数定义
 -- Lua 编程语言函数定义格式如下：
 

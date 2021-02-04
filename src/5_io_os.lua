@@ -1,4 +1,4 @@
-#!/usr/bin/lua
+#!/usr/local/bin/lua
 
 -- 1. input function
 print(">>>>>>>>>>>>>>>> 1. input FUN<<<<<<<<<<<<<<<\n")
@@ -20,7 +20,7 @@ end
 -- a = io.read()
 -- print (tostring(a).."的阶乘是：".. fact(a))
 
-local file1 = io.input("/home/robin/workspace/project/lua/lua/others/test.txt")
+local file1 = io.input("/Users/renbinjiang/workspace/project/lua/others/test.txt")
 --print(file1:read("*a"))
 io.input(file1)
 local lines = {}
@@ -44,7 +44,7 @@ print("---------test2---------\n")
 -- "*l": 读入当前行。
 -- "*a": 读入从当前文件指针位置开始的整个文件内容。
 
-local file = io.open("/home/robin/workspace/project/lua/lua/others/test.txt", "r")
+local file = io.open("/Users/renbinjiang/workspace/project/lua/others//test.txt", "r")
 print("1 ==>")
 print(file:read("*a"))
 print("2 ==>")
@@ -53,16 +53,16 @@ print("3 ==>")
 print(file:read("*n"))
 
 print("4 ==>")
-for line in io.lines("/home/robin/workspace/project/lua/lua/others/test.txt") do
+for line in io.lines("/Users/renbinjiang/workspace/project/lua/others//test.txt") do
     print(line) --默认读取一行
 end
 print(file:lines("*a"))
 file:close(file)
 
 print("5 ==>")
-local file3 = io.open("/home/robin/workspace/project/lua/lua/others/num.txt")
+local file3 = io.open("/Users/renbinjiang/workspace/project/lua/others/num.txt")
 io.input(file3)
-for line in io.lines("/home/robin/workspace/project/lua/lua/others/num.txt") do
+for line in io.lines("/Users/renbinjiang/workspace/project/lua/others/num.txt") do
 	print(line)
 	local m, n, i = io.read("*n", "*n", "*n")
 	if m == nil then
@@ -77,7 +77,7 @@ io.close(file3)
 -- 3. write file
 print("---------test3---------\n")
 io.write("123", "56", "\n")
-local file2 = io.open("/home/robin/workspace/project/lua/lua/others/test.txt", "a+")
+local file2 = io.open("/Users/renbinjiang/workspace/project/lua/others//test.txt", "a+")
 file2:write("\nwrite file\n") -- 在文件末尾追加
 io.output(file2)
 io.write("\n1234")
@@ -100,7 +100,7 @@ function fsize(file)
 	return size
 end
 
-local file4 = io.open("/home/robin/workspace/project/lua/lua/others/test.txt", "r")
+local file4 = io.open("/Users/renbinjiang/workspace/project/lua/others//test.txt", "r")
 print("6 ==>")
 print(fsize(file4))
 

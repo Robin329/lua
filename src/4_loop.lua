@@ -1,4 +1,4 @@
-#!/usr/bin/lua
+#!/usr/local/bin/lua
 --[[
 循环类型	        描述
 while 循环	       在条件为 true 时，让程序重复地执行某些语句。执行语句前会先检查条件是否为 true。
